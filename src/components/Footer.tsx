@@ -6,35 +6,31 @@ import { EVENT } from "@/lib/tokens";
 export function Footer() {
   const cols = [
     {
-      title: "Plan",
+      title: "Site",
       links: [
         { label: "Accueil", href: "/" },
         { label: "Lieu", href: "/lieu" },
         { label: "Billetterie", href: "/billetterie" },
         { label: "Carte du bar", href: "/carte" },
-        { label: "Associations présentes", href: "/associations" },
-        { label: "Barney", href: "/barney" },
+        { label: "Associations", href: "/associations" },
         { label: "FAQ", href: "/faq" },
       ],
     },
     {
-      title: "Prom EFREI",
+      title: "Légal",
       links: [
-        { label: "Associations présentes", href: "/associations" },
-        { label: "EFREI · efrei.fr", href: "https://www.efrei.fr" },
-        { label: "Bureau des Arts EFREI", href: "https://www.bda-efrei.fr" },
-        { label: "Ajouter à l'agenda", href: "/calendar.ics" },
         { label: "Conditions de vente", href: "/conditions" },
         { label: "Mentions légales", href: "/mentions-legales" },
+        { label: "Ajouter à l'agenda", href: "/calendar.ics" },
       ],
     },
     {
-      title: "Contact",
+      title: "Suivez-nous",
       links: [
         { label: EVENT.email, href: `mailto:${EVENT.email}` },
-        { label: "bureau@bda-efrei.fr", href: "mailto:bureau@bda-efrei.fr" },
         { label: EVENT.insta, href: "https://instagram.com/promefrei" },
         { label: "Discord BDA", href: "https://discord.gg/aJhjNCF2tF" },
+        { label: EVENT.hashtag, href: "https://instagram.com/explore/tags/lanuitdelefrei" },
       ],
     },
   ];
