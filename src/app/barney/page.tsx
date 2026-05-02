@@ -102,7 +102,7 @@ export default function BarneyPage() {
                 <h2 className="fraunces-display mt-4 pb-[0.06em] text-[clamp(36px,4.5vw,56px)] leading-[1.05] tracking-[-0.02em] text-cream">
                   Quelqu&apos;un<br />
                   <em className="fraunces-display [font-style:italic]">
-                    <GoldText className="inline-block pr-[0.18em]">
+                    <GoldText className="inline-block pb-[0.12em] pr-[0.2em]">
                       vous attend
                     </GoldText>
                   </em>
@@ -182,7 +182,7 @@ export default function BarneyPage() {
               <h3 className="fraunces-display mx-auto mt-8 max-w-[14ch] pb-[0.1em] text-[clamp(48px,8vw,112px)] leading-[1.05] tracking-[-0.035em] text-cream lg:mx-0">
                 Une seule nuit{" "}
                 <em className="fraunces-display [font-style:italic]">
-                  <GoldText className="inline-block pr-[0.18em]">
+                  <GoldText className="inline-block pb-[0.15em] pr-[0.2em]">
                     pour le croiser
                   </GoldText>
                 </em>

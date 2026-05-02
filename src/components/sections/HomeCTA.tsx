@@ -24,7 +24,7 @@ export function HomeCTA() {
             <br />
             Ou{" "}
             <em className="fraunces-display font-semibold [font-style:italic]">
-              <FestiveText className="inline-block pr-[0.18em]">
+              <FestiveText className="inline-block pb-[0.18em] pr-[0.2em]">
                 le regret
               </FestiveText>
             </em>

@@ -14,7 +14,9 @@ export function About() {
               la Seine devient
               <br />
               <em className="fraunces-display font-semibold [font-style:italic]">
-                <GoldText className="inline-block pr-[0.18em]">scène</GoldText>
+                <GoldText className="inline-block pb-[0.12em] pr-[0.2em]">
+                  scène
+                </GoldText>
               </em>
               .
             </h2>
