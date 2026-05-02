@@ -25,7 +25,7 @@ const ITEMS = [
   },
   {
     q: "Y a-t-il un vestiaire ?",
-    a: "Oui, vestiaire à bord. Manteau et sac à laisser pour la nuit. Le tarif est précisé à l'entrée selon l'organisation finale du Bureau des Arts. Pas de consigne pour les bagages.",
+    a: "Oui, vestiaire géré par l'établissement à bord. Tarifs · veste 3 € · sac ou casque 5 € · valise, sac à dos ou très gros sac 7 €. Manteau et sac à laisser pour la nuit. Pas de consigne pour les bagages.",
   },
   {
     q: "Jusqu'à quelle heure le bar reste ouvert ?",

@@ -21,8 +21,13 @@ export function HomeHero() {
 
       <div
         aria-hidden="true"
-        className="fraunces-display pointer-events-none absolute -right-16 top-16 select-none leading-[0.78] tracking-[-0.06em]"
-        style={{ fontSize: 920, color: "rgba(212, 164, 55, 0.06)", fontWeight: 900 }}
+        className="fraunces-display pointer-events-none absolute -right-12 top-24 hidden select-none leading-[0.92] tracking-[-0.06em] md:block"
+        style={{
+          fontSize: "clamp(420px, 56vw, 920px)",
+          color: "rgba(212, 164, 55, 0.06)",
+          fontWeight: 900,
+          paddingBottom: "0.08em",
+        }}
       >
         10
       </div>

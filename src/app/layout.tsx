@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: "%s · La Nuit de l'EFREI",
   },
   description:
-    "Le retour, dix ans plus tard. Jeudi 28 mai 2026 · La Péniche, 2 quai de la Tournelle · 22h → 04h. Une nuit, 300 invités, une promo dans la lumière. Fait par PROM EFREI.",
+    "Le retour, dix ans plus tard. Jeudi 28 mai 2026 · La Péniche, 2 quai de la Tournelle · 22h → 04h. Une nuit, 350 invités, une promo dans la lumière. Fait par PROM EFREI.",
   keywords: [
     "La Nuit de l'EFREI",
     "Prom EFREI",

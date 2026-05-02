@@ -25,7 +25,7 @@ export const EVENT = {
   doors: "22:00",
   start: "23:00",
   end: "04:00",
-  capacity: "300",
+  capacity: "350",
   venue: "La Péniche",
   address: "2 quai de la Tournelle",
   city: "Paris V",

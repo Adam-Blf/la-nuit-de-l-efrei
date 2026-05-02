@@ -32,7 +32,7 @@ export function About() {
 
         <div className="mt-32 grid grid-cols-1 gap-y-10 border-t border-brass-400/25 pt-12 md:grid-cols-3 md:gap-y-0">
           {[
-            { v: "300", l: "Invités", s: "jamais une de plus", color: "text-cream", lc: "text-brass-200" },
+            { v: "350", l: "Invités", s: "jamais une de plus", color: "text-cream", lc: "text-brass-200" },
             { v: "06h", l: "De fête", s: "22:00 → 04:00", color: "text-plum-300", lc: "text-plum-300" },
             { v: "10", l: "Ans plus tard", s: "le retour officiel", color: "text-cream", lc: "text-brass-200" },
           ].map((s, i) => (

@@ -7,6 +7,7 @@ import { GoldText } from "@/components/primitives/Decor";
 import { Tickets } from "@/components/sections/Tickets";
 import { ConsoBanner } from "@/components/sections/ConsoBanner";
 import { TicketInfo } from "@/components/sections/TicketInfo";
+import { MenuCarte } from "@/components/sections/MenuCarte";
 import { HelloAssoWidget } from "@/components/HelloAssoWidget";
 
 export const metadata: Metadata = {
@@ -29,9 +30,10 @@ export default function BilletteriePage() {
               votre <GoldText>place.</GoldText>
             </>
           }
-          lead="300 places · jamais une de plus. Conso à 2 € à bord. Billet strictement nominatif · pièce d'identité demandée à l'entrée."
+          lead="350 places · jamais une de plus. Conso à 2 € à bord. Billet strictement nominatif · pièce d'identité demandée à l'entrée."
         />
         <Tickets />
+        <MenuCarte />
         <ConsoBanner />
         <HelloAssoWidget />
         <TicketInfo />

@@ -16,9 +16,9 @@ export function ComebackBanner() {
       <div className="relative mx-auto max-w-[1280px] text-center">
         <Eyebrow>·· Dernière édition · MMXVI ··</Eyebrow>
 
-        <div className="relative mt-12 inline-block overflow-visible px-1.5 py-[0.12em]">
+        <div className="relative mt-12 inline-block overflow-visible px-[0.08em] pb-[0.18em] pt-[0.12em]">
           <div
-            className="fraunces-display inline-block overflow-visible font-bold leading-none tracking-[-0.04em]"
+            className="fraunces-display inline-block overflow-visible pb-[0.05em] font-bold leading-[1.05] tracking-[-0.04em]"
             style={{ fontSize: "clamp(180px, 32vw, 520px)" }}
           >
             <GoldText>10</GoldText>

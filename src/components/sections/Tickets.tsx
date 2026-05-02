@@ -55,7 +55,7 @@ export function Tickets() {
       <div className="mx-auto max-w-[1280px]">
         <div className="mb-20 text-center md:mb-24">
           <div className="font-sans text-[11px] font-bold uppercase tracking-[0.42em] text-brass-200">
-            BILLETTERIE · {EVENT.capacity} PLACES
+            BILLETTERIE · {EVENT.capacity} PLACES · JAMAIS UNE DE PLUS
           </div>
           <h2 className="fraunces-display mt-6 text-[clamp(40px,8vw,80px)] tracking-[-0.03em] text-cream">
             Trois tarifs

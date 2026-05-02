@@ -29,7 +29,7 @@ export function HomeCTA() {
             .
           </h3>
           <p className="mt-7 text-base text-cream/65 md:text-lg">
-            300 places · jamais une de plus.
+            350 places · jamais une de plus.
           </p>
           <Link
             href="/billetterie"
