@@ -114,7 +114,7 @@ const BLOCKS: Array<{ t: string; body: React.ReactNode }> = [
     ),
   },
   {
-    t: "Accès & comportement",
+    t: "Accès, vestiaire & comportement",
     body: (
       <>
         <p>
@@ -124,6 +124,16 @@ const BLOCKS: Array<{ t: string; body: React.ReactNode }> = [
           contraire à la sécurité du lieu ou des autres invités, ou
           contreviendrait au règlement intérieur de l&apos;établissement
           (article 7.1 du contrat Inwee).
+        </p>
+        <p className="mt-3">
+          <strong>Toute sortie de la péniche est définitive.</strong> Une
+          fois la passerelle franchie, le retour à bord n&apos;est pas
+          autorisé. Anticipez vos pauses extérieures.
+        </p>
+        <p className="mt-3">
+          Le vestiaire est géré par l&apos;établissement et{" "}
+          <strong>payable en liquide uniquement</strong> · veste 3 €, sac
+          ou casque 5 €, valise ou sac à dos 7 €.
         </p>
         <p className="mt-3">
           La consommation est réservée aux personnes majeures (18 ans

@@ -185,14 +185,15 @@ export function MenuCarte() {
 
           <div className="mt-10 border-t border-brass-400/20 pt-8">
             <div className="font-mono text-[10px] uppercase tracking-[0.42em] text-brass-200">
-              · Vestiaire · à votre charge
+              · Vestiaire · à votre charge · liquide uniquement
             </div>
             <div className="fraunces-display mt-3 text-xl tracking-[-0.01em] text-cream md:text-[22px]">
               Géré par l&apos;établissement · veste 3 € · sac 5 € · valise 7 €
             </div>
             <p className="mt-2 text-[13px] leading-[1.6] text-cream/55">
-              À déposer à l&apos;embarquement, pour la nuit entière. Pas de
-              consigne pour les bagages.
+              À déposer à l&apos;embarquement, pour la nuit entière. Paiement
+              cash au comptoir vestiaire · pas de CB. Toute sortie de la
+              péniche est définitive.
             </p>
           </div>
         </div>

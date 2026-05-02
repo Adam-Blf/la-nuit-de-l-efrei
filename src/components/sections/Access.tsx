@@ -8,7 +8,7 @@ export function Access() {
     {
       n: "02",
       t: "Vestiaire",
-      d: "Payant · veste 3 € · sac 5 € · valise 7 €. Manteau et sac à laisser pour la nuit.",
+      d: "Payant en liquide · veste 3 € · sac 5 € · valise 7 €. Manteau et sac à laisser pour la nuit.",
     },
     {
       n: "03",
@@ -18,7 +18,7 @@ export function Access() {
     {
       n: "04",
       t: "Sortie",
-      d: "Réversible jusqu'à 04h00. Au-delà · taxi recommandé.",
+      d: "Toute sortie est définitive · pas de retour à bord. Anticipez vos pauses extérieures.",
     },
   ];
 

@@ -29,7 +29,11 @@ const ITEMS = [
   },
   {
     q: "Y a-t-il un vestiaire ?",
-    a: "Oui, vestiaire géré par l'établissement à bord. Tarifs · veste 3 € · sac ou casque 5 € · valise, sac à dos ou très gros sac 7 €. Manteau et sac à laisser pour la nuit. Pas de consigne pour les bagages.",
+    a: "Oui, vestiaire géré par l'établissement à bord. Tarifs payables en liquide uniquement · veste 3 € · sac ou casque 5 € · valise, sac à dos ou très gros sac 7 €. Manteau et sac à laisser pour la nuit. Pas de consigne pour les bagages.",
+  },
+  {
+    q: "Puis-je sortir et revenir pendant la soirée ?",
+    a: "Non. Toute sortie est définitive · une fois la passerelle quittée, le retour à bord n'est pas autorisé. Anticipez vos pauses extérieures et prévoyez un sac compact pour le vestiaire.",
   },
   {
     q: "Qu'est-ce qui est compris dans la place ?",
