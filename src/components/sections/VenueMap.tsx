@@ -1,14 +1,18 @@
 import {
-  TrainFront,
-  TramFront,
-  Bus,
   Bike,
   Moon,
   CarTaxiFront,
 } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
+import type { ReactNode } from "react";
 
 import { Corners, Eyebrow } from "@/components/primitives/Decor";
+import {
+  BusBadge,
+  MetroBadge,
+  ModeIcon,
+  NoctilienBadge,
+  RerBadge,
+} from "@/components/primitives/LineBadge";
 import { Stars } from "@/components/primitives/Stars";
 
 const LAT = "48.8505";
@@ -19,47 +23,88 @@ const OSM_OPEN = `https://www.openstreetmap.org/?mlat=${LAT}&mlon=${LON}#map=18/
 const GMAPS_OPEN = `https://www.google.com/maps?q=${LAT},${LON}&z=18`;
 const APPLE_OPEN = `https://maps.apple.com/?q=La+Peniche&ll=${LAT},${LON}&z=18`;
 
-const STOPS: Array<{
+type Stop = {
   l: string;
   v: string;
-  line: string;
-  Icon: LucideIcon;
-}> = [
+  badges: ReactNode;
+  modeIcon: ReactNode;
+};
+
+const STOPS: Stop[] = [
   {
     l: "Métro",
     v: "Maubert-Mutualité · 8 min",
-    line: "Ligne 10",
-    Icon: TrainFront,
+    modeIcon: <ModeIcon mode="metro" />,
+    badges: <MetroBadge line="10" />,
   },
   {
     l: "RER",
     v: "Saint-Michel · 12 min",
-    line: "B & C",
-    Icon: TramFront,
+    modeIcon: <ModeIcon mode="rer" />,
+    badges: (
+      <span className="flex gap-1.5">
+        <RerBadge line="B" />
+        <RerBadge line="C" />
+      </span>
+    ),
   },
   {
     l: "Bus",
     v: "Pont de la Tournelle · 3 min",
-    line: "24 · 63 · 86 · 87",
-    Icon: Bus,
+    modeIcon: <ModeIcon mode="bus" />,
+    badges: (
+      <span className="flex flex-wrap gap-1">
+        <BusBadge line="24" />
+        <BusBadge line="63" />
+        <BusBadge line="86" />
+        <BusBadge line="87" />
+      </span>
+    ),
   },
   {
     l: "Vélib",
     v: "Station 50403 · 50 m",
-    line: "30 bornes",
-    Icon: Bike,
+    modeIcon: (
+      <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-[6px] bg-[#A6CE39] text-white">
+        <Bike size={16} strokeWidth={2.4} aria-hidden="true" />
+      </span>
+    ),
+    badges: (
+      <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-cream/55">
+        30 bornes
+      </span>
+    ),
   },
   {
     l: "Noctilien",
-    v: "Saint-Michel · 0h30 → 5h30",
-    line: "N12 · N13 · N15 · N122",
-    Icon: Moon,
+    v: "Saint-Michel · 00h30 → 05h30",
+    modeIcon: (
+      <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#252958] text-white">
+        <Moon size={15} strokeWidth={2} aria-hidden="true" />
+      </span>
+    ),
+    badges: (
+      <span className="flex flex-wrap gap-1">
+        <NoctilienBadge line="N12" />
+        <NoctilienBadge line="N13" />
+        <NoctilienBadge line="N15" />
+        <NoctilienBadge line="N122" />
+      </span>
+    ),
   },
   {
     l: "Taxi · VTC",
     v: "Sur le quai · toute la nuit",
-    line: "Uber · G7",
-    Icon: CarTaxiFront,
+    modeIcon: (
+      <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-[6px] bg-[#0F2E55] text-[#F4D03F]">
+        <CarTaxiFront size={15} strokeWidth={2} aria-hidden="true" />
+      </span>
+    ),
+    badges: (
+      <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-cream/55">
+        Uber · G7
+      </span>
+    ),
   },
 ];
 
@@ -136,25 +181,16 @@ export function VenueMap() {
         <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-7 sm:grid-cols-2 lg:grid-cols-3">
           {STOPS.map((s) => (
             <div key={s.l} className="border-t border-brass-400/20 pt-5">
-              <div className="flex items-center justify-between gap-2">
-                <div className="flex items-center gap-3">
-                  <s.Icon
-                    size={20}
-                    strokeWidth={1.4}
-                    className="text-brass-400"
-                    aria-hidden="true"
-                  />
-                  <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-brass-200">
-                    {s.l}
-                  </div>
-                </div>
-                <div className="font-mono text-[9px] uppercase tracking-[0.28em] text-cream/45">
-                  {s.line}
+              <div className="flex items-center gap-3">
+                {s.modeIcon}
+                <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-brass-200">
+                  {s.l}
                 </div>
               </div>
-              <div className="fraunces-display mt-2 text-lg text-cream md:text-[20px]">
+              <div className="fraunces-display mt-3 text-lg leading-tight text-cream md:text-[20px]">
                 {s.v}
               </div>
+              <div className="mt-3 flex items-center">{s.badges}</div>
             </div>
           ))}
         </div>
