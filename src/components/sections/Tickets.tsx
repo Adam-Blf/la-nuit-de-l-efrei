@@ -13,7 +13,7 @@ const TIERS = [
       "1 cocktail ou champagne + 1 soft offerts",
       "Privatisation totale péniche",
       "Conso suivantes à 2 € · bar jusqu'à 03h30",
-      "Tarif réservé à la promo qui vient de diplômer",
+      "Tarif réservé à la promo de l'EFREI qui vient d'être diplômée",
     ],
     avail: "TARIF PROMO · réservé EFREI 2025",
     featured: true,
