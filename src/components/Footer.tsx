@@ -21,6 +21,7 @@ export function Footer() {
       title: "Prom EFREI",
       links: [
         { label: "Associations présentes", href: "/associations" },
+        { label: "EFREI · efrei.fr", href: "https://www.efrei.fr" },
         { label: "Bureau des Arts EFREI", href: "https://www.bda-efrei.fr" },
         { label: "Ajouter à l'agenda", href: "/calendar.ics" },
         { label: "Conditions de vente", href: "/conditions" },
@@ -60,7 +61,20 @@ export function Footer() {
             <div className="font-mono text-[9px] uppercase tracking-[0.32em] text-brass-200">
               · En partenariat
             </div>
-            <EfreiLogo variant="blanc" width={120} height={42} className="opacity-90" />
+            <a
+              href="https://www.efrei.fr"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="EFREI · efrei.fr"
+              className="transition-opacity hover:opacity-100"
+            >
+              <EfreiLogo
+                variant="blanc"
+                width={120}
+                height={42}
+                className="opacity-90"
+              />
+            </a>
           </div>
         </div>
         {cols.map((col) => (
