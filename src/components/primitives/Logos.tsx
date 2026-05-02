@@ -20,6 +20,34 @@ export function PromBlason({
   );
 }
 
+export function EfreiLogo({
+  variant = "blanc",
+  width = 140,
+  height = 48,
+  className,
+}: {
+  variant?: "blanc" | "couleur" | "noir";
+  width?: number;
+  height?: number;
+  className?: string;
+}) {
+  const src =
+    variant === "couleur"
+      ? "/assets/efrei-couleur.svg"
+      : variant === "noir"
+        ? "/assets/efrei-noir.png"
+        : "/assets/efrei-blanc.png";
+  return (
+    <Image
+      src={src}
+      alt="EFREI · Université Paris-Panthéon-Assas"
+      width={width}
+      height={height}
+      className={`block h-auto w-auto ${className ?? ""}`}
+    />
+  );
+}
+
 export function Barney({
   size = 200,
   flipped = false,

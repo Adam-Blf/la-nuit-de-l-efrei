@@ -10,6 +10,7 @@ import {
   GoldRule,
   GoldText,
 } from "@/components/primitives/Decor";
+import { EfreiLogo } from "@/components/primitives/Logos";
 import { Stars } from "@/components/primitives/Stars";
 import { EVENT } from "@/lib/tokens";
 
@@ -130,6 +131,15 @@ export default function AssociationsPage() {
         <section className="relative overflow-hidden bg-navy-900 px-6 py-28 md:px-12 md:py-32 lg:px-20 lg:py-40 xl:px-[120px]">
           <Stars count={80} seed={2024} width={1440} height={900} density={0.6} />
           <div className="relative mx-auto max-w-[1280px]">
+            <div className="mb-16 flex flex-col items-center gap-5 border-y border-brass-400/30 py-10 md:mb-20 md:flex-row md:justify-between">
+              <div className="font-mono text-[10px] uppercase tracking-[0.42em] text-brass-200">
+                · Partenaire institutionnel
+              </div>
+              <EfreiLogo variant="blanc" width={200} height={68} />
+              <div className="text-center font-mono text-[10px] uppercase tracking-[0.32em] text-cream/60 md:text-right">
+                EFREI · Université Paris-Panthéon-Assas
+              </div>
+            </div>
             {TIERS.map((t, i) => (
               <div
                 key={t.l}

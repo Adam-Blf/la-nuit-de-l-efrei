@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { PromBlason } from "@/components/primitives/Logos";
+import { EfreiLogo, PromBlason } from "@/components/primitives/Logos";
 import { EVENT } from "@/lib/tokens";
 
 export function Footer() {
@@ -56,6 +56,12 @@ export function Footer() {
           <p className="mt-6 max-w-xs text-sm leading-relaxed text-cream/65">
             Une nuit où la Seine devient scène. Le retour, dix ans plus tard.
           </p>
+          <div className="mt-8 flex items-center gap-4 border-t border-brass-400/15 pt-6">
+            <div className="font-mono text-[9px] uppercase tracking-[0.32em] text-brass-200">
+              · En partenariat
+            </div>
+            <EfreiLogo variant="blanc" width={120} height={42} className="opacity-90" />
+          </div>
         </div>
         {cols.map((col) => (
           <div key={col.title}>
