@@ -82,17 +82,24 @@ export function Tickets() {
               <div className="fraunces-display mb-4 text-5xl leading-none text-brass-400">
                 {t.n}
               </div>
-              <div className="fraunces-display text-[clamp(28px,3vw,36px)] tracking-[-0.02em] text-cream">
-                {t.l}
+              <div className="flex min-h-[140px] flex-col lg:min-h-[148px]">
+                <div className="fraunces-display text-[clamp(26px,2.4vw,32px)] leading-[1.1] tracking-[-0.02em] text-cream">
+                  {t.l}
+                </div>
+                <div className="mt-2 text-sm leading-snug text-cream/60">
+                  {t.s}
+                </div>
               </div>
-              <div className="mt-2 text-sm text-cream/60">{t.s}</div>
-              <div className="mt-10 flex items-baseline gap-2 border-b border-brass-400/20 pb-8">
-                <span className="fraunces-display font-medium leading-none tracking-[-0.04em] text-cream"
+              <div className="mt-6 flex items-baseline gap-2 border-b border-brass-400/20 pb-8">
+                <span
+                  className="fraunces-display font-medium leading-none tracking-[-0.04em] text-cream tabular-nums"
                   style={{ fontSize: "clamp(72px, 10vw, 96px)" }}
                 >
                   {t.p}
                 </span>
-                <span className="fraunces-display text-3xl text-brass-200 md:text-4xl">€</span>
+                <span className="fraunces-display text-3xl text-brass-200 md:text-4xl">
+                  €
+                </span>
               </div>
               <ul className="mt-8 flex flex-col gap-3.5">
                 {t.f.map((f) => (
