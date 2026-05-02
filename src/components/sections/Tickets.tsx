@@ -5,17 +5,17 @@ import { EVENT } from "@/lib/tokens";
 const TIERS = [
   {
     n: "01",
-    l: "Promo 2026",
+    l: "Promo 2025",
     p: "14",
-    s: "Diplômés EFREI · promotion 2026",
+    s: "Diplômés EFREI · promotion 2025 · juste sortie",
     f: [
       "Portes 22h · fin 04h",
       "1 cocktail ou champagne + 1 soft offerts",
       "Privatisation totale péniche",
       "Conso suivantes à 2 € · bar jusqu'à 03h30",
-      "Tarif réservé promo diplômée",
+      "Tarif réservé à la promo qui vient de diplômer",
     ],
-    avail: "TARIF PROMO · réservé EFREI 2026",
+    avail: "TARIF PROMO · réservé EFREI 2025",
     featured: true,
   },
   {
