@@ -44,8 +44,6 @@ const PRESTATIONS = [
   { l: "Son et lumière", v: "Système intégré · réglage régisseur" },
   { l: "DJ & dancefloor", v: "Mix continu jusqu'à la fin" },
   { l: "Live · pont supérieur", v: "Concert assuré par Live EFREI" },
-  { l: "Photo booth", v: "2 tirages instantanés par invité" },
-  { l: "Captation vidéo", v: "Aftermovie officiel à J+7" },
   { l: "Photographe officiel", v: "Reportage de la nuit" },
 ];
 
@@ -176,11 +174,6 @@ export function MenuCarte() {
                 </li>
               ))}
             </ul>
-            <p className="mt-5 text-[12px] leading-[1.6] text-cream/55">
-              Et aussi · bières, softs, vins, shots maison. Paiement CB ou
-              cash au comptoir. Pas d&apos;open bar · service stoppé à 03h30,
-              soirée jusqu&apos;à 04h.
-            </p>
           </div>
 
           <div className="mt-10 border-t border-brass-400/20 pt-8">

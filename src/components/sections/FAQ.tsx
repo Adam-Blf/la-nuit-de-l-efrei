@@ -37,7 +37,7 @@ const ITEMS = [
   },
   {
     q: "Qu'est-ce qui est compris dans la place ?",
-    a: "Avec votre billet · 1 cocktail (ou un verre de champagne) et 1 soft offerts à l'embarquement, 6 petits-fours servis pendant le cocktail dînatoire, l'accès aux 3 ponts de la péniche, le DJ et le live de Live EFREI sur le pont supérieur, le photo booth (2 tirages), le photographe officiel et l'aftermovie. Le bar (consos suivantes à 2 €) est ouvert jusqu'à 03h30.",
+    a: "Avec votre billet · 1 cocktail (ou un verre de champagne) et 1 soft offerts à l'embarquement, 6 petits-fours servis pendant le cocktail dînatoire, l'accès aux 3 ponts de la péniche, le DJ et le live de Live EFREI sur le pont supérieur, le photographe officiel. Le bar (consos suivantes à 2 €) est ouvert jusqu'à 03h30.",
   },
   {
     q: "Comment je rentre après 04h ?",
