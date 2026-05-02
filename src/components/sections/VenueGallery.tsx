@@ -1,14 +1,40 @@
 import { GoldText, Plate } from "@/components/primitives/Decor";
+import { Photo } from "@/components/primitives/Photo";
+
+const ITEMS: Array<{
+  l: string;
+  src?: string;
+  alt?: string;
+}> = [
+  {
+    l: "Pont supérieur · vue Notre-Dame",
+    src: "/assets/peniche/pont-superieur-nuit.webp",
+    alt: "Pont supérieur de la péniche de nuit, lumières dorées et silhouette de Notre-Dame",
+  },
+  {
+    l: "Intérieur · ambiance jour",
+    src: "/assets/peniche/interieur-jour.webp",
+    alt: "Intérieur de la péniche en lumière du jour, mobilier en bois et velours",
+  },
+  {
+    l: "Bar · cuivre & laiton",
+  },
+  {
+    l: "La Péniche · vue extérieure",
+    src: "/assets/peniche/exterieur-magenta.jpg",
+    alt: "Vue extérieure de la péniche éclairée magenta sur la Seine",
+  },
+  {
+    l: "Intérieur · velours bleu nuit",
+    src: "/assets/peniche/interieur-nuit.webp",
+    alt: "Intérieur de la péniche, ambiance nuit, velours et reflets dorés",
+  },
+  {
+    l: "Passerelle d'accueil",
+  },
+];
 
 export function VenueGallery() {
-  const items = [
-    { l: "Pont supérieur · vue Notre-Dame", h: 540 },
-    { l: "Salon principal · velours bleu", h: 260 },
-    { l: "Bar · cuivre & laiton", h: 260 },
-    { l: "Pont avant · ciel ouvert", h: 540 },
-    { l: "Coursive · enfilade", h: 260 },
-    { l: "Passerelle d'accueil", h: 260 },
-  ];
   return (
     <section className="relative bg-navy-900 px-6 py-28 md:px-12 md:py-32 lg:px-20 lg:py-40 xl:px-[120px]">
       <div className="mx-auto max-w-[1280px]">
@@ -23,8 +49,9 @@ export function VenueGallery() {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-3 lg:grid-cols-4 lg:grid-rows-2">
-          {items.map((it, i) => {
+          {ITEMS.map((it, i) => {
             const big = i === 0 || i === 3;
+            const h = big ? 540 : 260;
             return (
               <div
                 key={i}
@@ -34,7 +61,16 @@ export function VenueGallery() {
                     : "col-span-1 lg:col-span-1"
                 }
               >
-                <Plate label={it.l} height={big ? 540 : 260} />
+                {it.src ? (
+                  <Photo
+                    src={it.src}
+                    alt={it.alt ?? it.l}
+                    caption={it.l}
+                    height={h}
+                  />
+                ) : (
+                  <Plate label={it.l} height={h} />
+                )}
               </div>
             );
           })}

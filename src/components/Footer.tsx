@@ -19,16 +19,18 @@ export function Footer() {
       title: "Prom EFREI",
       links: [
         { label: "Devenir partenaire", href: "/sponsors" },
-        { label: "Bureau des Arts", href: "https://www.efrei.fr" },
-        { label: "Mentions légales", href: "/" },
+        { label: "Bureau des Arts EFREI", href: "https://www.bda-efrei.fr" },
+        { label: "@bda_efrei", href: "https://www.instagram.com/bda_efrei/" },
+        { label: "Ajouter à l'agenda", href: "/calendar.ics" },
       ],
     },
     {
       title: "Contact",
       links: [
         { label: EVENT.email, href: `mailto:${EVENT.email}` },
+        { label: "bureau@bda-efrei.fr", href: "mailto:bureau@bda-efrei.fr" },
         { label: EVENT.insta, href: "https://instagram.com/promefrei" },
-        { label: EVENT.hashtag, href: "/" },
+        { label: "Discord BDA", href: "https://discord.gg/aJhjNCF2tF" },
       ],
     },
   ];

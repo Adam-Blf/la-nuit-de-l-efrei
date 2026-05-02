@@ -1,9 +1,5 @@
-import {
-  Corners,
-  Eyebrow,
-  GoldText,
-  Plate,
-} from "@/components/primitives/Decor";
+import { Eyebrow, GoldText } from "@/components/primitives/Decor";
+import { Photo } from "@/components/primitives/Photo";
 import { EVENT } from "@/lib/tokens";
 
 export function Venue() {
@@ -55,8 +51,13 @@ export function Venue() {
           </div>
         </div>
         <div className="relative">
-          <Plate label="La Péniche · vue extérieure nuit" height={680} />
-          <Corners size={42} opacity={0.55} />
+          <Photo
+            src="/assets/peniche/exterieur-magenta.jpg"
+            alt="La Péniche, vue extérieure de nuit, lumière magenta sur la coque blanche"
+            caption="La Péniche · vue extérieure nuit"
+            height={680}
+            priority
+          />
           <div className="absolute -bottom-7 -left-3 bg-brass-400 px-7 py-5 fraunces-display text-xl text-navy-900 md:-left-7 md:text-[22px]">
             48.852°N · 2.353°E
           </div>

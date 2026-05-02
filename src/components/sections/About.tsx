@@ -1,8 +1,5 @@
-import {
-  Eyebrow,
-  GoldText,
-  Plate,
-} from "@/components/primitives/Decor";
+import { Eyebrow, GoldText } from "@/components/primitives/Decor";
+import { Photo } from "@/components/primitives/Photo";
 
 export function About() {
   return (
@@ -23,7 +20,12 @@ export function About() {
             </h2>
           </div>
           <div className="relative mt-8 lg:mt-16">
-            <Plate label="Pont supérieur · La Péniche · nuit" height={520} />
+            <Photo
+              src="/assets/peniche/pont-superieur-nuit.webp"
+              alt="Pont supérieur de La Péniche, nuit, vue Notre-Dame"
+              caption="Pont supérieur · nuit"
+              height={520}
+            />
             <div className="absolute -bottom-7 -right-3 bg-plum-500 px-7 py-5 fraunces-display text-xl font-medium text-cream md:-right-7 md:text-[22px]">
               48.852°N · 2.353°E
             </div>

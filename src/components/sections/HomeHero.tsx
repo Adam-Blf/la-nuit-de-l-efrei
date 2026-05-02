@@ -82,12 +82,13 @@ export function HomeHero() {
             >
               Réserver →
             </Link>
-            <Link
-              href="/lieu"
+            <a
+              href="/calendar.ics"
               className="border-b border-brass-400 px-9 py-3 text-center text-[11px] font-semibold uppercase tracking-[0.18em] text-brass-200 hover:text-cream"
+              download="la-nuit-de-l-efrei.ics"
             >
-              Découvrir le lieu
-            </Link>
+              Ajouter à l&apos;agenda
+            </a>
           </div>
         </div>
       </div>
