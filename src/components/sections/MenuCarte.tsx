@@ -40,11 +40,11 @@ const PETITS_FOURS = [
 ];
 
 const PRESTATIONS = [
-  { l: "Privatisation totale", v: "La Péniche · 22h → 04h" },
-  { l: "Son et lumière", v: "Système intégré · réglage régisseur" },
-  { l: "DJ & dancefloor", v: "Mix continu jusqu'à la fin" },
-  { l: "Live · pont supérieur", v: "Concert assuré par Live EFREI" },
-  { l: "Photographe officiel", v: "Reportage de la nuit" },
+  "Privatisation totale de La Péniche",
+  "Son et lumière",
+  "DJ & dancefloor",
+  "Live · pont supérieur",
+  "Photographe officiel",
 ];
 
 const COCKTAILS = [
@@ -132,17 +132,15 @@ export function MenuCarte() {
               <div className="mb-6 font-mono text-[10px] uppercase tracking-[0.42em] text-brass-200">
                 Prestations à bord
               </div>
-              <ul className="flex flex-col gap-5">
+              <ul className="flex flex-col gap-3">
                 {PRESTATIONS.map((p) => (
                   <li
-                    key={p.l}
-                    className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-brass-400/15 pb-3"
+                    key={p}
+                    className="flex items-baseline gap-3 border-b border-brass-400/15 pb-3"
                   >
+                    <span className="text-brass-400">·</span>
                     <span className="fraunces-display text-base text-cream md:text-lg">
-                      {p.l}
-                    </span>
-                    <span className="text-right text-[13px] text-cream/60">
-                      {p.v}
+                      {p}
                     </span>
                   </li>
                 ))}
