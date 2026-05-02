@@ -52,6 +52,8 @@ const COCKTAILS = [
   { l: "Sex on the Beach", v: "Vodka · cranberry · orange · sirop pêche" },
   { l: "Ti'Punch", v: "Rhum · orange · ananas" },
   { l: "Teqpaf", v: "Tequila · sirop · service au shot" },
+  { l: "Sans alcool · sur demande", v: "Tous les cocktails en version soft" },
+  { l: "Eau plate · gazeuse", v: "Gratuite · à volonté toute la nuit" },
 ];
 
 export function MenuCarte() {

@@ -31,14 +31,21 @@ const SHOTS_BIERES_VINS = [
 ];
 
 const SOFTS = [
+  {
+    l: "Eau plate · gazeuse",
+    d: "Bouteilles à disposition · gratuites · à volonté toute la nuit.",
+  },
   { l: "Coca · Coca Zero", d: "Servi glacé." },
   { l: "Sprite · Schweppes Tonic", d: "Carbonatés." },
   { l: "Jus d'orange · ananas · cranberry", d: "Jus de fruit pur." },
-  { l: "Eau plate · gazeuse", d: "Servie à volonté à toutes tables." },
-  { l: "Red Bull", d: "Edition originale, glacée." },
+  { l: "Red Bull", d: "Édition originale, glacée." },
 ];
 
 const SANS_ALCOOL = [
+  {
+    l: "Tous les cocktails · sans alcool",
+    d: "Chaque cocktail maison (Vodka Redbull, Sex on the Beach, Ti'Punch, Teqpaf) est décliné en version sans alcool sur demande au comptoir.",
+  },
   {
     l: "Virgin Sex on the Beach",
     d: "Cranberry, orange, sirop de pêche · sans alcool.",
@@ -111,7 +118,7 @@ export default function CartePage() {
               <br className="hidden sm:block" /> à <GoldText>2&nbsp;€</GoldText>.
             </>
           }
-          lead="1 cocktail (ou champagne) et 1 soft offerts à l'embarquement avec votre place. Cocktails maison, bières, softs, vins, shots · une version sans alcool de chaque grand classique. Service au comptoir jusqu'à 03h30."
+          lead="1 cocktail (ou champagne) et 1 soft offerts à l'embarquement. Eau plate et gazeuse à disposition gratuitement toute la nuit. Tous les cocktails maison déclinés en version sans alcool. Service au comptoir jusqu'à 03h30."
         />
 
         <section className="bg-navy-900 px-6 py-24 md:px-12 md:py-28 lg:px-20 lg:py-36 xl:px-[120px]">
@@ -139,10 +146,10 @@ export default function CartePage() {
                 meta="04 grands formats"
                 items={SHOTS_BIERES_VINS}
               />
-              <Block title="Softs" meta="05 références" items={SOFTS} />
+              <Block title="Softs" meta="Eau gratuite · 5 références" items={SOFTS} />
               <Block
                 title="Sans alcool · Mocktails"
-                meta="03 cocktails sans alcool"
+                meta="Tous les cocktails en version soft"
                 items={SANS_ALCOOL}
               />
             </div>
