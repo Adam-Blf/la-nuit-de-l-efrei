@@ -8,7 +8,7 @@ export function Access() {
     {
       n: "02",
       t: "Vestiaire",
-      d: "Inclus. Manteau et sac obligatoire pour la nuit.",
+      d: "Payant · veste 3 € · sac 5 € · valise 7 €. Manteau et sac à laisser pour la nuit.",
     },
     {
       n: "03",
