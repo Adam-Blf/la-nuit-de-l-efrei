@@ -67,8 +67,9 @@ export function MenuCarte() {
             <br className="hidden sm:block" /> votre billet.
           </h2>
           <p className="mx-auto mt-7 max-w-[560px] text-base leading-[1.65] text-cream/65 md:text-lg">
-            Six petits-fours signés du comité, un verre de champagne à
-            l&apos;embarquement, et la péniche privatisée pour vous seuls.
+            Six petits-fours signés du comité, un cocktail ou champagne et un
+            soft offerts à l&apos;embarquement, et la péniche privatisée pour
+            vous seuls.
           </p>
         </Reveal>
 
@@ -112,13 +113,17 @@ export function MenuCarte() {
               </div>
               <div className="rounded-sm border border-brass-400/40 bg-navy-800/50 px-6 py-7 text-center">
                 <div className="font-mono text-[9px] uppercase tracking-[0.42em] text-brass-200">
-                  Coupe d&apos;accueil
+                  À l&apos;embarquement · offert
                 </div>
-                <div className="fraunces-display mt-3 text-2xl tracking-[-0.02em] text-cream md:text-[28px]">
-                  Champagne <span className="italic text-brass-200">brut</span>
+                <div className="fraunces-display mt-3 text-xl leading-tight tracking-[-0.02em] text-cream md:text-[24px]">
+                  1 cocktail{" "}
+                  <span className="italic text-brass-200">ou</span> champagne
+                  <span className="block text-base text-cream/65 md:text-[18px]">
+                    + 1 soft au choix
+                  </span>
                 </div>
-                <div className="mt-2 text-[13px] text-cream/55">
-                  Servi au pont supérieur · pour chaque invité
+                <div className="mt-3 text-[12px] text-cream/55">
+                  Servis au pont supérieur · pour chaque invité
                 </div>
               </div>
 

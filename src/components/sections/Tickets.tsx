@@ -10,8 +10,9 @@ const TIERS = [
     s: "Diplômés EFREI · promotion 2026",
     f: [
       "Portes 22h · fin 04h",
+      "1 cocktail ou champagne + 1 soft offerts",
       "Privatisation totale péniche",
-      "Conso à 2 € · bar jusqu'à 03h30",
+      "Conso suivantes à 2 € · bar jusqu'à 03h30",
       "Tarif réservé promo diplômée",
     ],
     avail: "TARIF PROMO · réservé EFREI 2026",
@@ -24,8 +25,9 @@ const TIERS = [
     s: "Toutes promos EFREI · ingénieurs, bachelors, mastères, alumni · et tous les étudiants des écoles du groupe Assas",
     f: [
       "Portes 22h · fin 04h",
+      "1 cocktail ou champagne + 1 soft offerts",
       "Privatisation totale péniche",
-      "Conso à 2 € · bar jusqu'à 03h30",
+      "Conso suivantes à 2 € · bar jusqu'à 03h30",
       "Carte étudiante ou justificatif alumni demandé",
     ],
     avail: "OUVERT · communauté Assas Université",
@@ -38,8 +40,9 @@ const TIERS = [
     s: "Invité · accompagnant · extérieur",
     f: [
       "Portes 22h · fin 04h",
+      "1 cocktail ou champagne + 1 soft offerts",
       "Privatisation totale péniche",
-      "Conso à 2 € · bar jusqu'à 03h30",
+      "Conso suivantes à 2 € · bar jusqu'à 03h30",
       "Sous réserve de places",
     ],
     avail: "PLACES LIMITÉES",

@@ -14,9 +14,9 @@ export function ConsoBanner() {
           </div>
         </div>
         <div className="max-w-[420px] text-[13px] text-cream/60 md:text-right">
-          Bières · softs · cocktails maison · vins servis à bord. Tarif unique
-          négocié pour la promo. Paiement CB ou cash au comptoir. Service stoppé à
-          03h30 · soirée jusqu&apos;à 04h.
+          1<sup className="text-brass-200">re</sup> conso (cocktail ou
+          champagne) et 1 soft offerts à l&apos;embarquement, puis tout à 2 €.
+          Service stoppé à 03h30 · soirée jusqu&apos;à 04h.
         </div>
       </div>
     </section>

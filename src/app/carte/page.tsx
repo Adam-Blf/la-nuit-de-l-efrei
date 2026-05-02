@@ -111,7 +111,7 @@ export default function CartePage() {
               <br className="hidden sm:block" /> à <GoldText>2&nbsp;€</GoldText>.
             </>
           }
-          lead="Cocktails maison, bières, softs, vins, shots. Une version sans alcool de chaque grand classique. Service au comptoir jusqu'à 03h30."
+          lead="1 cocktail (ou champagne) et 1 soft offerts à l'embarquement avec votre place. Cocktails maison, bières, softs, vins, shots — une version sans alcool de chaque grand classique. Service au comptoir jusqu'à 03h30."
         />
 
         <section className="bg-navy-900 px-6 py-24 md:px-12 md:py-28 lg:px-20 lg:py-36 xl:px-[120px]">
