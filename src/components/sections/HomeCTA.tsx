@@ -23,8 +23,10 @@ export function HomeCTA() {
             La place.
             <br />
             Ou{" "}
-            <em className="fraunces-display glyph-safe font-semibold [font-style:italic]">
-              <FestiveText>le regret</FestiveText>
+            <em className="fraunces-display font-semibold [font-style:italic]">
+              <FestiveText className="inline-block pr-[0.18em]">
+                le regret
+              </FestiveText>
             </em>
             .
           </h3>

@@ -22,8 +22,11 @@ const mono = JetBrains_Mono({
   weight: ["400", "500", "700"],
 });
 
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://la-nuit-de-l-efrei.vercel.app";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://prom.efrei.fr"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "La Nuit de l'EFREI · MMXXVI",
     template: "%s · La Nuit de l'EFREI",
@@ -44,16 +47,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://prom.efrei.fr",
+    url: SITE_URL,
     siteName: "La Nuit de l'EFREI",
     title: "La Nuit de l'EFREI · MMXXVI",
     description:
       "Le retour, dix ans plus tard. Jeudi 28 mai 2026 · La Péniche · 22h → 04h.",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "La Nuit de l'EFREI · MMXXVI · 28 mai 2026 · La Péniche",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "La Nuit de l'EFREI · MMXXVI",
     description: "Le retour, dix ans plus tard. 28 · 05 · 2026.",
+    images: ["/opengraph-image"],
   },
 };
 

@@ -13,8 +13,8 @@ export function About() {
               <br />
               la Seine devient
               <br />
-              <em className="fraunces-display glyph-safe font-semibold [font-style:italic]">
-                <GoldText>scène</GoldText>
+              <em className="fraunces-display font-semibold [font-style:italic]">
+                <GoldText className="inline-block pr-[0.18em]">scène</GoldText>
               </em>
               .
             </h2>

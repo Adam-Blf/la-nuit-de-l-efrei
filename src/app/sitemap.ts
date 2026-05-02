@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://prom.efrei.fr";
+  const base =
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://la-nuit-de-l-efrei.vercel.app";
   const lastModified = new Date("2026-05-02");
   return [
     { url: `${base}/`, lastModified, priority: 1, changeFrequency: "weekly" },

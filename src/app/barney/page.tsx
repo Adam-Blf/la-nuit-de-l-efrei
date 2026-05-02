@@ -101,8 +101,10 @@ export default function BarneyPage() {
                 <Eyebrow>· Bio</Eyebrow>
                 <h2 className="fraunces-display mt-4 pb-[0.06em] text-[clamp(36px,4.5vw,56px)] leading-[1.05] tracking-[-0.02em] text-cream">
                   Quelqu&apos;un<br />
-                  <em className="fraunces-display glyph-safe [font-style:italic]">
-                    <GoldText>vous attend</GoldText>
+                  <em className="fraunces-display [font-style:italic]">
+                    <GoldText className="inline-block pr-[0.18em]">
+                      vous attend
+                    </GoldText>
                   </em>
                   .
                 </h2>
@@ -179,8 +181,10 @@ export default function BarneyPage() {
               <Eyebrow>·· Le voir, en vrai ··</Eyebrow>
               <h3 className="fraunces-display mx-auto mt-8 max-w-[14ch] pb-[0.1em] text-[clamp(48px,8vw,112px)] leading-[1.05] tracking-[-0.035em] text-cream lg:mx-0">
                 Une seule nuit{" "}
-                <em className="fraunces-display glyph-safe [font-style:italic]">
-                  <GoldText>pour le croiser</GoldText>
+                <em className="fraunces-display [font-style:italic]">
+                  <GoldText className="inline-block pr-[0.18em]">
+                    pour le croiser
+                  </GoldText>
                 </em>
                 .
               </h3>
