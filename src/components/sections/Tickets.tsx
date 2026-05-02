@@ -1,4 +1,5 @@
 import { Corners, GoldText } from "@/components/primitives/Decor";
+import { Reveal } from "@/components/primitives/Reveal";
 import { EVENT } from "@/lib/tokens";
 
 const TIERS = [
@@ -18,23 +19,23 @@ const TIERS = [
   },
   {
     n: "02",
-    l: "Groupe Assas · Alumni EFREI",
+    l: "Étudiants & Alumni EFREI",
     p: "18",
-    s: "Assas · CFJ · École W · INA · ISIT · alumni EFREI",
+    s: "Toutes promos EFREI · ingénieurs, bachelors, mastères, alumni",
     f: [
       "Portes 22h · fin 04h",
       "Privatisation totale péniche",
       "Conso à 2 € · bar jusqu'à 03h30",
-      "Justificatif scolarité ou alumni demandé",
+      "Carte étudiante ou justificatif alumni demandé",
     ],
-    avail: "OUVERT · groupe partenaire",
+    avail: "OUVERT · communauté EFREI",
     featured: false,
   },
   {
     n: "03",
     l: "Externe",
     p: "22",
-    s: "Invité · accompagnant · extérieur",
+    s: "Invité, accompagnant, groupe Assas, extérieur",
     f: [
       "Portes 22h · fin 04h",
       "Privatisation totale péniche",
@@ -69,9 +70,10 @@ export function Tickets() {
         </div>
 
         <div className="grid gap-6 lg:grid-cols-3">
-          {TIERS.map((t) => (
-            <article
+          {TIERS.map((t, idx) => (
+            <Reveal
               key={t.n}
+              delay={idx * 0.08}
               className={`relative flex flex-col px-9 pb-10 pt-12 ${
                 t.featured
                   ? "bg-navy-800 border border-brass-400"
@@ -129,7 +131,7 @@ export function Tickets() {
                   Réserver
                 </a>
               </div>
-            </article>
+            </Reveal>
           ))}
         </div>
       </div>

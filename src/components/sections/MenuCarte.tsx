@@ -4,6 +4,7 @@ import {
   GoldRule,
   GoldText,
 } from "@/components/primitives/Decor";
+import { Reveal } from "@/components/primitives/Reveal";
 
 const PETITS_FOURS = [
   {
@@ -51,7 +52,7 @@ export function MenuCarte() {
   return (
     <section className="relative overflow-hidden bg-navy-950 px-6 py-24 md:px-12 md:py-28 lg:px-20 lg:py-36 xl:px-[120px]">
       <div className="relative mx-auto max-w-[1200px]">
-        <div className="mb-16 text-center md:mb-20">
+        <Reveal className="mb-16 text-center md:mb-20">
           <Eyebrow>·· La Carte de la nuit ··</Eyebrow>
           <h2 className="fraunces-display mx-auto mt-6 max-w-[18ch] text-[clamp(40px,7vw,84px)] font-medium leading-[0.96] tracking-[-0.03em] text-cream">
             Ce qui est <GoldText>compris</GoldText> dans
@@ -61,7 +62,7 @@ export function MenuCarte() {
             Six petits-fours signés du comité, un verre de champagne à
             l&apos;embarquement, et la péniche pour vous tout seuls.
           </p>
-        </div>
+        </Reveal>
 
         <div className="relative border border-brass-400/30 bg-navy-900/50 px-6 py-12 md:px-14 md:py-16 lg:px-20 lg:py-20">
           <Corners size={48} opacity={0.6} />

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -55,6 +55,13 @@ export const metadata: Metadata = {
     title: "La Nuit de l'EFREI · MMXXVI",
     description: "Le retour, dix ans plus tard. 28 · 05 · 2026.",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#001329",
+  colorScheme: "dark",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({

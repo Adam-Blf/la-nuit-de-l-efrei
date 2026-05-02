@@ -13,7 +13,7 @@ import { HelloAssoWidget } from "@/components/HelloAssoWidget";
 export const metadata: Metadata = {
   title: "Billetterie",
   description:
-    "Trois tarifs · 14 € Promo 2026 · 18 € Assas + Alumni · 22 € Externe. Billetterie HelloAsso officielle.",
+    "Trois tarifs · 14 € Promo 2026 · 18 € Étudiants & Alumni EFREI · 22 € Externe. Billetterie HelloAsso officielle.",
 };
 
 export default function BilletteriePage() {

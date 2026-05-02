@@ -4,6 +4,7 @@ import {
   GoldText,
   LightWash,
 } from "@/components/primitives/Decor";
+import { Reveal } from "@/components/primitives/Reveal";
 import { Stars } from "@/components/primitives/Stars";
 
 export function ComebackBanner() {
@@ -13,7 +14,7 @@ export function ComebackBanner() {
       <LightWash x="50%" y="50%" size={1600} color="rgba(212, 164, 55, 0.14)" />
       <LightWash x="20%" y="50%" size={900} color="rgba(91, 42, 134, 0.32)" />
 
-      <div className="relative mx-auto max-w-[1280px] text-center">
+      <Reveal as="div" className="relative mx-auto max-w-[1280px] text-center">
         <Eyebrow>·· Dernière édition · MMXVI ··</Eyebrow>
 
         <div className="relative mt-12 inline-block overflow-visible px-[0.08em] pb-[0.18em] pt-[0.12em]">
@@ -46,7 +47,7 @@ export function ComebackBanner() {
           </em>
           .
         </p>
-      </div>
+      </Reveal>
       <Grain opacity={0.06} />
     </section>
   );

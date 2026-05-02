@@ -20,8 +20,8 @@ export function Footer() {
       links: [
         { label: "Devenir partenaire", href: "/sponsors" },
         { label: "Bureau des Arts EFREI", href: "https://www.bda-efrei.fr" },
-        { label: "@bda_efrei", href: "https://www.instagram.com/bda_efrei/" },
         { label: "Ajouter à l'agenda", href: "/calendar.ics" },
+        { label: "Mentions légales", href: "/mentions-legales" },
       ],
     },
     {
