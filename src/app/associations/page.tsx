@@ -68,7 +68,7 @@ const TIERS: Array<{
       },
       {
         n: "Art'Efrei",
-        d: "Décoration de la péniche · ambiance, scénographie et installations sur les trois ponts.",
+        d: "Décoration de la péniche · ambiance et installations sur les trois ponts.",
         logo: "/assets/logos/art-efrei.png",
         href: "https://www.bda-efrei.fr",
       },
