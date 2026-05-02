@@ -13,6 +13,7 @@ import {
 import { EfreiLogo } from "@/components/primitives/Logos";
 import { Stars } from "@/components/primitives/Stars";
 import { EVENT } from "@/lib/tokens";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Associations présentes",
@@ -20,7 +21,18 @@ export const metadata: Metadata = {
     "Toutes les associations EFREI à bord de La Péniche le 28 mai 2026 · BDA, Prom EFREI, Live EFREI, New Lix, Efreestyle, Efr'Action, Picture Studio et plus.",
 };
 
-const TIERS = [
+type Item = {
+  n: string;
+  d: string;
+  logo?: string;
+  href?: string;
+};
+
+const TIERS: Array<{
+  l: string;
+  s: string;
+  items: Item[];
+}> = [
   {
     l: "Organisation",
     s: "Maîtres de la nuit",
@@ -28,10 +40,13 @@ const TIERS = [
       {
         n: "Prom EFREI",
         d: "Promotion 2026 · porte le projet du gala depuis octobre.",
+        logo: "/assets/prom-efrei.png",
       },
       {
         n: "Bureau des Arts EFREI",
         d: "Mise à disposition de la scène, des artistes et de la régie.",
+        logo: "/assets/logos/bda-efrei.png",
+        href: "https://www.bda-efrei.fr",
       },
     ],
   },
@@ -84,20 +99,49 @@ export default function AssociationsPage() {
                       <GoldRule width={48} />
                     </div>
                   </div>
-                  <ul className="grid gap-x-10 gap-y-7 sm:grid-cols-2">
-                    {t.items.map((item) => (
-                      <li
-                        key={item.n}
-                        className="border-b border-brass-400/15 pb-5"
-                      >
-                        <div className="fraunces-display text-xl tracking-[-0.01em] text-cream md:text-[24px]">
-                          {item.n}
-                        </div>
-                        <div className="mt-2 text-[13px] leading-[1.6] text-cream/60">
-                          {item.d}
-                        </div>
-                      </li>
-                    ))}
+                  <ul className="grid gap-x-10 gap-y-8 sm:grid-cols-2">
+                    {t.items.map((item) => {
+                      const inner = (
+                        <>
+                          {item.logo && (
+                            <div className="mb-5 flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-sm border border-brass-400/30 bg-cream/5 p-2">
+                              <Image
+                                src={item.logo}
+                                alt={`${item.n} · logo`}
+                                width={72}
+                                height={72}
+                                className="h-auto w-auto max-h-full max-w-full object-contain"
+                              />
+                            </div>
+                          )}
+                          <div className="fraunces-display text-xl tracking-[-0.01em] text-cream md:text-[24px]">
+                            {item.n}
+                          </div>
+                          <div className="mt-2 text-[13px] leading-[1.6] text-cream/60">
+                            {item.d}
+                          </div>
+                        </>
+                      );
+                      return (
+                        <li
+                          key={item.n}
+                          className="border-b border-brass-400/15 pb-6"
+                        >
+                          {item.href ? (
+                            <a
+                              href={item.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="block transition-opacity hover:opacity-80"
+                            >
+                              {inner}
+                            </a>
+                          ) : (
+                            inner
+                          )}
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               </div>
