@@ -1,10 +1,10 @@
-import { GoldText, Plate } from "@/components/primitives/Decor";
+import { GoldText } from "@/components/primitives/Decor";
 import { Photo } from "@/components/primitives/Photo";
 
 const ITEMS: Array<{
   l: string;
-  src?: string;
-  alt?: string;
+  src: string;
+  alt: string;
 }> = [
   {
     l: "Pont supérieur · vue Notre-Dame",
@@ -12,17 +12,19 @@ const ITEMS: Array<{
     alt: "Pont supérieur de la péniche de nuit, lumières dorées et silhouette de Notre-Dame",
   },
   {
+    l: "Soirée à bord",
+    src: "/assets/peniche/peniche-soiree-2.jpg",
+    alt: "Ambiance soirée à bord de la péniche, lumières chaudes et invités",
+  },
+  {
     l: "Intérieur · ambiance jour",
     src: "/assets/peniche/interieur-jour.webp",
     alt: "Intérieur de la péniche en lumière du jour, mobilier en bois et velours",
   },
   {
-    l: "Bar · cuivre & laiton",
-  },
-  {
     l: "La Péniche · vue extérieure",
-    src: "/assets/peniche/exterieur-magenta.jpg",
-    alt: "Vue extérieure de la péniche éclairée magenta sur la Seine",
+    src: "/assets/peniche/peniche-soiree-1.jpg",
+    alt: "La Péniche éclairée la nuit, reflets sur la Seine",
   },
   {
     l: "Intérieur · velours bleu nuit",
@@ -30,7 +32,9 @@ const ITEMS: Array<{
     alt: "Intérieur de la péniche, ambiance nuit, velours et reflets dorés",
   },
   {
-    l: "Passerelle d'accueil",
+    l: "Pont · détail",
+    src: "/assets/peniche/peniche-soiree-3.jpg",
+    alt: "Détail du pont de la péniche, ambiance feutrée",
   },
 ];
 
@@ -61,16 +65,12 @@ export function VenueGallery() {
                     : "col-span-1 lg:col-span-1"
                 }
               >
-                {it.src ? (
-                  <Photo
-                    src={it.src}
-                    alt={it.alt ?? it.l}
-                    caption={it.l}
-                    height={h}
-                  />
-                ) : (
-                  <Plate label={it.l} height={h} />
-                )}
+                <Photo
+                  src={it.src}
+                  alt={it.alt}
+                  caption={it.l}
+                  height={h}
+                />
               </div>
             );
           })}
