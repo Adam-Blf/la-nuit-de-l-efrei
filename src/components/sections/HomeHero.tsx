@@ -43,7 +43,7 @@ export function HomeHero() {
       <div className="relative mx-auto flex min-h-[1100px] max-w-[1600px] flex-col justify-end px-6 pb-24 md:px-12 lg:px-20 xl:px-[120px]">
         <p className="mb-10 max-w-[720px] text-lg leading-[1.45] text-cream/78 md:text-[22px]">
           Le retour,{" "}
-          <em className="fraunces-display font-medium not-italic text-brass-200 [font-style:italic]">
+          <em className="fraunces-display glyph-safe font-medium not-italic text-brass-200 [font-style:italic]">
             dix ans plus tard
           </em>
           .

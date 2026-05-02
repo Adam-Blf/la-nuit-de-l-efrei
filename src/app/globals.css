@@ -119,6 +119,16 @@ button {
   font-feature-settings: "ss01" on;
 }
 
+.glyph-safe {
+  padding-inline-end: 0.12em;
+  display: inline-block;
+}
+
+.glyph-safe-tight {
+  padding-inline-end: 0.08em;
+  display: inline-block;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

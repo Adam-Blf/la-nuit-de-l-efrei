@@ -74,7 +74,15 @@ export default function RootLayout({
       lang="fr"
       className={`${fraunces.variable} ${inter.variable} ${mono.variable} antialiased`}
     >
-      <body className="bg-navy-900 text-cream">{children}</body>
+      <body className="bg-navy-900 text-cream">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:bg-brass-400 focus:px-5 focus:py-3 focus:font-mono focus:text-xs focus:font-bold focus:uppercase focus:tracking-[0.2em] focus:text-navy-900"
+        >
+          Aller au contenu
+        </a>
+        <div id="main">{children}</div>
+      </body>
     </html>
   );
 }

@@ -65,7 +65,7 @@ export default function BarneyPage() {
               </h1>
               <p className="mt-8 max-w-[520px] text-lg leading-[1.55] text-cream/72 md:text-[22px]">
                 Chouette effraie en{" "}
-                <em className="fraunces-display text-brass-200 [font-style:italic]">
+                <em className="fraunces-display glyph-safe text-brass-200 [font-style:italic]">
                   smoking bleu nuit
                 </em>
                 . Hôte de la nuit, garde-temps de la promo, ami discret du
@@ -101,7 +101,7 @@ export default function BarneyPage() {
                 <Eyebrow>· Bio</Eyebrow>
                 <h2 className="fraunces-display mt-4 pb-[0.06em] text-[clamp(36px,4.5vw,56px)] leading-[1.05] tracking-[-0.02em] text-cream">
                   Quelqu&apos;un<br />
-                  <em className="fraunces-display [font-style:italic]">
+                  <em className="fraunces-display glyph-safe [font-style:italic]">
                     <GoldText>vous attend</GoldText>
                   </em>
                   .
@@ -179,7 +179,7 @@ export default function BarneyPage() {
               <Eyebrow>·· Le voir, en vrai ··</Eyebrow>
               <h3 className="fraunces-display mx-auto mt-8 max-w-[14ch] pb-[0.1em] text-[clamp(48px,8vw,112px)] leading-[1.05] tracking-[-0.035em] text-cream lg:mx-0">
                 Une seule nuit{" "}
-                <em className="fraunces-display [font-style:italic]">
+                <em className="fraunces-display glyph-safe [font-style:italic]">
                   <GoldText>pour le croiser</GoldText>
                 </em>
                 .
