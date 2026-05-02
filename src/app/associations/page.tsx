@@ -35,80 +35,6 @@ const TIERS = [
       },
     ],
   },
-  {
-    l: "Animations à bord",
-    s: "Le programme de la nuit",
-    items: [
-      {
-        n: "Live EFREI",
-        d: "Concert live sur le pont supérieur · setlist exclusive.",
-      },
-      {
-        n: "New Lix",
-        d: "DJing et beatmaking · mix continu jusqu'à la fermeture.",
-      },
-      {
-        n: "Efreestyle",
-        d: "Danse · démo en milieu de soirée et battle ouvert.",
-      },
-      {
-        n: "Scène Efreinée",
-        d: "Théâtre · saynètes courtes en intermède.",
-      },
-    ],
-  },
-  {
-    l: "Captation officielle",
-    s: "Mémoire de la nuit",
-    items: [
-      {
-        n: "Efrei Picture Studio",
-        d: "Photographe officiel · reportage et portraits.",
-      },
-      {
-        n: "Efr'Action",
-        d: "Captation vidéo · aftermovie officiel à J+7.",
-      },
-      {
-        n: "Les Plumes",
-        d: "Texte de la soirée · récit publié en suivant.",
-      },
-    ],
-  },
-  {
-    l: "Présence amicale",
-    s: "Invités à embarquer",
-    items: [
-      {
-        n: "Bureau des Étudiants",
-        d: "Représentation BDE EFREI.",
-      },
-      {
-        n: "Bureau des Sports",
-        d: "Représentation BDS EFREI.",
-      },
-      {
-        n: "Bureau International",
-        d: "Représentation BI · échanges et cohortes Erasmus.",
-      },
-      {
-        n: "Junior EFREI",
-        d: "Junior-entreprise.",
-      },
-      {
-        n: "Art'Efrei",
-        d: "Arts manuels · expo permanente sur le pont médian.",
-      },
-      {
-        n: "Efrei Poker",
-        d: "Délégation conviée à embarquer.",
-      },
-      {
-        n: "Efrei Rugby",
-        d: "Délégation conviée à embarquer.",
-      },
-    ],
-  },
 ];
 
 export default function AssociationsPage() {
@@ -125,7 +51,7 @@ export default function AssociationsPage() {
               <GoldText>à quai.</GoldText>
             </>
           }
-          lead="Le BDA n'est pas seul à bord. Live EFREI, New Lix, Efreestyle, Efr'Action, Picture Studio · les associations EFREI font la nuit avec nous."
+          lead="Prom EFREI et le Bureau des Arts portent la nuit. La liste complète des associations présentes à bord arrive prochainement."
         />
 
         <section className="relative overflow-hidden bg-navy-900 px-6 py-28 md:px-12 md:py-32 lg:px-20 lg:py-40 xl:px-[120px]">
@@ -179,13 +105,13 @@ export default function AssociationsPage() {
 
             <div className="relative mt-24 border border-brass-400 px-8 py-16 text-center md:px-14 md:py-20">
               <Corners size={32} opacity={0.6} />
-              <Eyebrow>· Votre asso est manquante ?</Eyebrow>
+              <Eyebrow>· Votre asso à bord ?</Eyebrow>
               <h3 className="fraunces-display mt-5 pb-[0.08em] text-[clamp(32px,4.5vw,48px)] leading-[1.05] tracking-[-0.02em] text-cream">
                 Embarquez avec nous.
               </h3>
               <p className="mx-auto mt-4 max-w-[480px] text-[14px] leading-[1.6] text-cream/65">
-                Asso EFREI, BDE partenaire, club étudiant · si vous voulez être
-                présents le 28 mai, écrivez-nous.
+                Asso EFREI, BDE partenaire, club étudiant, asso du groupe Assas
+                · si vous voulez être présents le 28 mai, écrivez-nous.
               </p>
               <Link
                 href={`mailto:${EVENT.email}`}
