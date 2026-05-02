@@ -53,7 +53,7 @@ const COCKTAILS = [
   { l: "Ti'Punch", v: "Rhum · orange · ananas" },
   { l: "Teqpaf", v: "Tequila · sirop · service au shot" },
   { l: "Sans alcool · sur demande", v: "Tous les cocktails en version soft" },
-  { l: "Eau plate · gazeuse", v: "Gratuite · à volonté toute la nuit" },
+  { l: "Eau plate · bouteilles", v: "Gratuite · à volonté toute la nuit" },
 ];
 
 export function MenuCarte() {

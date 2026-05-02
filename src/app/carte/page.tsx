@@ -32,7 +32,7 @@ const SHOTS_BIERES_VINS = [
 
 const SOFTS = [
   {
-    l: "Eau plate · gazeuse",
+    l: "Eau plate",
     d: "Bouteilles à disposition · gratuites · à volonté toute la nuit.",
   },
   { l: "Coca · Coca Zero", d: "Servi glacé." },
@@ -118,7 +118,7 @@ export default function CartePage() {
               <br className="hidden sm:block" /> à <GoldText>2&nbsp;€</GoldText>.
             </>
           }
-          lead="1 cocktail (ou champagne) et 1 soft offerts à l'embarquement. Eau plate et gazeuse à disposition gratuitement toute la nuit. Tous les cocktails maison déclinés en version sans alcool. Service au comptoir jusqu'à 03h30."
+          lead="1 cocktail (ou champagne) et 1 soft offerts à l'embarquement. Bouteilles d'eau plate à disposition gratuitement toute la nuit. Tous les cocktails maison déclinés en version sans alcool. Service au comptoir jusqu'à 03h30."
         />
 
         <section className="bg-navy-900 px-6 py-24 md:px-12 md:py-28 lg:px-20 lg:py-36 xl:px-[120px]">
