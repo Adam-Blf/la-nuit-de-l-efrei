@@ -1,9 +1,19 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { EfreiLogo, PromBlason } from "@/components/primitives/Logos";
 import { EVENT } from "@/lib/tokens";
 
 export function Footer() {
+  const pathname = usePathname();
+  const isCurrent = (href: string) => {
+    if (!href.startsWith("/") || href.includes(":")) return false;
+    if (href === "/") return pathname === "/";
+    return pathname === href;
+  };
+
   const cols = [
     {
       title: "Site",
@@ -73,25 +83,29 @@ export function Footer() {
             </a>
           </div>
         </div>
-        {cols.map((col) => (
-          <div key={col.title}>
-            <div className="mb-5 font-mono text-[10px] uppercase tracking-[0.32em] text-brass-200">
-              {col.title}
+        {cols.map((col) => {
+          const visible = col.links.filter((l) => !isCurrent(l.href));
+          if (visible.length === 0) return null;
+          return (
+            <div key={col.title}>
+              <div className="mb-5 font-mono text-[10px] uppercase tracking-[0.32em] text-brass-200">
+                {col.title}
+              </div>
+              <ul className="flex flex-col gap-3">
+                {visible.map((l) => (
+                  <li key={l.label}>
+                    <Link
+                      href={l.href}
+                      className="text-sm text-cream/70 transition-colors hover:text-cream"
+                    >
+                      {l.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <ul className="flex flex-col gap-3">
-              {col.links.map((l) => (
-                <li key={l.label}>
-                  <Link
-                    href={l.href}
-                    className="text-sm text-cream/70 transition-colors hover:text-cream"
-                  >
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+          );
+        })}
       </div>
       <div className="mx-auto mt-16 flex max-w-[1280px] flex-col gap-3 border-t border-brass-400/10 pt-7 font-mono text-[10px] uppercase tracking-[0.32em] text-cream/45 md:flex-row md:items-center md:justify-between">
         <span>FAIT PAR PROM EFREI · {EVENT.edition}</span>
