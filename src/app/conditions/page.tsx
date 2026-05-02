@@ -137,8 +137,18 @@ const BLOCKS: Array<{ t: string; body: React.ReactNode }> = [
         </p>
         <p className="mt-3">
           La consommation est réservée aux personnes majeures (18 ans
-          révolus). Le dress code &laquo; robe élégante ou costume &raquo; est
-          obligatoire · les sneakers et tenues décontractées sont refusées.
+          révolus).
+        </p>
+        <p className="mt-3">
+          <strong>
+            L&apos;organisation se réserve le droit de refuser
+            l&apos;embarquement à toute personne en jogging ou dans une
+            tenue ne respectant pas le code vestimentaire de la soirée
+          </strong>{" "}
+          (robe élégante ou costume, smoking, robe longue, tenue de soirée).
+          Les sneakers et tenues décontractées sont refusées. Aucun
+          remboursement n&apos;est accordé en cas de refus pour
+          non-conformité.
         </p>
       </>
     ),

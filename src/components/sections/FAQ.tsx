@@ -25,7 +25,7 @@ const ITEMS = [
   },
   {
     q: "Le dress code est-il vraiment obligatoire ?",
-    a: "Oui · robe élégante ou costume. Smoking, robe longue, costume sombre, tenue de soirée. Le velours est encouragé. Les sneakers ne le sont pas.",
+    a: "Oui · robe élégante ou costume. Smoking, robe longue, costume sombre, tenue de soirée. Le velours est encouragé, les sneakers ne le sont pas. L'organisation se réserve le droit de refuser l'embarquement à toute personne en jogging ou en tenue ne respectant pas le code vestimentaire · sans remboursement.",
   },
   {
     q: "Y a-t-il un vestiaire ?",
