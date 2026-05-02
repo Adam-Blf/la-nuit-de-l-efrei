@@ -50,6 +50,16 @@ const TIERS: Array<{
       },
     ],
   },
+  {
+    l: "Animations à bord",
+    s: "Le programme de la nuit",
+    items: [
+      {
+        n: "Live EFREI",
+        d: "Concert live sur le pont supérieur · setlist exclusive du club musique du Bureau des Arts.",
+      },
+    ],
+  },
 ];
 
 export default function AssociationsPage() {
@@ -66,7 +76,7 @@ export default function AssociationsPage() {
               <GoldText>à quai.</GoldText>
             </>
           }
-          lead="Prom EFREI et le Bureau des Arts portent la nuit. La liste complète des associations présentes à bord arrive prochainement."
+          lead="Prom EFREI et le Bureau des Arts portent la nuit. Live EFREI assure le concert sur le pont supérieur. La liste complète des associations présentes à bord arrive prochainement."
         />
 
         <section className="relative overflow-hidden bg-navy-900 px-6 py-28 md:px-12 md:py-32 lg:px-20 lg:py-40 xl:px-[120px]">
