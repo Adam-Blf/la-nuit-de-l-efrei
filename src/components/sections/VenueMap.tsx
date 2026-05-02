@@ -10,9 +10,16 @@ const GMAPS_OPEN = `https://www.google.com/maps?q=${LAT},${LON}&z=18`;
 const APPLE_OPEN = `https://maps.apple.com/?q=La+Peniche&ll=${LAT},${LON}&z=18`;
 
 const STOPS = [
-  { l: "Métro", v: "Maubert-Mutualité · 8 min", line: "10" },
+  { l: "Métro", v: "Maubert-Mutualité · 8 min", line: "Ligne 10" },
   { l: "RER", v: "Saint-Michel · 12 min", line: "B & C" },
+  { l: "Bus", v: "Pont de la Tournelle · 3 min", line: "24 · 63 · 86 · 87" },
   { l: "Vélib", v: "Station 50403 · 50 m", line: "30 bornes" },
+  {
+    l: "Noctilien",
+    v: "Saint-Michel · 0h30 → 5h30",
+    line: "N12 · N13 · N15 · N122",
+  },
+  { l: "Taxi · VTC", v: "Sur le quai · toute la nuit", line: "Uber · G7" },
 ];
 
 export function VenueMap() {
@@ -85,23 +92,28 @@ export function VenueMap() {
           </div>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-7 sm:grid-cols-2 lg:grid-cols-3">
           {STOPS.map((s) => (
             <div key={s.l} className="border-t border-brass-400/20 pt-5">
               <div className="flex items-baseline justify-between gap-2">
                 <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-brass-200">
                   {s.l}
                 </div>
-                <div className="font-mono text-[9px] uppercase tracking-[0.32em] text-cream/45">
+                <div className="font-mono text-[9px] uppercase tracking-[0.28em] text-cream/45">
                   {s.line}
                 </div>
               </div>
-              <div className="fraunces-display mt-2 text-xl text-cream md:text-[22px]">
+              <div className="fraunces-display mt-2 text-lg text-cream md:text-[20px]">
                 {s.v}
               </div>
             </div>
           ))}
         </div>
+        <p className="mt-8 max-w-[640px] text-[13px] leading-[1.7] text-cream/55">
+          Le métro ferme vers 01h en semaine · le Noctilien prend le relais
+          depuis Saint-Michel jusqu&apos;à 05h30. Taxis et VTC accessibles
+          directement en pied de passerelle à la sortie.
+        </p>
       </div>
     </section>
   );
