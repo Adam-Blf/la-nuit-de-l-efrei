@@ -60,6 +60,18 @@ const TIERS: Array<{
         logo: "/assets/logos/live-efrei.png",
         href: "https://www.bda-efrei.fr",
       },
+      {
+        n: "New Lix",
+        d: "DJing et beatmaking · mix continu jusqu'à la fermeture du dancefloor.",
+        logo: "/assets/logos/new-lix.png",
+        href: "https://www.bda-efrei.fr",
+      },
+      {
+        n: "Art'Efrei",
+        d: "Arts visuels et créations manuelles · scénographie, signalétique et expo permanente sur le pont médian.",
+        logo: "/assets/logos/art-efrei.png",
+        href: "https://www.bda-efrei.fr",
+      },
     ],
   },
 ];
@@ -78,7 +90,7 @@ export default function AssociationsPage() {
               <GoldText>à quai.</GoldText>
             </>
           }
-          lead="Prom EFREI et le Bureau des Arts portent la nuit. Live EFREI assure le concert sur le pont supérieur. La liste complète des associations présentes à bord arrive prochainement."
+          lead="Prom EFREI et le Bureau des Arts portent la nuit. Live EFREI sur le pont supérieur, New Lix au mix, Art'Efrei à la scénographie. Le reste des associations à bord arrive prochainement."
         />
 
         <section className="relative overflow-hidden bg-navy-900 px-6 py-28 md:px-12 md:py-32 lg:px-20 lg:py-40 xl:px-[120px]">
