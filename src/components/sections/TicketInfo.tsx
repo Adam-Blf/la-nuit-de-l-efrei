@@ -16,9 +16,9 @@ export function TicketInfo() {
       d: "Billet strictement nominatif · pièce d'identité demandée à l'entrée",
     },
     {
-      l: "Annulation",
-      v: "Jusqu'au J-15",
-      d: "Remboursement intégral · au-delà, place perdue",
+      l: "Remboursement",
+      v: "Aucun",
+      d: "Une fois achetée, la place ne peut être ni remboursée ni échangée",
     },
   ];
 

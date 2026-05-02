@@ -20,6 +20,10 @@ const ITEMS = [
     a: "Non. Le billet est strictement nominatif, aucune cession n'est possible. Présentation obligatoire d'une pièce d'identité physique correspondant au nom du billet à l'embarquement.",
   },
   {
+    q: "Est-ce que je peux me faire rembourser si je ne peux pas venir ?",
+    a: "Non. Une fois la place achetée, aucun remboursement ne peut être accordé · y compris en cas d'empêchement personnel, professionnel, médical, de retard ou de transport. Voir la politique d'achat complète sur la page Conditions de vente.",
+  },
+  {
     q: "Le dress code est-il vraiment obligatoire ?",
     a: "Oui · robe élégante ou costume. Smoking, robe longue, costume sombre, tenue de soirée. Le velours est encouragé. Les sneakers ne le sont pas.",
   },

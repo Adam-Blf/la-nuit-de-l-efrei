@@ -11,7 +11,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/carte`, lastModified, priority: 0.7, changeFrequency: "monthly" },
     { url: `${base}/barney`, lastModified, priority: 0.5, changeFrequency: "monthly" },
     { url: `${base}/faq`, lastModified, priority: 0.6, changeFrequency: "monthly" },
-    { url: `${base}/sponsors`, lastModified, priority: 0.5, changeFrequency: "monthly" },
+    { url: `${base}/associations`, lastModified, priority: 0.7, changeFrequency: "monthly" },
+    { url: `${base}/conditions`, lastModified, priority: 0.4, changeFrequency: "yearly" },
     { url: `${base}/mentions-legales`, lastModified, priority: 0.2, changeFrequency: "yearly" },
   ];
 }

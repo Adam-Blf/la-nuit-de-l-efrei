@@ -37,8 +37,8 @@ export function HelloAssoWidget() {
             Réserver <span className="gold-text italic">maintenant</span>.
           </h2>
           <p className="mx-auto mt-5 max-w-[520px] text-sm leading-[1.65] text-cream/65 md:text-base">
-            Paiement sécurisé via HelloAsso · billet nominatif envoyé par mail · aucune
-            cession possible.
+            Paiement sécurisé via HelloAsso · billet nominatif envoyé par mail ·
+            aucune cession, aucun remboursement après achat.
           </p>
         </div>
 
