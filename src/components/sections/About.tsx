@@ -8,7 +8,7 @@ export function About() {
         <div className="grid gap-16 lg:grid-cols-[1.4fr_1fr] lg:gap-24">
           <div>
             <Eyebrow>· I · L&apos;événement</Eyebrow>
-            <h2 className="fraunces-display mt-8 text-[clamp(48px,9vw,144px)] font-medium leading-[0.92] tracking-[-0.035em] text-cream">
+            <h2 className="fraunces-display mt-8 pb-[0.1em] text-[clamp(48px,9vw,144px)] font-medium leading-[1.02] tracking-[-0.035em] text-cream">
               Une nuit où
               <br />
               la Seine devient

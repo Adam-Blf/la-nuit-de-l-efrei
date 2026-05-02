@@ -37,7 +37,7 @@ export const NAV_ITEMS = [
   { id: "/", label: "Accueil" },
   { id: "/lieu", label: "Lieu" },
   { id: "/billetterie", label: "Billetterie" },
-  { id: "/sponsors", label: "Sponsors" },
+  { id: "/carte", label: "Carte du bar" },
   { id: "/faq", label: "FAQ" },
 ] as const;
 

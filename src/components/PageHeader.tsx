@@ -18,7 +18,7 @@ export function PageHeader({
       <LightWash x="80%" y="20%" size={900} color="rgba(226, 69, 108, 0.12)" />
       <div className="relative mx-auto max-w-[1280px]">
         <Eyebrow>{eyebrow}</Eyebrow>
-        <h1 className="fraunces-display mt-6 max-w-[1100px] text-[clamp(48px,8.4vw,128px)] font-medium leading-[0.96] tracking-[-0.025em] text-cream md:mt-8">
+        <h1 className="fraunces-display mt-6 max-w-[1100px] pb-[0.1em] text-[clamp(48px,8.4vw,128px)] font-medium leading-[1.05] tracking-[-0.025em] text-cream md:mt-8">
           {title}
         </h1>
         {lead && (

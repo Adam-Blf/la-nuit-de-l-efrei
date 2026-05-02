@@ -8,12 +8,13 @@ import { Tickets } from "@/components/sections/Tickets";
 import { ConsoBanner } from "@/components/sections/ConsoBanner";
 import { TicketInfo } from "@/components/sections/TicketInfo";
 import { MenuCarte } from "@/components/sections/MenuCarte";
+import { Transports } from "@/components/sections/Transports";
 import { HelloAssoWidget } from "@/components/HelloAssoWidget";
 
 export const metadata: Metadata = {
   title: "Billetterie",
   description:
-    "Trois tarifs · 14 € Promo 2026 · 18 € Étudiants & Alumni EFREI · 22 € Externe. Billetterie HelloAsso officielle.",
+    "Trois tarifs · 14 € Promo 2026 · 18 € Étudiants & Alumni EFREI + étudiants groupe Assas (CFJ, École W, INA, ISIT) · 22 € Externe. Billetterie HelloAsso officielle.",
 };
 
 export default function BilletteriePage() {
@@ -36,6 +37,7 @@ export default function BilletteriePage() {
         <MenuCarte />
         <ConsoBanner />
         <HelloAssoWidget />
+        <Transports />
         <TicketInfo />
       </main>
       <Footer />

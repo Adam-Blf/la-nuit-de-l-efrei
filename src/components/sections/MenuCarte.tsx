@@ -41,11 +41,19 @@ const PETITS_FOURS = [
 
 const PRESTATIONS = [
   { l: "Privatisation totale", v: "La Péniche · 22h → 04h" },
-  { l: "Croisière sur la Seine", v: "Pendant le cocktail dînatoire" },
   { l: "Son et lumière", v: "Système intégré · réglage régisseur" },
   { l: "DJ & dancefloor", v: "Mix continu jusqu'à la fin" },
+  { l: "Live · pont supérieur", v: "Concert assuré par Live EFREI" },
   { l: "Photo booth", v: "2 tirages instantanés par invité" },
+  { l: "Captation vidéo", v: "Aftermovie officiel à J+7" },
   { l: "Photographe officiel", v: "Reportage de la nuit" },
+];
+
+const COCKTAILS = [
+  { l: "Vodka Redbull", v: "Vodka · Red Bull" },
+  { l: "Sex on the Beach", v: "Vodka · cranberry · orange · sirop pêche" },
+  { l: "Ti'Punch", v: "Rhum · orange · ananas" },
+  { l: "Teqpaf", v: "Tequila · sirop · service au shot" },
 ];
 
 export function MenuCarte() {
@@ -54,13 +62,13 @@ export function MenuCarte() {
       <div className="relative mx-auto max-w-[1200px]">
         <Reveal className="mb-16 text-center md:mb-20">
           <Eyebrow>·· La Carte de la nuit ··</Eyebrow>
-          <h2 className="fraunces-display mx-auto mt-6 max-w-[18ch] text-[clamp(40px,7vw,84px)] font-medium leading-[0.96] tracking-[-0.03em] text-cream">
+          <h2 className="fraunces-display mx-auto mt-6 max-w-[18ch] pb-[0.1em] text-[clamp(40px,7vw,84px)] font-medium leading-[1.05] tracking-[-0.03em] text-cream">
             Ce qui est <GoldText>compris</GoldText> dans
             <br className="hidden sm:block" /> votre billet.
           </h2>
           <p className="mx-auto mt-7 max-w-[560px] text-base leading-[1.65] text-cream/65 md:text-lg">
             Six petits-fours signés du comité, un verre de champagne à
-            l&apos;embarquement, et la péniche pour vous tout seuls.
+            l&apos;embarquement, et la péniche privatisée pour vous seuls.
           </p>
         </Reveal>
 
@@ -139,32 +147,48 @@ export function MenuCarte() {
             </div>
           </div>
 
-          <div className="mt-12 grid gap-8 border-t border-brass-400/20 pt-10 md:grid-cols-2 md:gap-12">
-            <div>
+          <div className="mt-12 border-t border-brass-400/20 pt-10">
+            <div className="mb-6 flex flex-wrap items-baseline justify-between gap-4">
               <div className="font-mono text-[10px] uppercase tracking-[0.42em] text-brass-200">
-                · En supplément
+                · Bar · toutes les consos à <GoldText>2&nbsp;€</GoldText>
               </div>
-              <div className="fraunces-display mt-3 text-xl tracking-[-0.01em] text-cream md:text-[22px]">
-                Bar · toutes les consos à <GoldText>2&nbsp;€</GoldText>
+              <div className="font-mono text-[9px] uppercase tracking-[0.32em] text-cream/45">
+                Service jusqu&apos;à 03h30
               </div>
-              <p className="mt-2 text-[13px] leading-[1.6] text-cream/55">
-                Bières, softs, cocktails maison (vodka redbull, sex on the
-                beach, ti punch), shots. Service jusqu&apos;à 03h30. Paiement CB
-                ou cash au comptoir.
-              </p>
             </div>
-            <div>
-              <div className="font-mono text-[10px] uppercase tracking-[0.42em] text-brass-200">
-                · Vestiaire
-              </div>
-              <div className="fraunces-display mt-3 text-xl tracking-[-0.01em] text-cream md:text-[22px]">
-                Géré par l&apos;établissement
-              </div>
-              <p className="mt-2 text-[13px] leading-[1.6] text-cream/55">
-                Veste 3 € · sac ou casque 5 € · valise, sac à dos ou très gros
-                sac 7 €. À déposer à l&apos;embarquement, pour la nuit entière.
-              </p>
+            <ul className="grid gap-x-8 gap-y-4 sm:grid-cols-2">
+              {COCKTAILS.map((c) => (
+                <li
+                  key={c.l}
+                  className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-brass-400/15 pb-3"
+                >
+                  <span className="fraunces-display text-base text-cream md:text-lg">
+                    {c.l}
+                  </span>
+                  <span className="text-right text-[12px] text-cream/55">
+                    {c.v}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-5 text-[12px] leading-[1.6] text-cream/55">
+              Et aussi · bières, softs, vins, shots maison. Paiement CB ou
+              cash au comptoir. Pas d&apos;open bar · service stoppé à 03h30,
+              soirée jusqu&apos;à 04h.
+            </p>
+          </div>
+
+          <div className="mt-10 border-t border-brass-400/20 pt-8">
+            <div className="font-mono text-[10px] uppercase tracking-[0.42em] text-brass-200">
+              · Vestiaire · à votre charge
             </div>
+            <div className="fraunces-display mt-3 text-xl tracking-[-0.01em] text-cream md:text-[22px]">
+              Géré par l&apos;établissement · veste 3 € · sac 5 € · valise 7 €
+            </div>
+            <p className="mt-2 text-[13px] leading-[1.6] text-cream/55">
+              À déposer à l&apos;embarquement, pour la nuit entière. Pas de
+              consigne pour les bagages.
+            </p>
           </div>
         </div>
       </div>

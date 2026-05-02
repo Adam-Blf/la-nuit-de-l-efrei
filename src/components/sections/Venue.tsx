@@ -18,15 +18,15 @@ export function Venue() {
           </h2>
           <p className="mt-9 max-w-[480px] text-base leading-[1.7] text-cream/72 md:mt-10 md:text-[18px]">
             Amarrée quai de la Tournelle. Vue Notre-Dame. Trois ponts, trois
-            ambiances, une seule promo. Son et lumière inclus, croisière sur la
-            Seine offerte le temps du cocktail.
+            ambiances, une seule promo. Son et lumière inclus, à quai pour la
+            nuit entière.
           </p>
           <div className="mt-12 grid grid-cols-2 gap-8 border-t border-brass-400/20 pt-10">
             {[
               { l: "Adresse", v: EVENT.address },
               { l: "Arrondissement", v: `${EVENT.city} · Latin` },
               { l: "Capacité", v: `${EVENT.capacity} invités` },
-              { l: "Inclus", v: "Son · lumière · croisière" },
+              { l: "Inclus", v: "Son · lumière · DJ" },
             ].map((d) => (
               <div key={d.l}>
                 <div className="font-sans text-[10px] font-bold uppercase tracking-[0.32em] text-brass-200">

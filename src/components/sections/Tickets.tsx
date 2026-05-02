@@ -21,21 +21,21 @@ const TIERS = [
     n: "02",
     l: "Étudiants & Alumni EFREI",
     p: "18",
-    s: "Toutes promos EFREI · ingénieurs, bachelors, mastères, alumni",
+    s: "Toutes promos EFREI · ingénieurs, bachelors, mastères, alumni · et tous les étudiants des écoles du groupe Assas",
     f: [
       "Portes 22h · fin 04h",
       "Privatisation totale péniche",
       "Conso à 2 € · bar jusqu'à 03h30",
       "Carte étudiante ou justificatif alumni demandé",
     ],
-    avail: "OUVERT · communauté EFREI",
+    avail: "OUVERT · communauté Assas Université",
     featured: false,
   },
   {
     n: "03",
     l: "Externe",
     p: "22",
-    s: "Invité, accompagnant, groupe Assas, extérieur",
+    s: "Invité · accompagnant · extérieur",
     f: [
       "Portes 22h · fin 04h",
       "Privatisation totale péniche",
@@ -58,7 +58,7 @@ export function Tickets() {
           <div className="font-sans text-[11px] font-bold uppercase tracking-[0.42em] text-brass-200">
             BILLETTERIE · {EVENT.capacity} PLACES · JAMAIS UNE DE PLUS
           </div>
-          <h2 className="fraunces-display mt-6 text-[clamp(40px,8vw,80px)] tracking-[-0.03em] text-cream">
+          <h2 className="fraunces-display mt-6 pb-[0.1em] text-[clamp(40px,8vw,80px)] leading-[1.05] tracking-[-0.03em] text-cream">
             Trois tarifs
             <br />
             pour <GoldText>embarquer.</GoldText>

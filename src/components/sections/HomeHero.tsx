@@ -49,7 +49,7 @@ export function HomeHero() {
           .
         </p>
 
-        <h1 className="fraunces-display m-0 text-[clamp(56px,13vw,220px)] font-medium leading-[0.86] tracking-[-0.04em] text-cream">
+        <h1 className="fraunces-display m-0 pb-[0.08em] text-[clamp(56px,13vw,220px)] font-medium leading-[0.98] tracking-[-0.04em] text-cream">
           La Nuit
           <br />
           <span className="block pl-[6vw] font-bold">

@@ -7,6 +7,7 @@ import { GoldText } from "@/components/primitives/Decor";
 import { Venue } from "@/components/sections/Venue";
 import { VenueMap } from "@/components/sections/VenueMap";
 import { VenueGallery } from "@/components/sections/VenueGallery";
+import { VideoTeaser } from "@/components/sections/VideoTeaser";
 import { Access } from "@/components/sections/Access";
 
 export const metadata: Metadata = {
@@ -32,6 +33,7 @@ export default function LieuPage() {
           lead="Amarrée face à Notre-Dame. Privatisée pour une seule nuit. Trois ponts pour 350 invités."
         />
         <Venue />
+        <VideoTeaser />
         <VenueMap />
         <VenueGallery />
         <Access />
