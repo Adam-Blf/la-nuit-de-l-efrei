@@ -9,15 +9,15 @@ import { EASE } from "@/lib/tokens";
 const ITEMS = [
   {
     q: "Quand a lieu La Nuit de l'EFREI ?",
-    a: "Jeudi 28 mai 2026, de 23h à 04h. Embarquement à partir de 22h sur la passerelle d'accueil, 2 quai de la Tournelle, 75005 Paris.",
+    a: "Jeudi 28 mai 2026. Portes ouvertes à partir de 22h, fin de soirée 04h. Embarquement sur la passerelle, 2 quai de la Tournelle, 75005 Paris.",
   },
   {
     q: "Qui peut acheter une place ?",
-    a: "Trois tarifs · promo diplômée EFREI 2026 à 14€ · étudiants Assas et alumni EFREI à 18€ · extérieurs à 22€. Justificatif demandé à l'entrée selon le tarif.",
+    a: "Trois tarifs · promo diplômée EFREI 2026 à 14 € · groupe Assas (Université Paris-Panthéon-Assas, CFJ, École W, INA, ISIT) et alumni EFREI à 18 € · extérieurs à 22 €. Justificatif de scolarité ou d'alumni demandé à l'entrée selon le tarif.",
   },
   {
     q: "Est-ce que je peux céder ma place ?",
-    a: "Oui, jusqu'à J-7. Cession encadrée via Prom EFREI. Au-delà, le billet est nominatif et bloqué.",
+    a: "Non. Le billet est strictement nominatif, aucune cession n'est possible. Présentation obligatoire d'une pièce d'identité physique correspondant au nom du billet à l'embarquement.",
   },
   {
     q: "Le dress code est-il vraiment obligatoire ?",
@@ -25,15 +25,15 @@ const ITEMS = [
   },
   {
     q: "Y a-t-il un vestiaire ?",
-    a: "Oui, inclus dans la place. Manteau et sac obligatoire pour la nuit. Pas de consigne pour les bagages.",
+    a: "Oui, vestiaire à bord. Manteau et sac à laisser pour la nuit. Le tarif est précisé à l'entrée selon l'organisation finale du Bureau des Arts. Pas de consigne pour les bagages.",
   },
   {
-    q: "Le bar est-il ouvert toute la nuit ?",
-    a: "Oui, toutes les consos à 2 € · bières, softs, cocktails maison, vins servis à bord. Paiement CB ou cash au comptoir, pas d'open bar.",
+    q: "Jusqu'à quelle heure le bar reste ouvert ?",
+    a: "Service au bar jusqu'à 03h30. Toutes les consos à 2 € · bières, softs, cocktails maison, vins servis à bord. Paiement CB ou cash au comptoir, pas d'open bar.",
   },
   {
     q: "Comment je rentre après 04h ?",
-    a: "Taxis pré-réservés sur le quai. Le pôle logistique tient un listing nominatif. Métro fermé · prévoyez ce trajet à l'avance.",
+    a: "Saint-Michel Notre-Dame est à 8 minutes à pied · plusieurs lignes Noctilien partent de cette gare avec un service de 00h30 à 05h30. Taxis et VTC accessibles directement sur le quai. Métro fermé à cette heure · pensez à anticiper votre trajet.",
   },
 ];
 

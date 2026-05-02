@@ -29,7 +29,7 @@ export default function BilletteriePage() {
               votre <GoldText>place.</GoldText>
             </>
           }
-          lead="300 places · jamais une de plus. Conso à 2 € à bord. Cession encadrée jusqu'au J-7."
+          lead="300 places · jamais une de plus. Conso à 2 € à bord. Billet strictement nominatif · pièce d'identité demandée à l'entrée."
         />
         <Tickets />
         <ConsoBanner />

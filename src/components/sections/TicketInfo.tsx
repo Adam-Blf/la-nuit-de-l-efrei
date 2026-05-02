@@ -2,23 +2,23 @@ export function TicketInfo() {
   const blocks = [
     {
       l: "Paiement",
-      v: "CB · virement",
-      d: "Lien HelloAsso sécurisé après réservation",
+      v: "CB · sécurisé",
+      d: "Paiement via HelloAsso · reçu envoyé par mail",
     },
     {
       l: "Confirmation",
       v: "< 24h",
-      d: "Billet nominatif PDF · cession encadrée",
+      d: "Billet nominatif PDF envoyé après validation",
+    },
+    {
+      l: "Cession",
+      v: "Impossible",
+      d: "Billet strictement nominatif · pièce d'identité demandée à l'entrée",
     },
     {
       l: "Annulation",
       v: "Jusqu'au J-15",
-      d: "Remboursement intégral · sans condition",
-    },
-    {
-      l: "Au-delà",
-      v: "Cession",
-      d: "Listing officiel sur demande à contact@promefrei.fr",
+      d: "Remboursement intégral · au-delà, place perdue",
     },
   ];
 

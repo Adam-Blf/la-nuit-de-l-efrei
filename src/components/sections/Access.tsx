@@ -29,7 +29,7 @@ export function Access() {
           ACCÈS · CONSIGNES
         </div>
         <h2 className="fraunces-display mt-7 max-w-[720px] text-[clamp(36px,5vw,56px)] tracking-[-0.03em] text-cream">
-          Présentez-vous à 21h45 · pas avant.
+          Embarquement à partir de 22h00.
         </h2>
         <div className="mt-16 grid grid-cols-1 gap-y-10 sm:grid-cols-2 sm:gap-y-0 lg:grid-cols-4">
           {steps.map((s, i) => (
