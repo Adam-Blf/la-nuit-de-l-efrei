@@ -1,70 +1,103 @@
+import { Corners, Eyebrow } from "@/components/primitives/Decor";
 import { Stars } from "@/components/primitives/Stars";
+
+const LAT = "48.8505";
+const LON = "2.3528";
+const BBOX = "2.3478,48.8487,2.3578,48.8523";
+const OSM_EMBED = `https://www.openstreetmap.org/export/embed.html?bbox=${BBOX}&layer=mapnik&marker=${LAT},${LON}`;
+const OSM_OPEN = `https://www.openstreetmap.org/?mlat=${LAT}&mlon=${LON}#map=18/${LAT}/${LON}`;
+const GMAPS_OPEN = `https://www.google.com/maps?q=${LAT},${LON}&z=18`;
+const APPLE_OPEN = `https://maps.apple.com/?q=La+Peniche&ll=${LAT},${LON}&z=18`;
+
+const STOPS = [
+  { l: "Métro", v: "Maubert-Mutualité · 8 min", line: "10" },
+  { l: "RER", v: "Saint-Michel · 12 min", line: "B & C" },
+  { l: "Vélib", v: "Station 50403 · 50 m", line: "30 bornes" },
+];
 
 export function VenueMap() {
   return (
     <section className="relative border-y border-brass-400/15 bg-navy-800 px-6 py-24 md:px-12 lg:px-20 lg:py-28 xl:px-[120px]">
       <Stars count={80} seed={2353} width={1440} height={520} density={0.5} />
       <div className="relative mx-auto max-w-[1280px]">
-        <div className="mb-10 text-center font-sans text-[11px] font-bold uppercase tracking-[0.42em] text-brass-200">
-          SITUATION
+        <div className="mb-10 flex flex-wrap items-baseline justify-between gap-4">
+          <div>
+            <Eyebrow>· Situation · 2 quai de la Tournelle</Eyebrow>
+            <h2 className="fraunces-display mt-3 text-[clamp(28px,3.6vw,40px)] leading-[1.1] tracking-[-0.02em] text-cream">
+              Paris V · face à Notre-Dame.
+            </h2>
+          </div>
+          <div className="flex flex-wrap gap-3 font-mono text-[10px] uppercase tracking-[0.28em] text-brass-200">
+            <a
+              href={OSM_OPEN}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-brass-400/40 px-3 py-2 transition-colors hover:bg-brass-400 hover:text-navy-900"
+            >
+              OpenStreetMap ↗
+            </a>
+            <a
+              href={GMAPS_OPEN}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-brass-400/40 px-3 py-2 transition-colors hover:bg-brass-400 hover:text-navy-900"
+            >
+              Google Maps ↗
+            </a>
+            <a
+              href={APPLE_OPEN}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-brass-400/40 px-3 py-2 transition-colors hover:bg-brass-400 hover:text-navy-900"
+            >
+              Plans Apple ↗
+            </a>
+          </div>
         </div>
-        <div className="relative h-[360px] overflow-hidden border border-brass-400/25 md:h-[420px] lg:h-[460px]"
-          style={{ background: "linear-gradient(180deg, var(--navy-900) 0%, var(--navy-800) 100%)" }}
-        >
-          <svg
-            viewBox="0 0 1200 460"
-            width="100%"
-            height="100%"
-            preserveAspectRatio="xMidYMid slice"
+
+        <div className="relative h-[420px] overflow-hidden border border-brass-400/30 bg-navy-900 md:h-[520px]">
+          <iframe
+            title="Plan d'accès · La Péniche, 2 quai de la Tournelle, 75005 Paris"
+            src={OSM_EMBED}
+            loading="lazy"
+            className="absolute inset-0 h-full w-full"
+            style={{ border: 0 }}
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+          <div
             aria-hidden="true"
-          >
-            <path
-              d="M-50 280 Q 200 220 380 240 Q 560 270 720 230 Q 880 210 1100 250 Q 1250 270 1300 250 L 1300 320 Q 1100 310 900 290 Q 700 280 540 310 Q 360 330 200 310 Q 50 300 -50 320 Z"
-              fill="rgba(0, 43, 85, 0.6)"
-              stroke="rgba(212, 164, 55,0.35)"
-              strokeWidth="0.6"
-            />
-            <text x="120" y="200" fontFamily="var(--font-jetbrains)" fontSize="9" letterSpacing="2" fill="rgba(245,230,211,0.4)">
-              QUAI DE LA TOURNELLE
-            </text>
-            <text x="900" y="180" fontFamily="var(--font-jetbrains)" fontSize="9" letterSpacing="2" fill="rgba(245,230,211,0.4)">
-              ÎLE SAINT-LOUIS
-            </text>
-            <text x="500" y="400" fontFamily="var(--font-jetbrains)" fontSize="9" letterSpacing="2" fill="rgba(245,230,211,0.4)">
-              RIVE GAUCHE
-            </text>
-            <g>
-              <circle cx="540" cy="280" r="40" fill="none" stroke="#D4A437" strokeWidth="0.6" opacity="0.5" />
-              <circle cx="540" cy="280" r="22" fill="none" stroke="#D4A437" strokeWidth="0.6" opacity="0.7" />
-              <circle cx="540" cy="280" r="6" fill="#D4A437" />
-              <line x1="540" y1="280" x2="540" y2="100" stroke="#D4A437" strokeWidth="0.4" strokeDasharray="2 4" />
-              <text x="548" y="100" fontFamily="var(--font-fraunces)" fontStyle="italic" fontSize="22" fill="#F5E6D3">
-                La Péniche
-              </text>
-              <text x="548" y="118" fontFamily="var(--font-jetbrains)" fontSize="9" letterSpacing="1.5" fill="#EAC97B">
-                02 · QUAI DE LA TOURNELLE
-              </text>
-            </g>
-            <g>
-              <rect x="700" y="225" width="40" height="20" fill="none" stroke="rgba(212, 164, 55,0.4)" strokeWidth="0.4" />
-              <text x="700" y="218" fontFamily="var(--font-jetbrains)" fontSize="8" letterSpacing="1" fill="rgba(245,230,211,0.4)">
-                NOTRE-DAME
-              </text>
-            </g>
-          </svg>
+            className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-brass-400/30 mix-blend-overlay"
+          />
+          <Corners size={48} opacity={0.7} />
+          <div className="pointer-events-none absolute bottom-4 left-4 max-w-[260px] border border-brass-400/40 bg-navy-900/85 px-4 py-3 backdrop-blur-md">
+            <div className="font-mono text-[9px] uppercase tracking-[0.32em] text-brass-200">
+              · Embarquement
+            </div>
+            <div className="fraunces-display mt-1 text-lg leading-tight text-cream">
+              La Péniche
+            </div>
+            <div className="mt-1 text-[12px] text-cream/65">
+              2 quai de la Tournelle, 75005 Paris
+            </div>
+            <div className="mt-1 font-mono text-[9px] tracking-[0.28em] text-brass-200">
+              48.8505°N · 2.3528°E
+            </div>
+          </div>
         </div>
+
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
-          {[
-            { l: "Métro", v: "Maubert-Mutualité · 8 min" },
-            { l: "RER", v: "Saint-Michel · 12 min" },
-            { l: "Vélib", v: "Station 50403 · 50 m" },
-          ].map((d) => (
-            <div key={d.l} className="border-t border-brass-400/20 pt-5">
-              <div className="font-sans text-[10px] font-bold uppercase tracking-[0.32em] text-brass-200">
-                {d.l}
+          {STOPS.map((s) => (
+            <div key={s.l} className="border-t border-brass-400/20 pt-5">
+              <div className="flex items-baseline justify-between gap-2">
+                <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-brass-200">
+                  {s.l}
+                </div>
+                <div className="font-mono text-[9px] uppercase tracking-[0.32em] text-cream/45">
+                  {s.line}
+                </div>
               </div>
               <div className="fraunces-display mt-2 text-xl text-cream md:text-[22px]">
-                {d.v}
+                {s.v}
               </div>
             </div>
           ))}
