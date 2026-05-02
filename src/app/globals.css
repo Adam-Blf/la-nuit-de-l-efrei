@@ -1,26 +1,133 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --navy-900: #001329;
+  --navy-800: #001f3f;
+  --navy-700: #002b55;
+  --navy-950: #000814;
+  --brass-400: #d4a437;
+  --brass-200: #eac97b;
+  --brass-50: #f8efd9;
+  --cream: #f5e6d3;
+  --plum-500: #e2456c;
+  --plum-300: #ff7b9c;
+  --violet-700: #5b2a86;
+
+  --gold-gradient: linear-gradient(
+    120deg,
+    #a87509 0%,
+    #d4a437 30%,
+    #fbe9b6 50%,
+    #d4a437 70%,
+    #6b4a07 100%
+  );
+  --festive-gradient: linear-gradient(
+    120deg,
+    #e2456c 0%,
+    #d4a437 50%,
+    #fbe9b6 100%
+  );
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-navy-900: var(--navy-900);
+  --color-navy-800: var(--navy-800);
+  --color-navy-700: var(--navy-700);
+  --color-navy-950: var(--navy-950);
+  --color-brass-400: var(--brass-400);
+  --color-brass-200: var(--brass-200);
+  --color-brass-50: var(--brass-50);
+  --color-cream: var(--cream);
+  --color-plum-500: var(--plum-500);
+  --color-plum-300: var(--plum-300);
+  --color-violet-700: var(--violet-700);
+
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: var(--navy-900);
+  color: var(--cream);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--brass-400);
+  color: var(--navy-900);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.333%);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-marquee {
+  animation: marquee 32s linear infinite;
+  will-change: transform;
+}
+
+.gold-text {
+  background-image: var(--gold-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.festive-text {
+  background-image: var(--festive-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gold-rule-h {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--brass-400) 50%,
+    transparent
+  );
+}
+
+.gold-rule-v {
+  background: linear-gradient(
+    180deg,
+    transparent,
+    var(--brass-400) 50%,
+    transparent
+  );
+}
+
+.fraunces-display {
+  font-family: var(--font-fraunces), "Times New Roman", serif;
+  font-variation-settings: "SOFT" 30, "WONK" 0;
+  font-feature-settings: "ss01" on;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+  .animate-marquee {
+    animation: none;
+  }
 }
