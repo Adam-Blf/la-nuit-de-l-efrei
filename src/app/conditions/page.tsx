@@ -35,9 +35,10 @@ const BLOCKS: Array<{ t: string; body: React.ReactNode }> = [
           ce site.
         </p>
         <p className="mt-3">
-          Trois tarifs · 14&nbsp;€ Promo 2026 · 18&nbsp;€ Étudiants &amp; Alumni
-          EFREI et étudiants du groupe Assas · 22&nbsp;€ Externe. Une fois la
-          commande validée, un billet nominatif est envoyé par mail sous 24h.
+          Trois tarifs · 14&nbsp;€ Promo 2025 (diplômés EFREI sortis en juin
+          2025) · 18&nbsp;€ Étudiants &amp; Alumni EFREI et étudiants du
+          groupe Assas · 22&nbsp;€ Externe. Une fois la commande validée, un
+          billet nominatif est envoyé par mail sous 24h.
         </p>
       </>
     ),
@@ -93,8 +94,8 @@ const BLOCKS: Array<{ t: string; body: React.ReactNode }> = [
         </p>
         <ul className="mt-3 ml-5 list-disc space-y-2">
           <li>
-            <strong>14 € Promo 2026</strong> · attestation de scolarité ou
-            relevé de notes EFREI 2025-2026.
+            <strong>14 € Promo 2025</strong> · diplôme ou attestation de
+            réussite EFREI promotion 2025 (juin 2025).
           </li>
           <li>
             <strong>18 € Étudiants &amp; Alumni</strong> · carte étudiante en

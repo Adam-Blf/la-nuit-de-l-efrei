@@ -13,7 +13,7 @@ const ITEMS = [
   },
   {
     q: "Qui peut acheter une place ?",
-    a: "Trois tarifs · 14 € promo diplômée EFREI 2026 · 18 € toutes promos EFREI, alumni EFREI et étudiants actuels du groupe Assas Université (Assas, CFJ, École W, INA, ISIT) · 22 € externes (accompagnants, invités, extérieur). Carte étudiante ou justificatif alumni demandé à l'entrée selon le tarif choisi.",
+    a: "Trois tarifs · 14 € promo diplômée EFREI 2025 (la promo qui vient juste de sortir) · 18 € toutes les autres promos EFREI, alumni EFREI et étudiants actuels du groupe Assas Université (Assas, CFJ, École W, INA, ISIT) · 22 € externes (accompagnants, invités, extérieur). Carte étudiante ou justificatif alumni demandé à l'entrée selon le tarif choisi.",
   },
   {
     q: "Est-ce que je peux céder ma place ?",

@@ -14,7 +14,7 @@ import { HelloAssoWidget } from "@/components/HelloAssoWidget";
 export const metadata: Metadata = {
   title: "Billetterie",
   description:
-    "Trois tarifs · 14 € Promo 2026 · 18 € Étudiants & Alumni EFREI + étudiants groupe Assas (CFJ, École W, INA, ISIT) · 22 € Externe. Billetterie HelloAsso officielle.",
+    "Trois tarifs · 14 € Promo 2025 (juste diplômée) · 18 € Étudiants & Alumni EFREI + étudiants groupe Assas (CFJ, École W, INA, ISIT) · 22 € Externe. Billetterie HelloAsso officielle.",
 };
 
 export default function BilletteriePage() {
