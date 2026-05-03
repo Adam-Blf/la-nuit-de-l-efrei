@@ -7,7 +7,6 @@ import { GoldText } from "@/components/primitives/Decor";
 import { Tickets } from "@/components/sections/Tickets";
 import { ConsoBanner } from "@/components/sections/ConsoBanner";
 import { TicketInfo } from "@/components/sections/TicketInfo";
-import { MenuCarte } from "@/components/sections/MenuCarte";
 import { Transports } from "@/components/sections/Transports";
 import { HelloAssoWidget } from "@/components/HelloAssoWidget";
 
@@ -34,7 +33,6 @@ export default function BilletteriePage() {
           lead="350 places · jamais une de plus. Conso à 2 € à bord. Billet strictement nominatif · pièce d'identité demandée à l'entrée."
         />
         <Tickets />
-        <MenuCarte />
         <ConsoBanner />
         <HelloAssoWidget />
         <Transports />

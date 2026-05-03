@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { SiteNav } from "@/components/SiteNav";
 import { Footer } from "@/components/Footer";
 import { PageHeader } from "@/components/PageHeader";
+import { MenuCarte } from "@/components/sections/MenuCarte";
 import {
   Corners,
   Eyebrow,
@@ -120,6 +121,7 @@ export default function CartePage() {
           }
           lead="1 cocktail (ou champagne) et 1 soft offerts à l'embarquement. Bouteilles d'eau plate à disposition gratuitement toute la nuit. Tous les cocktails maison déclinés en version sans alcool. Service au comptoir jusqu'à 03h30."
         />
+        <MenuCarte />
 
         <section className="bg-navy-900 px-6 py-24 md:px-12 md:py-28 lg:px-20 lg:py-36 xl:px-[120px]">
           <div className="relative mx-auto max-w-[1100px] border border-brass-400/30 bg-navy-900/60 px-6 py-12 md:px-14 md:py-16 lg:px-20 lg:py-20">
