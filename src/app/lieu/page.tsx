@@ -13,7 +13,7 @@ import { Access } from "@/components/sections/Access";
 export const metadata: Metadata = {
   title: "Lieu",
   description:
-    "La Péniche, 2 quai de la Tournelle · Paris V. Privatisée pour 350 invités le 4 juin 2026.",
+    "La Péniche, 2 quai de la Tournelle · Paris V. Privatisée pour 350 invités le 28 mai 2026.",
 };
 
 export default function LieuPage() {

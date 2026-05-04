@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "La Nuit de l'EFREI · MMXXVI",
     short_name: "Nuit EFREI",
     description:
-      "Le retour, dix ans plus tard. Jeudi 4 juin 2026, La Péniche, 22h → 04h. Fait par Prom EFREI.",
+      "Le retour, dix ans plus tard. Jeudi 28 mai 2026, La Péniche, 22h → 04h. Fait par Prom EFREI.",
     start_url: "/",
     display: "standalone",
     background_color: "#001329",

@@ -18,7 +18,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Associations présentes",
   description:
-    "Toutes les associations EFREI à bord de La Péniche le 4 juin 2026 · BDA, Prom EFREI, Live EFREI, New Lix, Efreestyle, Efr'Action, Picture Studio et plus.",
+    "Toutes les associations EFREI à bord de La Péniche le 28 mai 2026 · BDA, Prom EFREI, Live EFREI, New Lix, Efreestyle, Efr'Action, Picture Studio et plus.",
 };
 
 type Item = {
@@ -185,7 +185,7 @@ export default function AssociationsPage() {
               </h3>
               <p className="mx-auto mt-4 max-w-[480px] text-[14px] leading-[1.6] text-cream/65">
                 Asso EFREI, BDE partenaire, club étudiant, asso du groupe Assas
-                · si vous voulez être présents le 4 juin, écrivez-nous.
+                · si vous voulez être présents le 28 mai, écrivez-nous.
               </p>
               <Link
                 href={`mailto:${EVENT.email}`}

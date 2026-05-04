@@ -9,7 +9,7 @@ import { EASE } from "@/lib/tokens";
 const ITEMS = [
   {
     q: "Quand a lieu La Nuit de l'EFREI ?",
-    a: "Jeudi 4 juin 2026. Portes ouvertes à partir de 22h, fin de soirée 04h. Embarquement sur la passerelle, 2 quai de la Tournelle, 75005 Paris.",
+    a: "Jeudi 28 mai 2026. Portes ouvertes à partir de 22h, fin de soirée 04h. Embarquement sur la passerelle, 2 quai de la Tournelle, 75005 Paris.",
   },
   {
     q: "Qui peut acheter une place ?",
@@ -25,7 +25,7 @@ const ITEMS = [
   },
   {
     q: "Le dress code est-il vraiment obligatoire ?",
-    a: "Oui · robe élégante ou costume. Smoking, robe longue, costume sombre, tenue de soirée. Le velours est encouragé, les sneakers ne le sont pas. L'organisation se réserve le droit de refuser l'embarquement à toute personne en jogging ou en tenue ne respectant pas le code vestimentaire · sans remboursement.",
+    a: "Oui · robe élégante ou costume. Smoking, robe, costume, tenue de soirée. Le velours est encouragé, les sneakers ne le sont pas. L'organisation se réserve le droit de refuser l'embarquement à toute personne en jogging ou en tenue ne respectant pas le code vestimentaire · sans remboursement.",
   },
   {
     q: "Y a-t-il un vestiaire ?",
@@ -49,7 +49,7 @@ const ITEMS = [
   },
   {
     q: "Y a-t-il des photos ou un aftermovie ?",
-    a: "Oui · un photographe officiel couvre toute la nuit, et un aftermovie est tourné par Efrei Picture Studio. Les photos seront publiées sur @promefrei dans la semaine qui suit. En achetant ta place tu acceptes l'usage de ton image dans la com post-event. Pour t'opposer · prom@bda-efrei.fr avant le 4 juin.",
+    a: "Oui · un photographe officiel couvre toute la nuit, et un aftermovie est tourné par Efrei Picture Studio. Les photos seront publiées sur @promefrei dans la semaine qui suit. En achetant ta place tu acceptes l'usage de ton image dans la com post-event. Pour t'opposer · prom@bda-efrei.fr avant le 28 mai.",
   },
   {
     q: "Puis-je commander un cocktail sans alcool ?",
