@@ -73,11 +73,7 @@ const ITEMS = [
   },
   {
     q: "Comment devenir partenaire ou sponsor ?",
-    a: "Voir la page /sponsors · 4 niveaux d'engagement (Mécène · Partenaire · Soutien · Bienfaiteur) avec contreparties dédiées. Contact partenariats · contact@promefrei.fr avec « PARTENARIAT » dans l'objet, on revient sous 48h.",
-  },
-  {
-    q: "Pourquoi un site web en plus du HelloAsso ?",
-    a: "Le HelloAsso porte la billetterie et le paiement. Le site centralise tout le reste (lieu, accès, programme, FAQ, conditions, associations à bord) sur une URL unique facile à partager. Il sert aussi à pérenniser le projet · les prochaines promos pourront le maintenir d'année en année et c'est un canal que les gens consultent souvent plus que les stories Insta qui disparaissent en 24h.",
+    a: "Voir la page /associations · 4 niveaux d'engagement (Mécène · Partenaire · Soutien · Bienfaiteur) avec contreparties dédiées. Contact partenariats · contact@promefrei.fr avec « PARTENARIAT » dans l'objet, on revient sous 48h.",
   },
 ];
 
@@ -95,7 +91,7 @@ export function FAQ() {
             Questions <GoldText>fréquentes.</GoldText>
           </h2>
           <div className="font-mono text-[11px] tracking-[0.28em] text-cream/50">
-            18 · ENTRÉES
+            17 · ENTRÉES
           </div>
         </div>
 
