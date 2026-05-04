@@ -27,7 +27,7 @@ export default function FAQPage() {
               <GoldText>se demande.</GoldText>
             </>
           }
-          lead="Les neuf questions le plus souvent posées. Si la vôtre n'y figure pas · écrivez-nous."
+          lead="Les questions le plus souvent posées · embarquement, billetterie, conditions, accessibilité, contact. Si la vôtre n'y figure pas · écrivez-nous."
         />
         <FAQ />
         <ContactBlock />

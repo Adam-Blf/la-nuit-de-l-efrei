@@ -43,6 +43,42 @@ const ITEMS = [
     q: "Comment je rentre après 04h ?",
     a: "Saint-Michel Notre-Dame est à 8 minutes à pied · plusieurs lignes Noctilien partent de cette gare avec un service de 00h30 à 05h30. Taxis et VTC accessibles directement sur le quai. Métro fermé à cette heure · pensez à anticiper votre trajet.",
   },
+  {
+    q: "À quelle heure max je peux arriver ?",
+    a: "L'embarquement est ouvert de 22h00 à 00h30. Après 00h30, l'équipage se réserve le droit de refuser l'accès pour des raisons de comptage et de sécurité. Anticipez les retards RATP · le métro 10 ralentit en soirée et le dernier passage à Maubert-Mutualité est avant 00h45.",
+  },
+  {
+    q: "Y a-t-il des photos ou un aftermovie ?",
+    a: "Oui · un photographe officiel couvre toute la nuit, et un aftermovie est tourné par Efrei Picture Studio. Les photos seront publiées sur @promefrei dans la semaine qui suit. En achetant ta place tu acceptes l'usage de ton image dans la com post-event. Pour t'opposer · contact@promefrei.fr avant le 4 juin.",
+  },
+  {
+    q: "Puis-je commander un cocktail sans alcool ?",
+    a: "Oui · tous les cocktails de la carte sont déclinables en version sans alcool sur simple demande au bar · même prix (2 €), même verre, mêmes ingrédients sauf l'alcool. L'eau plate est gratuite en bouteille à volonté à bord.",
+  },
+  {
+    q: "L'accès est-il adapté aux personnes à mobilité réduite ?",
+    a: "La passerelle d'embarquement a une légère pente (~6%) et trois marches d'accès au quai bas · un agent peut prêter assistance. Les trois ponts de la péniche sont reliés par des escaliers raides · l'accès aux ponts supérieur et inférieur n'est pas adapté aux fauteuils, le pont central reste accessible. Préviens-nous avant l'événement à contact@promefrei.fr si tu as un besoin spécifique, on s'organise.",
+  },
+  {
+    q: "Je peux changer le nom sur mon billet ?",
+    a: "Non. Le billet est strictement nominatif (article 11 du contrat de mise à disposition Inwee), aucune modification n'est possible une fois acheté. Vérifie deux fois ton orthographe avant de valider sur HelloAsso.",
+  },
+  {
+    q: "J'ai perdu ma carte étudiante ou mon justificatif alumni ?",
+    a: "Une attestation EFREI ou Assas téléchargée depuis l'intranet, un mail @efrei.net valide, ou ton diplôme suffisent. Sans aucun justificatif à la passerelle, le tarif externe (22 €) s'applique automatiquement.",
+  },
+  {
+    q: "J'ai perdu un objet pendant la soirée, comment le récupérer ?",
+    a: "Le vestiaire centralise les objets trouvés pendant la nuit. Après l'événement · message à @promefrei ou contact@promefrei.fr avec une description (et une photo si possible). Les objets sont gardés 30 jours puis remis à un service de don.",
+  },
+  {
+    q: "Comment devenir partenaire ou sponsor ?",
+    a: "Voir la page /sponsors · 4 niveaux d'engagement (Mécène · Partenaire · Soutien · Bienfaiteur) avec contreparties dédiées. Contact partenariats · contact@promefrei.fr avec « PARTENARIAT » dans l'objet, on revient sous 48h.",
+  },
+  {
+    q: "Pourquoi un site web en plus du HelloAsso ?",
+    a: "Le HelloAsso porte la billetterie et le paiement. Le site centralise tout le reste (lieu, accès, programme, FAQ, conditions, associations à bord) sur une URL unique facile à partager. Il sert aussi à pérenniser le projet · les prochaines promos pourront le maintenir d'année en année et c'est un canal que les gens consultent souvent plus que les stories Insta qui disparaissent en 24h.",
+  },
 ];
 
 export function FAQ() {
@@ -59,7 +95,7 @@ export function FAQ() {
             Questions <GoldText>fréquentes.</GoldText>
           </h2>
           <div className="font-mono text-[11px] tracking-[0.28em] text-cream/50">
-            09 · ENTRÉES
+            18 · ENTRÉES
           </div>
         </div>
 
