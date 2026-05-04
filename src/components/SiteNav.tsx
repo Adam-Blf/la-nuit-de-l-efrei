@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 import { PromBlason } from "@/components/primitives/Logos";
+import { AssosBar } from "@/components/AssosBar";
 import { EVENT, NAV_ITEMS, EASE } from "@/lib/tokens";
 
 export function SiteNav() {
@@ -27,7 +28,9 @@ export function SiteNav() {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 flex items-center justify-between border-b border-brass-400/20 bg-navy-900/80 px-6 py-4 backdrop-blur-md md:px-12 lg:px-20 xl:px-[120px]">
+      <header className="sticky top-0 z-50">
+        <AssosBar />
+      <nav className="flex items-center justify-between border-b border-brass-400/20 bg-navy-900/80 px-6 py-4 backdrop-blur-md md:px-12 lg:px-20 xl:px-[120px]">
         <Link href="/" className="flex items-center gap-3 group">
           <PromBlason size={36} />
           <span className="flex flex-col leading-tight">
@@ -81,6 +84,7 @@ export function SiteNav() {
           </button>
         </div>
       </nav>
+      </header>
 
       <AnimatePresence>
         {open && (

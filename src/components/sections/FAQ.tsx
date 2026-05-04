@@ -59,7 +59,7 @@ export function FAQ() {
             Questions <GoldText>fréquentes.</GoldText>
           </h2>
           <div className="font-mono text-[11px] tracking-[0.28em] text-cream/50">
-            07 · ENTRÉES
+            09 · ENTRÉES
           </div>
         </div>
 
