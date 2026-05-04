@@ -1,5 +1,10 @@
 # La Nuit de l'EFREI · MMXXVI
 
+<!-- adam-badges:start -->
+[![commits](https://img.shields.io/github/commit-activity/t/Adam-Blf/la-nuit-de-l-efrei?color=001329&label=commits&style=flat-square)](https://github.com/Adam-Blf/la-nuit-de-l-efrei/commits) [![visites](https://hits.sh/github.com/Adam-Blf/la-nuit-de-l-efrei.svg?style=flat-square&label=visites&color=001329)](https://hits.sh/github.com/Adam-Blf/la-nuit-de-l-efrei/) [![last commit](https://img.shields.io/github/last-commit/Adam-Blf/la-nuit-de-l-efrei?color=D4A437&style=flat-square&label=dernier%20push)](https://github.com/Adam-Blf/la-nuit-de-l-efrei/commits) [![top language](https://img.shields.io/github/languages/top/Adam-Blf/la-nuit-de-l-efrei?style=flat-square)](https://github.com/Adam-Blf/la-nuit-de-l-efrei) [![license](https://img.shields.io/github/license/Adam-Blf/la-nuit-de-l-efrei?style=flat-square&color=D4A437)](LICENSE)
+<!-- adam-badges:end -->
+
+
 [![Next.js 16](https://img.shields.io/badge/Next.js-16-000?logo=nextdotjs)](https://nextjs.org)
 [![React 19](https://img.shields.io/badge/React-19-149ECA?logo=react)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript)](https://typescriptlang.org)
