@@ -39,6 +39,7 @@ export const NAV_ITEMS = [
   { id: "/billetterie", label: "Billetterie" },
   { id: "/carte", label: "Carte du bar" },
   { id: "/faq", label: "FAQ" },
+  { id: "/associations", label: "Associations" },
 ] as const;
 
 export const EASE = [0.22, 1, 0.36, 1] as const;
