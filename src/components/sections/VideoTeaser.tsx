@@ -12,7 +12,7 @@ export function VideoTeaser() {
             </h2>
           </div>
           <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-cream/45">
-            Captation officielle · 28 · 05 · 2026
+            Captation officielle · 4 · 06 · 2026
           </div>
         </div>
 

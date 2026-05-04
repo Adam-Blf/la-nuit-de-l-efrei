@@ -52,7 +52,7 @@ const BLOCKS: Array<{ t: string; body: React.ReactNode }> = [
           qu&apos;en soit la raison.
         </p>
         <p className="mt-3">
-          Si vous ne pouvez pas venir le 28 mai 2026, votre place est perdue.
+          Si vous ne pouvez pas venir le 4 juin 2026, votre place est perdue.
           Aucun remboursement, partiel ou total, ne sera accordé · y compris
           en cas d&apos;empêchement personnel, professionnel, médical, de
           retard, de transport, ou de force majeure individuelle.
@@ -224,7 +224,7 @@ export default function ConditionsPage() {
               <GoldText>la place est gardée.</GoldText>
             </>
           }
-          lead="Lisez avant d'acheter. Le billet est nominatif, non cessible, non remboursable. La nuit du 28 mai se mérite, on n'aime pas devoir refuser quelqu'un à la passerelle."
+          lead="Lisez avant d'acheter. Le billet est nominatif, non cessible, non remboursable. La nuit du 4 juin se mérite, on n'aime pas devoir refuser quelqu'un à la passerelle."
         />
         <section className="bg-navy-900 px-6 py-24 md:px-12 lg:px-20 lg:py-32 xl:px-[120px]">
           <div className="mx-auto grid max-w-[1100px] gap-y-12 lg:grid-cols-[220px_1fr] lg:gap-x-16 lg:gap-y-16">

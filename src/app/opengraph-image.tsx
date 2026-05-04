@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "La Nuit de l'EFREI · MMXXVI · 28 mai 2026 · La Péniche";
+export const alt = "La Nuit de l'EFREI · MMXXVI · 4 juin 2026 · La Péniche";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -34,7 +34,7 @@ export default async function OG() {
           }}
         >
           <div>FAIT PAR PROM EFREI · MMXXVI</div>
-          <div>28 · 05 · 2026</div>
+          <div>4 · 06 · 2026</div>
         </div>
 
         <div

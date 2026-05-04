@@ -17,7 +17,7 @@ import { Stars } from "@/components/primitives/Stars";
 export const metadata: Metadata = {
   title: "Barney · la mascotte",
   description:
-    "Barney, chouette effraie en smoking bleu nuit. Mascotte officielle de La Nuit de l'EFREI. Votre hôte du 28 mai 2026.",
+    "Barney, chouette effraie en smoking bleu nuit. Mascotte officielle de La Nuit de l'EFREI. Votre hôte du 4 juin 2026.",
 };
 
 const FACTS = [
@@ -124,7 +124,7 @@ export default function BarneyPage() {
                 </p>
                 <p>
                   Si vous croisez son regard sur une affiche ou dans un coin
-                  de la péniche le 28 mai, sachez qu&apos;il vous a aussi
+                  de la péniche le 4 juin, sachez qu&apos;il vous a aussi
                   remarqué.
                 </p>
                 <div className="pt-4">
@@ -189,7 +189,7 @@ export default function BarneyPage() {
                 .
               </h3>
               <p className="mt-7 text-base text-cream/65 md:text-lg">
-                Le 28 mai 2026 · La Péniche · 22h.
+                Le 4 juin 2026 · La Péniche · 22h.
               </p>
               <Link
                 href="/billetterie"

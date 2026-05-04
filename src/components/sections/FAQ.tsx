@@ -9,7 +9,7 @@ import { EASE } from "@/lib/tokens";
 const ITEMS = [
   {
     q: "Quand a lieu La Nuit de l'EFREI ?",
-    a: "Jeudi 28 mai 2026. Portes ouvertes à partir de 22h, fin de soirée 04h. Embarquement sur la passerelle, 2 quai de la Tournelle, 75005 Paris.",
+    a: "Jeudi 4 juin 2026. Portes ouvertes à partir de 22h, fin de soirée 04h. Embarquement sur la passerelle, 2 quai de la Tournelle, 75005 Paris.",
   },
   {
     q: "Qui peut acheter une place ?",

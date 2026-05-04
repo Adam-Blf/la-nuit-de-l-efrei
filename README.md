@@ -13,7 +13,7 @@
 [![License MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Version 0.1.0](https://img.shields.io/badge/version-0.1.0-blue)](package.json)
 
-Site officiel du gala **La Nuit de l'EFREI** · jeudi 28 mai 2026 · La Péniche, 2 quai de la Tournelle · Paris V · 22h → 04h · 300 invités · privatisation totale.
+Site officiel du gala **La Nuit de l'EFREI** · jeudi 4 juin 2026 · La Péniche, 2 quai de la Tournelle · Paris V · 22h → 04h · 300 invités · privatisation totale.
 
 Le retour, dix ans plus tard.
 
@@ -54,7 +54,7 @@ Toutes les pages sont **responsive** (mobile-first via Tailwind), partagent `Sit
 ## Données event (source · contrat Inwee + chat de validation)
 
 ```
-Date         · jeudi 28 mai 2026
+Date         · jeudi 4 juin 2026
 Horaires     · portes 22h · ouverture officielle 23h · fin 04h
 Lieu         · La Péniche, 2 quai de la Tournelle, 75005 Paris
 Capacité     · 300 invités · privatisation totale
