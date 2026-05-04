@@ -16,7 +16,7 @@ export const EVENT = {
   name: "La Nuit de l'EFREI",
   edition: "MMXXVI",
   org: "Prom EFREI",
-  email: "contact@promefrei.fr",
+  email: "prom@bda-efrei.fr",
   insta: "@promefrei",
   hashtag: "#LaNuitDeLEFREI",
   date: "4 · 06 · 2026",

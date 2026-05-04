@@ -49,7 +49,7 @@ const ITEMS = [
   },
   {
     q: "Y a-t-il des photos ou un aftermovie ?",
-    a: "Oui · un photographe officiel couvre toute la nuit, et un aftermovie est tourné par Efrei Picture Studio. Les photos seront publiées sur @promefrei dans la semaine qui suit. En achetant ta place tu acceptes l'usage de ton image dans la com post-event. Pour t'opposer · contact@promefrei.fr avant le 4 juin.",
+    a: "Oui · un photographe officiel couvre toute la nuit, et un aftermovie est tourné par Efrei Picture Studio. Les photos seront publiées sur @promefrei dans la semaine qui suit. En achetant ta place tu acceptes l'usage de ton image dans la com post-event. Pour t'opposer · prom@bda-efrei.fr avant le 4 juin.",
   },
   {
     q: "Puis-je commander un cocktail sans alcool ?",
@@ -57,7 +57,7 @@ const ITEMS = [
   },
   {
     q: "L'accès est-il adapté aux personnes à mobilité réduite ?",
-    a: "La passerelle d'embarquement a une légère pente (~6%) et trois marches d'accès au quai bas · un agent peut prêter assistance. Les trois ponts de la péniche sont reliés par des escaliers raides · l'accès aux ponts supérieur et inférieur n'est pas adapté aux fauteuils, le pont central reste accessible. Préviens-nous avant l'événement à contact@promefrei.fr si tu as un besoin spécifique, on s'organise.",
+    a: "La passerelle d'embarquement a une légère pente (~6%) et trois marches d'accès au quai bas · un agent peut prêter assistance. Les trois ponts de la péniche sont reliés par des escaliers raides · l'accès aux ponts supérieur et inférieur n'est pas adapté aux fauteuils, le pont central reste accessible. Préviens-nous avant l'événement à prom@bda-efrei.fr si tu as un besoin spécifique, on s'organise.",
   },
   {
     q: "Je peux changer le nom sur mon billet ?",
@@ -69,11 +69,11 @@ const ITEMS = [
   },
   {
     q: "J'ai perdu un objet pendant la soirée, comment le récupérer ?",
-    a: "Le vestiaire centralise les objets trouvés pendant la nuit. Après l'événement · message à @promefrei ou contact@promefrei.fr avec une description (et une photo si possible). Les objets sont gardés 30 jours puis remis à un service de don.",
+    a: "Le vestiaire centralise les objets trouvés pendant la nuit. Après l'événement · message à @promefrei ou prom@bda-efrei.fr avec une description (et une photo si possible). Les objets sont gardés 30 jours puis remis à un service de don.",
   },
   {
     q: "Comment devenir partenaire ou sponsor ?",
-    a: "Voir la page /associations · 4 niveaux d'engagement (Mécène · Partenaire · Soutien · Bienfaiteur) avec contreparties dédiées. Contact partenariats · contact@promefrei.fr avec « PARTENARIAT » dans l'objet, on revient sous 48h.",
+    a: "Voir la page /associations · 4 niveaux d'engagement (Mécène · Partenaire · Soutien · Bienfaiteur) avec contreparties dédiées. Contact partenariats · prom@bda-efrei.fr avec « PARTENARIAT » dans l'objet, on revient sous 48h.",
   },
 ];
 
