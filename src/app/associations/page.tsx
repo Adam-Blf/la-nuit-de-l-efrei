@@ -129,7 +129,7 @@ const TIERS: Array<{
     items: [
       {
         n: "BDE ISIT",
-        d: "Le BDE de l'ISIT relaie la com du gala à ses étudiants. Une école partenaire au campus, des places ouvertes aux Isitiens.",
+        d: "Le BDE de l'ISIT relaie la com du gala à ses étudiants. Une école partenaire au campus, des places ouvertes aux Isitistes.",
         logo: "/assets/logos/bde-isit.jpg",
         href: "https://www.instagram.com/bdeisit/",
       },
