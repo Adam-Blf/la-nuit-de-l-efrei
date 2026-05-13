@@ -51,6 +51,7 @@ const TIERS: Array<{
       {
         n: "Bureau des Élèves EFREI",
         d: "Co-organisation et soutien logistique pour la nuit du 28 mai.",
+        logo: "/assets/logos/bde-efrei.jpg",
         href: "https://www.bde-efrei.fr",
       },
     ],
@@ -74,11 +75,13 @@ const TIERS: Array<{
       {
         n: "Voltage Contrôle EFREI",
         d: "Régie son et lumière · pilotage technique de la scène pendant le live.",
+        logo: "/assets/logos/voltage.png",
         href: "https://www.instagram.com/voltagecontrole.efrei/",
       },
       {
         n: "DJ Shinny · invité",
         d: "DJ externe en guest · set 00h00 → 02h00 · house, hits et open format.",
+        logo: "/assets/logos/dj-shinny.jpg",
         href: "https://www.instagram.com/dj_shinny/",
       },
     ],
@@ -96,7 +99,7 @@ const TIERS: Array<{
       {
         n: "Toudoom",
         d: "Captation vidéo et tournage de l'after-movie · souvenirs de la nuit.",
-        logo: "/assets/logos/toudoum.png",
+        logo: "/assets/logos/toudoum.svg",
         href: "https://www.instagram.com/toudoom/",
       },
       {
