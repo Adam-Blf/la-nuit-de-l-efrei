@@ -41,7 +41,7 @@ const TIERS: Array<{
     items: [
       {
         n: "Prom EFREI",
-        d: "On porte le gala depuis octobre. Six mois de boulot pour vous offrir la nuit du 28 mai.",
+        d: "On porte le gala depuis mai dernier. Un an de boulot pour vous offrir la nuit du 28 mai.",
         logo: "/assets/prom-efrei.png",
       },
       {
