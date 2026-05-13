@@ -63,7 +63,7 @@ const TIERS: Array<{
         n: "Live EFREI",
         d: "Concert live sur le pont supérieur · setlist exclusive du club musique du Bureau des Arts.",
         logo: "/assets/logos/live-efrei.png",
-        href: "https://www.bda-efrei.fr",
+        href: "https://www.instagram.com/live.efrei/",
       },
       {
         n: "New Lix",
