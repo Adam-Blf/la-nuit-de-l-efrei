@@ -18,7 +18,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Associations présentes",
   description:
-    "Toutes les associations à bord de La Péniche le 28 mai 2026 · BDA, BDE, Prom EFREI, Live EFREI, New Lix, Voltage Contrôle, EPS Picture Studio, Toudoom, Art'Efrei, Le Continental et DJ Shinny en guest.",
+    "Toutes les associations à bord de La Péniche le 28 mai 2026 · Prom EFREI, BDA, BDE, Live EFREI, New Lix, DJ Shinny, Voltage Contrôle, EPS Picture Studio, Toudoom, Le Continental, Art'Efrei, La Taverne du Troll, Efrei Ultras et Rugbière EFREI.",
 };
 
 type Item = {
@@ -102,12 +102,6 @@ const TIERS: Array<{
         logo: "/assets/logos/toudoum.svg",
         href: "https://www.instagram.com/toudoom/",
       },
-      {
-        n: "Art'Efrei",
-        d: "Art'Efrei habille la péniche. Trois ponts, trois ambiances, une signature visuelle Seine Étoilée travaillée depuis février.",
-        logo: "/assets/logos/art-efrei.svg",
-        href: "https://www.instagram.com/artefrei/",
-      },
     ],
   },
   {
@@ -118,6 +112,36 @@ const TIERS: Array<{
         n: "Le Continental",
         d: "Le Continental tient le bar. Cocktails, vins, softs servis sans attente toute la nuit pour 2€ la conso.",
         logo: "/assets/logos/le-continental.svg",
+      },
+    ],
+  },
+  {
+    l: "Concours · places offertes",
+    s: "Ils ont fait gagner vos billets",
+    items: [
+      {
+        n: "Art'Efrei",
+        d: "Plusieurs places gagnées via leurs concours sur Insta. Suivez-les, ils relancent un tirage avant la soirée.",
+        logo: "/assets/logos/art-efrei.svg",
+        href: "https://www.instagram.com/artefrei/",
+      },
+      {
+        n: "La Taverne du Troll",
+        d: "Le club JDR du campus. Concours de places sur leur compte, dés, cartes, soirées entre deux quêtes.",
+        logo: "/assets/logos/taverne-du-troll.png",
+        href: "https://www.instagram.com/la_taverne_du_troll/",
+      },
+      {
+        n: "Efrei Ultras",
+        d: "Les supporters du campus. Ils mettent leur communauté à contribution pour faire gagner des places à la péniche.",
+        logo: "/assets/logos/efrei-ultras.png",
+        href: "https://www.instagram.com/efrei.ultras/",
+      },
+      {
+        n: "Rugbière EFREI",
+        d: "Le club rugby version festive. Concours sur leur Insta, plusieurs billets offerts à leur audience.",
+        logo: "/assets/logos/efrei-rugby.png",
+        href: "https://www.instagram.com/rugbiere.efrei/",
       },
     ],
   },
@@ -137,7 +161,7 @@ export default function AssociationsPage() {
               <GoldText>à quai.</GoldText>
             </>
           }
-          lead="Onze associations à bord pour la nuit. Live EFREI ouvre le pont supérieur en concert, New Lix lance la soirée, DJ Shinny prend les platines de 00h à 02h en guest, Voltage Contrôle envoie la tech et la tek jusqu'à 04h. EPS shoote tout, Toudoom monte l'after-movie, Art'Efrei signe la déco, Le Continental tient le bar. Prom EFREI, BDA et BDE portent le projet."
+          lead="Quinze associations à bord pour la nuit. Live EFREI ouvre le pont supérieur en concert, New Lix lance la soirée, DJ Shinny prend les platines de 00h à 02h en guest, Voltage Contrôle envoie la tech et la tek jusqu'à 04h. EPS shoote tout, Toudoom monte l'after-movie, Le Continental tient le bar. Art'Efrei, La Taverne du Troll, Efrei Ultras et Rugbière EFREI ont fait gagner des places à leurs communautés. Prom EFREI, BDA et BDE portent le projet."
         />
 
         <section className="relative overflow-hidden bg-navy-900 px-6 py-28 md:px-12 md:py-32 lg:px-20 lg:py-40 xl:px-[120px]">
