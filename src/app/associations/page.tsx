@@ -18,7 +18,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Associations présentes",
   description:
-    "Toutes les associations EFREI à bord de La Péniche le 28 mai 2026 · BDA, Prom EFREI, Live EFREI, New Lix, Efreestyle, Efr'Action, Picture Studio et plus.",
+    "Toutes les associations EFREI à bord de La Péniche le 28 mai 2026 · BDA, BDE, Prom EFREI, Live EFREI, New Lix, Voltage Contrôle, Toudoom, EPS, Art'Efrei, Picture Studio et DJ Shinny en guest.",
 };
 
 type Item = {
@@ -48,11 +48,16 @@ const TIERS: Array<{
         logo: "/assets/logos/bda-efrei.png",
         href: "https://www.bda-efrei.fr",
       },
+      {
+        n: "Bureau des Élèves EFREI",
+        d: "Co-organisation et soutien logistique pour la nuit du 28 mai.",
+        href: "https://www.bde-efrei.fr",
+      },
     ],
   },
   {
-    l: "Animations à bord",
-    s: "Le programme de la nuit",
+    l: "Musique & DJ",
+    s: "Le son de la nuit",
     items: [
       {
         n: "Live EFREI",
@@ -64,13 +69,52 @@ const TIERS: Array<{
         n: "New Lix",
         d: "DJing et beatmaking · mix sur une partie de la soirée.",
         logo: "/assets/logos/new-lix.png",
+        href: "https://www.instagram.com/new.lixx/",
+      },
+      {
+        n: "Voltage Contrôle EFREI",
+        d: "Régie son et lumière · pilotage technique de la scène pendant le live.",
+        href: "https://www.instagram.com/voltagecontrole.efrei/",
+      },
+      {
+        n: "DJ Shinny · invité",
+        d: "DJ externe en guest · set 00h00 → 02h00 · house, hits et open format.",
+        href: "https://www.instagram.com/dj_shinny/",
+      },
+    ],
+  },
+  {
+    l: "Animation & sport",
+    s: "Énergie à bord",
+    items: [
+      {
+        n: "Toudoom",
+        d: "Club d'animation EFREI · jeux, défis et énergie sur les trois ponts.",
+        logo: "/assets/logos/toudoum.png",
+        href: "https://www.instagram.com/toudoom/",
+      },
+      {
+        n: "EPS · Efrei Photo Studio",
+        d: "Équipe sport et performance · animations et démonstrations à bord.",
+        logo: "/assets/logos/eps.png",
         href: "https://www.bda-efrei.fr",
       },
+    ],
+  },
+  {
+    l: "Visuel & déco",
+    s: "Le décor de la nuit",
+    items: [
       {
         n: "Art'Efrei",
         d: "Décoration de la péniche · ambiance et installations sur les trois ponts.",
         logo: "/assets/logos/art-efrei.png",
-        href: "https://www.bda-efrei.fr",
+        href: "https://www.instagram.com/artefrei/",
+      },
+      {
+        n: "Efrei Picture Studio",
+        d: "Photographie et reportage de soirée · captation officielle du gala.",
+        href: "https://www.instagram.com/efreipicturestudio/",
       },
     ],
   },
@@ -90,7 +134,7 @@ export default function AssociationsPage() {
               <GoldText>à quai.</GoldText>
             </>
           }
-          lead="Prom EFREI et le Bureau des Arts portent la nuit. Live EFREI sur le pont supérieur, New Lix au mix sur une partie de la soirée, Art'Efrei à la décoration. Le reste des associations à bord arrive prochainement."
+          lead="Prom EFREI, BDA et BDE portent la nuit. Live EFREI sur le pont supérieur, New Lix au mix, DJ Shinny en guest de 00h à 02h, Voltage Contrôle à la régie, Art'Efrei et Picture Studio au visuel, Toudoom et EPS à l'animation."
         />
 
         <section className="relative overflow-hidden bg-navy-900 px-6 py-28 md:px-12 md:py-32 lg:px-20 lg:py-40 xl:px-[120px]">
