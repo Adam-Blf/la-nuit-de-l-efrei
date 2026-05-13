@@ -76,7 +76,7 @@ const TIERS: Array<{
       },
       {
         n: "DJ Shinny · invité",
-        d: "Notre guest de la soirée. Set de 00h00 à 02h00 : house, hits, open format. Le moment où la péniche bascule.",
+        d: "Au milieu de soirée, de 00h00 à 02h00. Pop, shatta, reggaeton, commercial : le set qui fait chanter la péniche.",
         logo: "/assets/logos/dj-shinny.jpg",
         href: "https://www.instagram.com/dj_shinny/",
       },
@@ -167,7 +167,7 @@ export default function AssociationsPage() {
               <GoldText>à quai.</GoldText>
             </>
           }
-          lead="Quinze associations à bord pour la nuit. Live EFREI ouvre le pont supérieur en concert, New Lix lance la soirée, DJ Shinny prend les platines de 00h à 02h en guest, Voltage Contrôle envoie la tech et la tek jusqu'à 04h. EPS shoote tout, Toudoom monte l'after-movie, Le Continental tient le bar. Art'Efrei, La Taverne du Troll, Efrei Rugby et Efrei Ultras ont fait gagner des places à leurs communautés. Prom EFREI, BDA et BDE portent le projet."
+          lead="Quinze associations à bord pour la nuit. Live EFREI ouvre le pont supérieur en concert, New Lixx lance la soirée, DJ Shinny prend les platines de 00h à 02h en milieu de soirée (pop, shatta, reggaeton, commercial), Voltage Contrôle envoie la tech et la tek jusqu'à 04h. EPS shoote tout, Toudoom monte l'after-movie, Le Continental tient le bar. Art'Efrei, La Taverne du Troll, Efrei Rugby et Efrei Ultras ont fait gagner des places à leurs communautés. Prom EFREI, BDA et BDE portent le projet."
         />
 
         <section className="relative overflow-hidden bg-navy-900 px-6 py-28 md:px-12 md:py-32 lg:px-20 lg:py-40 xl:px-[120px]">
