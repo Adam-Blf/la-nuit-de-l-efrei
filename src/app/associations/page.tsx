@@ -131,7 +131,7 @@ const TIERS: Array<{
       },
       {
         n: "La Taverne du Troll",
-        d: "Atelier JDR ouvert à tous le jour du gala, de 10h jusqu'en fin d'après-midi. Allez-venez libre, même si vous avez cours entre deux.",
+        d: "Atelier peinture Warhammer le jeudi 21 mai au Student Hub, de 10h à 18h. Ouvert à tous, allez-venez libre. Places gagnées sur place avant le gala.",
         logo: "/assets/logos/taverne-du-troll.png",
         href: "https://www.instagram.com/la_taverne_du_troll/",
       },
