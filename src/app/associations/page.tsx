@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 // Rebuild every hour so the date-aware descriptions (eventDate + dPast) auto-flip
 // without needing a manual git push after each gala event passes.
@@ -16,7 +15,6 @@ import {
 } from "@/components/primitives/Decor";
 import { EfreiLogo } from "@/components/primitives/Logos";
 import { Stars } from "@/components/primitives/Stars";
-import { EVENT } from "@/lib/tokens";
 import Image from "next/image";
 
 export const metadata: Metadata = {
@@ -297,15 +295,17 @@ export default function AssociationsPage() {
               </h3>
               <p className="mx-auto mt-4 max-w-[480px] text-[14px] leading-[1.6] text-cream/65">
                 Vous avez une asso EFREI, un club étudiant, un BDE
-                partenaire ? Écrivez-nous, on a encore de la place sur les
-                ponts.
+                partenaire ? Envoyez-nous un DM sur Instagram, on a encore de
+                la place sur les ponts.
               </p>
-              <Link
-                href={`mailto:${EVENT.email}`}
+              <a
+                href="https://www.instagram.com/promefrei/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-8 inline-block bg-brass-400 px-9 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.32em] text-navy-900 transition-transform hover:-translate-y-px"
               >
-                {EVENT.email}
-              </Link>
+                DM @promefrei ↗
+              </a>
             </div>
           </div>
         </section>

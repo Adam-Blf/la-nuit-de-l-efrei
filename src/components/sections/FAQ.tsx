@@ -73,7 +73,7 @@ const ITEMS = [
   },
   {
     q: "Comment devenir partenaire ou sponsor ?",
-    a: "Voir la page /associations pour la liste des assos déjà à bord. Si tu portes une asso EFREI, un club étudiant ou un BDE partenaire et que tu veux nous rejoindre, écris-nous à prom@bda-efrei.fr avec « PARTENARIAT » dans l'objet · on revient sous 48h pour discuter des contreparties.",
+    a: "Voir la page /associations pour la liste des assos déjà à bord. Si tu portes une asso EFREI, un club étudiant ou un BDE partenaire et que tu veux nous rejoindre, envoie-nous un DM sur Instagram @promefrei · on revient sous 48h pour discuter des contreparties.",
   },
 ];
 
