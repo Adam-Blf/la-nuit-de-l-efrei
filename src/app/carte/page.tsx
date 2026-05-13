@@ -18,41 +18,41 @@ export const metadata: Metadata = {
 };
 
 const COCKTAILS = [
-  { l: "Vodka Redbull", d: "Vodka servie sur Red Bull glacé." },
+  { l: "Vodka-Crazy Tiger", d: "Vodka Delaitre servie sur Crazy Tiger énergie glacée." },
   { l: "Sex on the Beach", d: "Vodka, cranberry, jus d'orange, sirop de pêche." },
-  { l: "Ti'Punch", d: "Rhum, jus d'orange, ananas." },
-  { l: "Teqpaf", d: "Tequila, sirop maison · service au shot." },
+  { l: "Planteur tropical", d: "Rhum blanc Delaitre, jus d'ananas, orange." },
+  { l: "Teq Paf", d: "Tequila Acayucan, citron vert · service au shot jetable." },
 ];
 
-const SHOTS_BIERES_VINS = [
-  { l: "Bière pression", d: "Lager · pression toute la nuit." },
-  { l: "Vin de la Seine", d: "Rouge · blanc · rosé selon arrivage." },
-  { l: "Shot maison", d: "Tequila ou vodka, citron-sel sur demande." },
-  { l: "Champagne brut", d: "Coupe d'accueil offerte à l'embarquement." },
+const VINS_MOUSSEUX = [
+  { l: "Mousseux André Gallois Brut 75cl", d: "AOP · coupe d'accueil offerte à l'embarquement." },
+  { l: "Vin rouge Bordeaux AOP", d: "Terres Douces · servi au verre au bar." },
+  { l: "Vin blanc Italia", d: "Vallefiore Vino d'Italia · servi au verre au bar." },
+  { l: "Shot tequila", d: "Au verre jetable, citron vert pressé." },
 ];
 
 const SOFTS = [
   {
-    l: "Eau plate",
-    d: "Bouteilles à disposition · gratuites · à volonté toute la nuit.",
+    l: "Eau plate Cristaline",
+    d: "Service au bar · gratuit · à volonté toute la nuit.",
   },
-  { l: "Coca · Coca Zero", d: "Servi glacé." },
-  { l: "Sprite · Schweppes Tonic", d: "Carbonatés." },
-  { l: "Jus d'orange · ananas · cranberry", d: "Jus de fruit pur." },
-  { l: "Red Bull", d: "Édition originale, glacée." },
+  { l: "Pepsi · Pepsi Zéro", d: "Cola classique ou sans sucre." },
+  { l: "7UP Citron-Citron Vert", d: "Limonade pétillante." },
+  { l: "Fuzetea Thé Pêche", d: "Thé glacé sans bulles." },
+  { l: "Oasis Tropical", d: "Jus de fruits sans bulles." },
 ];
 
 const SANS_ALCOOL = [
   {
     l: "Tous les cocktails · sans alcool",
-    d: "Chaque cocktail maison (Vodka Redbull, Sex on the Beach, Ti'Punch, Teqpaf) est décliné en version sans alcool sur demande au comptoir.",
+    d: "Chaque cocktail maison (Vodka-CT, Sex on the Beach, Planteur, Teq Paf) est décliné en version sans alcool sur demande au comptoir.",
   },
   {
     l: "Virgin Sex on the Beach",
     d: "Cranberry, orange, sirop de pêche · sans alcool.",
   },
   {
-    l: "Virgin Ti'Punch",
+    l: "Virgin Planteur",
     d: "Orange, ananas, citron vert pressé · sans alcool.",
   },
   {
@@ -144,9 +144,9 @@ export default function CartePage() {
                 items={COCKTAILS}
               />
               <Block
-                title="Bières · vins · shots"
-                meta="04 grands formats"
-                items={SHOTS_BIERES_VINS}
+                title="Vins · mousseux · shots"
+                meta="04 références"
+                items={VINS_MOUSSEUX}
               />
               <Block title="Softs" meta="Eau gratuite · 5 références" items={SOFTS} />
               <Block

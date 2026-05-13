@@ -9,33 +9,33 @@ import { Reveal } from "@/components/primitives/Reveal";
 const PETITS_FOURS = [
   {
     n: "I",
-    t: "Brochettes tomate · mozzarella",
-    d: "Tomate cerise, mozzarella di bufala, feuille de basilic.",
+    t: "Pain surprise Charcutier",
+    d: "Mini sandwichs charcuterie variée · 50 pièces par plateau.",
   },
   {
     n: "II",
-    t: "Feuilleté d'automne",
-    d: "Pâte feuilletée dorée, emmental, chèvre, knacki, jaune d'œuf.",
+    t: "Cake chèvre-tomate",
+    d: "Cake salé chèvre frais, tomate confite, basilic.",
   },
   {
     n: "III",
-    t: "Cake légumes du Sud",
-    d: "Poivron, courgette, oignon doux, pâte feuilletée maison.",
+    t: "Cake Jambon emmental",
+    d: "Cake salé jambon supérieur, emmental fondu.",
   },
   {
     n: "IV",
-    t: "Bruschetta jambon cru",
-    d: "Pain de campagne, pesto rosso, jambon cru, pignons grillés.",
+    t: "Pain surprise aux graines",
+    d: "Mini sandwichs assortis aux graines · 45 pièces par plateau.",
   },
   {
     n: "V",
-    t: "Assiette charcuterie",
-    d: "Saucisson sec, jambon cru, chorizo doux à la coupe.",
+    t: "Petits fours traiteur",
+    d: "Assortiment salé · feuilletés · tartelettes · 16 pièces.",
   },
   {
     n: "VI",
-    t: "Beignet de Poséidon",
-    d: "Truite fumée, blini tiède, fromage frais aux herbes.",
+    t: "Mini paniers feuilletés",
+    d: "Paniers feuilletés garnis · 16 pièces assorties.",
   },
 ];
 
@@ -43,17 +43,17 @@ const PRESTATIONS = [
   "Privatisation totale de La Péniche",
   "Son et lumière",
   "DJ & dancefloor",
-  "Live · pont supérieur",
-  "Photographe officiel",
+  "Photobooth · pont supérieur",
+  "Vins rouge & blanc au verre · gratuits",
 ];
 
 const COCKTAILS = [
-  { l: "Vodka Redbull", v: "Vodka · Red Bull" },
+  { l: "Vodka-Crazy Tiger", v: "Vodka · Crazy Tiger énergie" },
   { l: "Sex on the Beach", v: "Vodka · cranberry · orange · sirop pêche" },
-  { l: "Ti'Punch", v: "Rhum · orange · ananas" },
-  { l: "Teqpaf", v: "Tequila · sirop · service au shot" },
+  { l: "Planteur tropical", v: "Rhum blanc · orange · ananas" },
+  { l: "Teq Paf", v: "Tequila · citron vert · service au shot" },
   { l: "Sans alcool · sur demande", v: "Tous les cocktails en version soft" },
-  { l: "Eau plate · bouteilles", v: "Gratuite · à volonté toute la nuit" },
+  { l: "Eau plate · service au bar", v: "Gratuite · à volonté toute la nuit" },
 ];
 
 export function MenuCarte() {
@@ -67,9 +67,9 @@ export function MenuCarte() {
             <br className="hidden sm:block" /> votre billet.
           </h2>
           <p className="mx-auto mt-7 max-w-[560px] text-base leading-[1.65] text-cream/65 md:text-lg">
-            Six petits-fours signés du comité, un cocktail ou champagne et un
-            soft offerts à l&apos;embarquement, et la péniche privatisée pour
-            vous seuls.
+            Six pièces signées du traiteur, un mousseux et un soft offerts à
+            l&apos;embarquement, vin rouge &amp; blanc gratuit au bar, et la
+            péniche privatisée pour vous seuls.
           </p>
         </Reveal>
 
@@ -83,7 +83,7 @@ export function MenuCarte() {
                   Cocktail dînatoire
                 </div>
                 <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-cream/45">
-                  Six bouchées
+                  Six items · 6 pièces / invité
                 </div>
               </div>
               <ul className="flex flex-col gap-7">
@@ -116,10 +116,10 @@ export function MenuCarte() {
                   À l&apos;embarquement · offert
                 </div>
                 <div className="fraunces-display mt-3 text-xl leading-tight tracking-[-0.02em] text-cream md:text-[24px]">
-                  1 cocktail{" "}
-                  <span className="italic text-brass-200">ou</span> champagne
+                  1 coupe de mousseux{" "}
+                  <span className="italic text-brass-200">ou</span> verre de vin
                   <span className="block text-base text-cream/65 md:text-[18px]">
-                    + 1 soft au choix
+                    + 1 soft au choix (5 références)
                   </span>
                 </div>
                 <div className="mt-3 text-[12px] text-cream/55">
