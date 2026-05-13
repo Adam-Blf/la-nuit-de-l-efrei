@@ -26,6 +26,8 @@ type Item = {
   d: string;
   logo?: string;
   href?: string;
+  /** Force the image to scale up (1.5x) inside the uniform 96x96 frame · for logos with too much whitespace */
+  bigLogo?: boolean;
 };
 
 const TIERS: Array<{
@@ -136,12 +138,14 @@ const TIERS: Array<{
         d: "Deux places offertes au meilleur joueur des Ovalies et au meilleur supporter. La péniche récompense ceux qui ont tout donné sur le terrain.",
         logo: "/assets/logos/efrei-rugby.png",
         href: "https://www.instagram.com/rugbiere.efrei/",
+        bigLogo: true,
       },
       {
         n: "Efrei Ultras",
         d: "Place remise au meilleur chant de supporter. La voix qui a porté la tribune décroche son billet pour la péniche.",
         logo: "/assets/logos/efrei-ultras.png",
         href: "https://www.instagram.com/efrei.ultras/",
+        bigLogo: true,
       },
     ],
   },
@@ -211,7 +215,9 @@ export default function AssociationsPage() {
                                 alt={`${item.n} · logo`}
                                 width={96}
                                 height={96}
-                                className="h-full w-full object-contain"
+                                className={`h-full w-full object-contain ${
+                                  item.bigLogo ? "scale-150" : ""
+                                }`}
                               />
                             </div>
                           )}
