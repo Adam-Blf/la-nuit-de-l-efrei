@@ -18,7 +18,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Associations présentes",
   description:
-    "Toutes les associations EFREI à bord de La Péniche le 28 mai 2026 · BDA, BDE, Prom EFREI, Live EFREI, New Lix, Voltage Contrôle, Toudoom, Art'Efrei, EPS Efrei Picture Studio et DJ Shinny en guest.",
+    "Toutes les associations à bord de La Péniche le 28 mai 2026 · BDA, BDE, Prom EFREI, Live EFREI, New Lix, Voltage Contrôle, EPS Picture Studio, Toudoom, Art'Efrei, Le Continental et DJ Shinny en guest.",
 };
 
 type Item = {
@@ -67,7 +67,7 @@ const TIERS: Array<{
       },
       {
         n: "New Lix",
-        d: "DJing et beatmaking · mix sur une partie de la soirée.",
+        d: "Première partie de soirée · DJing et beatmaking pour ouvrir la nuit.",
         logo: "/assets/logos/new-lix.png",
         href: "https://www.instagram.com/new.lixx/",
       },
@@ -84,12 +84,18 @@ const TIERS: Array<{
     ],
   },
   {
-    l: "Animation & visuel",
-    s: "Énergie et image",
+    l: "Image & animation",
+    s: "Capter la nuit",
     items: [
       {
+        n: "EPS · Efrei Picture Studio",
+        d: "Prise de photos pendant la soirée + animation du photobooth.",
+        logo: "/assets/logos/eps.png",
+        href: "https://www.instagram.com/efreipicturestudio/",
+      },
+      {
         n: "Toudoom",
-        d: "Club d'animation EFREI · jeux, défis et énergie sur les trois ponts.",
+        d: "Captation vidéo et tournage de l'after-movie · souvenirs de la nuit.",
         logo: "/assets/logos/toudoum.png",
         href: "https://www.instagram.com/toudoom/",
       },
@@ -99,11 +105,16 @@ const TIERS: Array<{
         logo: "/assets/logos/art-efrei.svg",
         href: "https://www.instagram.com/artefrei/",
       },
+    ],
+  },
+  {
+    l: "Service à bord",
+    s: "Le bar de la nuit",
+    items: [
       {
-        n: "EPS · Efrei Picture Studio",
-        d: "Photographie et reportage de soirée · captation officielle du gala.",
-        logo: "/assets/logos/eps.png",
-        href: "https://www.instagram.com/efreipicturestudio/",
+        n: "Le Continental",
+        d: "Service au bar · cocktails, vins, softs · équipe bar partenaire pour la soirée.",
+        logo: "/assets/logos/le-continental.svg",
       },
     ],
   },
@@ -123,7 +134,7 @@ export default function AssociationsPage() {
               <GoldText>à quai.</GoldText>
             </>
           }
-          lead="Prom EFREI, BDA et BDE portent la nuit. Live EFREI sur le pont supérieur, New Lix au mix, DJ Shinny en guest de 00h à 02h, Voltage Contrôle à la régie, Toudoom à l'animation, Art'Efrei à la déco et EPS (Efrei Picture Studio) à la captation officielle."
+          lead="Prom EFREI, BDA et BDE portent la nuit. Live EFREI sur le pont supérieur, New Lix en première partie, DJ Shinny en guest de 00h à 02h, Voltage Contrôle à la régie, EPS pour la photo et le photobooth, Toudoom pour l'after-movie, Art'Efrei à la déco et Le Continental au service du bar."
         />
 
         <section className="relative overflow-hidden bg-navy-900 px-6 py-28 md:px-12 md:py-32 lg:px-20 lg:py-40 xl:px-[120px]">
