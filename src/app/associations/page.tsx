@@ -26,8 +26,6 @@ type Item = {
   d: string;
   logo?: string;
   href?: string;
-  /** Use this when the logo has heavy whitespace and looks too small in the standard frame */
-  bigLogo?: boolean;
 };
 
 const TIERS: Array<{
@@ -76,7 +74,7 @@ const TIERS: Array<{
       },
       {
         n: "DJ Shinny · invité",
-        d: "Au milieu de soirée, de 00h00 à 02h00. Pop, shatta, reggaeton, commercial : le set qui fait chanter la péniche.",
+        d: "Au milieu de soirée. Pop, shatta, reggaeton, commercial : le set qui fait chanter la péniche.",
         logo: "/assets/logos/dj-shinny.jpg",
         href: "https://www.instagram.com/dj_shinny/",
       },
@@ -97,7 +95,6 @@ const TIERS: Array<{
         d: "EPS shoote toute la nuit. Photos officielles + photobooth installé sur le pont principal pour repartir avec ses tirages.",
         logo: "/assets/logos/eps.png",
         href: "https://www.instagram.com/efreipicturestudio/",
-        bigLogo: true,
       },
       {
         n: "Toudoom",
@@ -133,21 +130,18 @@ const TIERS: Array<{
         d: "Atelier JDR ouvert à tous le jour du gala, de 10h jusqu'en fin d'après-midi. Allez-venez libre, même si vous avez cours entre deux.",
         logo: "/assets/logos/taverne-du-troll.png",
         href: "https://www.instagram.com/la_taverne_du_troll/",
-        bigLogo: true,
       },
       {
         n: "Efrei Rugby",
         d: "Deux places offertes au meilleur joueur des Ovalies et au meilleur supporter. La péniche récompense ceux qui ont tout donné sur le terrain.",
         logo: "/assets/logos/efrei-rugby.png",
         href: "https://www.instagram.com/rugbiere.efrei/",
-        bigLogo: true,
       },
       {
         n: "Efrei Ultras",
         d: "Place remise au meilleur chant de supporter. La voix qui a porté la tribune décroche son billet pour la péniche.",
         logo: "/assets/logos/efrei-ultras.png",
         href: "https://www.instagram.com/efrei.ultras/",
-        bigLogo: true,
       },
     ],
   },
@@ -167,7 +161,7 @@ export default function AssociationsPage() {
               <GoldText>à quai.</GoldText>
             </>
           }
-          lead="Quinze associations à bord pour la nuit. Live EFREI ouvre le pont supérieur en concert, New Lixx lance la soirée, DJ Shinny prend les platines de 00h à 02h en milieu de soirée (pop, shatta, reggaeton, commercial), Voltage Contrôle envoie la tech et la tek jusqu'à 04h. EPS shoote tout, Toudoom monte l'after-movie, Le Continental tient le bar. Art'Efrei, La Taverne du Troll, Efrei Rugby et Efrei Ultras ont fait gagner des places à leurs communautés. Prom EFREI, BDA et BDE portent le projet."
+          lead="Quinze associations à bord pour la nuit. Live EFREI ouvre le pont supérieur en concert, New Lixx lance la soirée, DJ Shinny prend les platines en milieu de soirée (pop, shatta, reggaeton, commercial), Voltage Contrôle envoie la tech et la tek jusqu'à 04h. EPS shoote tout, Toudoom monte l'after-movie, Le Continental tient le bar. Art'Efrei, La Taverne du Troll, Efrei Rugby et Efrei Ultras ont fait gagner des places à leurs communautés. Prom EFREI, BDA et BDE portent le projet."
         />
 
         <section className="relative overflow-hidden bg-navy-900 px-6 py-28 md:px-12 md:py-32 lg:px-20 lg:py-40 xl:px-[120px]">
@@ -211,21 +205,13 @@ export default function AssociationsPage() {
                       const inner = (
                         <>
                           {item.logo && (
-                            <div
-                              className={`mb-5 flex shrink-0 items-center justify-center overflow-hidden rounded-sm border border-brass-400/30 bg-cream/5 ${
-                                item.bigLogo
-                                  ? "h-28 w-28 p-0"
-                                  : "h-20 w-20 p-2"
-                              }`}
-                            >
+                            <div className="mb-5 flex h-24 w-24 shrink-0 items-center justify-center overflow-hidden rounded-sm border border-brass-400/30 bg-cream/5 p-2">
                               <Image
                                 src={item.logo}
                                 alt={`${item.n} · logo`}
-                                width={item.bigLogo ? 112 : 72}
-                                height={item.bigLogo ? 112 : 72}
-                                className={`h-auto w-auto max-h-full max-w-full object-contain ${
-                                  item.bigLogo ? "scale-110" : ""
-                                }`}
+                                width={96}
+                                height={96}
+                                className="h-auto w-auto max-h-full max-w-full object-contain"
                               />
                             </div>
                           )}
