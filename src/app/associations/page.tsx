@@ -51,7 +51,7 @@ const TIERS: Array<{
       {
         n: "Bureau des Élèves EFREI",
         d: "Le BDE est de la partie. Communication relayée à toute la promo et une équipe de bénévoles staffés sur la soirée.",
-        logo: "/assets/logos/bde-efrei.jpg",
+        logo: "/assets/logos/bde-efrei.png",
         href: "https://www.bde-efrei.fr",
       },
     ],
