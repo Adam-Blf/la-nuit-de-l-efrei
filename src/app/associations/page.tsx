@@ -35,22 +35,22 @@ const TIERS: Array<{
 }> = [
   {
     l: "Organisation",
-    s: "Maîtres de la nuit",
+    s: "Aux commandes de la nuit",
     items: [
       {
         n: "Prom EFREI",
-        d: "Promotion 2026 · porte le projet du gala depuis octobre.",
+        d: "On porte le gala depuis octobre. Six mois de boulot pour vous offrir la nuit du 28 mai.",
         logo: "/assets/prom-efrei.png",
       },
       {
         n: "Bureau des Arts EFREI",
-        d: "Mise à disposition de la scène, des artistes et de la régie.",
+        d: "Le BDA met la scène, les artistes et la régie. Quatre de ses clubs partenaires embarquent avec nous.",
         logo: "/assets/logos/bda-efrei.png",
         href: "https://www.bda-efrei.fr",
       },
       {
         n: "Bureau des Élèves EFREI",
-        d: "Co-organisation et soutien logistique pour la nuit du 28 mai.",
+        d: "Le BDE est de la partie. Logistique, bénévoles, communication : ils tiennent la moitié des ficelles de la soirée.",
         logo: "/assets/logos/bde-efrei.jpg",
         href: "https://www.bde-efrei.fr",
       },
@@ -62,49 +62,49 @@ const TIERS: Array<{
     items: [
       {
         n: "Live EFREI",
-        d: "Concert live sur le pont supérieur · setlist exclusive du club musique du Bureau des Arts.",
+        d: "Le club musique du BDA prend le pont supérieur. Instruments en direct, voix, setlist exclusive composée pour la péniche.",
         logo: "/assets/logos/live-efrei.png",
         href: "https://www.instagram.com/live.efrei/",
       },
       {
         n: "New Lix",
-        d: "Première partie de soirée · DJing et beatmaking pour ouvrir la nuit.",
+        d: "C'est lui qui ouvre la nuit. DJing et beatmaking dès l'embarquement pour chauffer les trois ponts.",
         logo: "/assets/logos/new-lix.png",
         href: "https://www.instagram.com/new.lixx/",
       },
       {
-        n: "Voltage Contrôle EFREI",
-        d: "Régie son et lumière · pilotage technique de la scène pendant le live.",
-        logo: "/assets/logos/voltage.png",
-        href: "https://www.instagram.com/voltagecontrole.efrei/",
-      },
-      {
         n: "DJ Shinny · invité",
-        d: "DJ externe en guest · set 00h00 → 02h00 · house, hits et open format.",
+        d: "Notre guest de la soirée. Set de 00h00 à 02h00 : house, hits, open format. Le moment où la péniche bascule.",
         logo: "/assets/logos/dj-shinny.jpg",
         href: "https://www.instagram.com/dj_shinny/",
+      },
+      {
+        n: "Voltage Contrôle EFREI",
+        d: "Ils prennent la fin de soirée. Tech et tek non-stop jusqu'à 04h00, pour ceux qui veulent danser jusqu'au bout.",
+        logo: "/assets/logos/voltage.png",
+        href: "https://www.instagram.com/voltagecontrole.efrei/",
       },
     ],
   },
   {
     l: "Image & animation",
-    s: "Capter la nuit",
+    s: "Garder la nuit en mémoire",
     items: [
       {
         n: "EPS · Efrei Picture Studio",
-        d: "Prise de photos pendant la soirée + animation du photobooth.",
+        d: "EPS shoote toute la nuit. Photos officielles + photobooth installé sur le pont principal pour repartir avec ses tirages.",
         logo: "/assets/logos/eps.png",
         href: "https://www.instagram.com/efreipicturestudio/",
       },
       {
         n: "Toudoom",
-        d: "Captation vidéo et tournage de l'after-movie · souvenirs de la nuit.",
+        d: "Toudoom filme la nuit pour l'after-movie. Les meilleurs moments montés et livrés quelques jours après le gala.",
         logo: "/assets/logos/toudoum.svg",
         href: "https://www.instagram.com/toudoom/",
       },
       {
         n: "Art'Efrei",
-        d: "Décoration de la péniche · ambiance et installations sur les trois ponts.",
+        d: "Art'Efrei habille la péniche. Trois ponts, trois ambiances, une signature visuelle Seine Étoilée travaillée depuis février.",
         logo: "/assets/logos/art-efrei.svg",
         href: "https://www.instagram.com/artefrei/",
       },
@@ -116,7 +116,7 @@ const TIERS: Array<{
     items: [
       {
         n: "Le Continental",
-        d: "Service au bar · cocktails, vins, softs · équipe bar partenaire pour la soirée.",
+        d: "Le Continental tient le bar. Cocktails, vins, softs servis sans attente toute la nuit pour 2€ la conso.",
         logo: "/assets/logos/le-continental.svg",
       },
     ],
@@ -137,7 +137,7 @@ export default function AssociationsPage() {
               <GoldText>à quai.</GoldText>
             </>
           }
-          lead="Prom EFREI, BDA et BDE portent la nuit. Live EFREI sur le pont supérieur, New Lix en première partie, DJ Shinny en guest de 00h à 02h, Voltage Contrôle à la régie, EPS pour la photo et le photobooth, Toudoom pour l'after-movie, Art'Efrei à la déco et Le Continental au service du bar."
+          lead="Onze associations à bord pour la nuit. Live EFREI ouvre le pont supérieur en concert, New Lix lance la soirée, DJ Shinny prend les platines de 00h à 02h en guest, Voltage Contrôle envoie la tech et la tek jusqu'à 04h. EPS shoote tout, Toudoom monte l'after-movie, Art'Efrei signe la déco, Le Continental tient le bar. Prom EFREI, BDA et BDE portent le projet."
         />
 
         <section className="relative overflow-hidden bg-navy-900 px-6 py-28 md:px-12 md:py-32 lg:px-20 lg:py-40 xl:px-[120px]">
@@ -231,8 +231,9 @@ export default function AssociationsPage() {
                 Embarquez avec nous.
               </h3>
               <p className="mx-auto mt-4 max-w-[480px] text-[14px] leading-[1.6] text-cream/65">
-                Asso EFREI, BDE partenaire, club étudiant, asso du groupe Assas
-                · si vous voulez être présents le 28 mai, écrivez-nous.
+                Vous avez une asso EFREI, un club étudiant, un BDE
+                partenaire ? Écrivez-nous, on a encore de la place sur les
+                ponts.
               </p>
               <Link
                 href={`mailto:${EVENT.email}`}
