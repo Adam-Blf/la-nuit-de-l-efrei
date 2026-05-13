@@ -96,7 +96,7 @@ const TIERS: Array<{
       {
         n: "Art'Efrei",
         d: "Décoration de la péniche · ambiance et installations sur les trois ponts.",
-        logo: "/assets/logos/art-efrei.png",
+        logo: "/assets/logos/art-efrei.svg",
         href: "https://www.instagram.com/artefrei/",
       },
       {
