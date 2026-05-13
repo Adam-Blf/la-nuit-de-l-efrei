@@ -18,7 +18,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Associations présentes",
   description:
-    "Toutes les associations à bord de La Péniche le 28 mai 2026 · Prom EFREI, BDA, BDE, Live EFREI, New Lix, DJ Shinny, Voltage Contrôle, EPS Picture Studio, Toudoom, Le Continental, Art'Efrei, La Taverne du Troll, Efrei Rugby et Efrei Ultras.",
+    "Toutes les associations à bord de La Péniche le 28 mai 2026 · Prom EFREI, BDA, BDE, Live EFREI, New Lixx, DJ Shinny, Voltage Contrôle, EPS Picture Studio, Toudoom, Le Continental, BDE ISIT, Art'Efrei, La Taverne du Troll, Efrei Rugby et Efrei Ultras.",
 };
 
 type Item = {
@@ -124,6 +124,18 @@ const TIERS: Array<{
     ],
   },
   {
+    l: "Partenaires com",
+    s: "Ils ont relayé la nuit",
+    items: [
+      {
+        n: "BDE ISIT",
+        d: "Le BDE de l'ISIT relaie la com du gala à ses étudiants. Une école partenaire au campus, des places ouvertes aux Isitiens.",
+        logo: "/assets/logos/bde-isit.jpg",
+        href: "https://www.instagram.com/bdeisit/",
+      },
+    ],
+  },
+  {
     l: "Concours · places offertes",
     s: "Ils ont fait gagner vos billets",
     items: [
@@ -174,7 +186,7 @@ export default function AssociationsPage() {
               <GoldText>à quai.</GoldText>
             </>
           }
-          lead="Quinze associations à bord pour la nuit. Live EFREI ouvre le pont supérieur en concert, New Lixx lance la soirée, DJ Shinny prend les platines en milieu de soirée (pop, shatta, reggaeton, commercial), Voltage Contrôle envoie la tech et la tek jusqu'à 04h. EPS shoote tout, Toudoom monte l'after-movie, Le Continental tient le bar. Art'Efrei, La Taverne du Troll, Efrei Rugby et Efrei Ultras ont fait gagner des places à leurs communautés. Prom EFREI, BDA et BDE portent le projet."
+          lead="Seize associations à bord pour la nuit. Live EFREI ouvre le pont supérieur en concert, New Lixx lance la soirée, DJ Shinny prend les platines en milieu de soirée (pop, shatta, reggaeton, commercial), Voltage Contrôle envoie la tech et la tek jusqu'à 04h. EPS shoote tout, Toudoom monte l'after-movie, Le Continental tient le bar, BDE ISIT relaie la com. Art'Efrei, La Taverne du Troll, Efrei Rugby et Efrei Ultras ont fait gagner des places à leurs communautés. Prom EFREI, BDA et BDE portent le projet."
         />
 
         <section className="relative overflow-hidden bg-navy-900 px-6 py-28 md:px-12 md:py-32 lg:px-20 lg:py-40 xl:px-[120px]">
