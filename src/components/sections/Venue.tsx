@@ -17,7 +17,7 @@ export function Venue() {
             <GoldText>Privatisée.</GoldText>
           </h2>
           <p className="mt-9 max-w-[480px] text-base leading-[1.7] text-cream/72 md:mt-10 md:text-[18px]">
-            Amarrée quai de la Tournelle. Vue Notre-Dame. Trois ponts, trois
+            Amarrée quai de la Tournelle. Vue Notre-Dame. Deux ponts, deux
             ambiances, une seule promo. Son et lumière inclus, à quai pour la
             nuit entière.
           </p>

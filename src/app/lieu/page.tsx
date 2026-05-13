@@ -30,7 +30,7 @@ export default function LieuPage() {
               <GoldText>Une promo, à quai.</GoldText>
             </>
           }
-          lead="Amarrée face à Notre-Dame. Privatisée pour une seule nuit. Trois ponts pour 350 invités."
+          lead="Amarrée face à Notre-Dame. Privatisée pour une seule nuit. Deux ponts pour 350 invités."
         />
         <Venue />
         <VideoTeaser />

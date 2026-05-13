@@ -37,7 +37,7 @@ const ITEMS = [
   },
   {
     q: "Qu'est-ce qui est compris dans la place ?",
-    a: "Avec votre billet · 1 cocktail (ou un verre de champagne) et 1 soft offerts à l'embarquement, 6 petits-fours servis pendant le cocktail dînatoire, les bouteilles d'eau plate à volonté gratuitement, l'accès aux 3 ponts de la péniche, le DJ et le live de Live EFREI sur le pont supérieur, le photographe officiel. Le bar (consos suivantes à 2 € · cocktails déclinés en version sans alcool sur demande) est ouvert jusqu'à 03h30.",
+    a: "Avec votre billet · 1 cocktail (ou un verre de champagne) et 1 soft offerts à l'embarquement, 6 petits-fours servis pendant le cocktail dînatoire, les bouteilles d'eau plate à volonté gratuitement, l'accès aux 2 ponts de la péniche, le DJ et le live de Live EFREI sur le pont supérieur, le photographe officiel. Le bar (consos suivantes à 2 € · cocktails déclinés en version sans alcool sur demande) est ouvert jusqu'à 03h30.",
   },
   {
     q: "Comment je rentre après 04h ?",
@@ -57,7 +57,7 @@ const ITEMS = [
   },
   {
     q: "L'accès est-il adapté aux personnes à mobilité réduite ?",
-    a: "La passerelle d'embarquement a une légère pente (~6%) et trois marches d'accès au quai bas · un agent peut prêter assistance. Les trois ponts de la péniche sont reliés par des escaliers raides · l'accès aux ponts supérieur et inférieur n'est pas adapté aux fauteuils, le pont central reste accessible. Préviens-nous avant l'événement à prom@bda-efrei.fr si tu as un besoin spécifique, on s'organise.",
+    a: "La passerelle d'embarquement a une légère pente (~6%) et trois marches d'accès au quai bas · un agent peut prêter assistance. Les deux ponts de la péniche sont reliés par un escalier raide · l'accès au pont supérieur n'est pas adapté aux fauteuils, le pont inférieur reste accessible. Préviens-nous avant l'événement à prom@bda-efrei.fr si tu as un besoin spécifique, on s'organise.",
   },
   {
     q: "Je peux changer le nom sur mon billet ?",

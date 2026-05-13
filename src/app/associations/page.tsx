@@ -52,7 +52,7 @@ const TIERS: Array<{
       },
       {
         n: "Bureau des Élèves EFREI",
-        d: "Le BDE est de la partie. Logistique, bénévoles, communication : ils tiennent la moitié des ficelles de la soirée.",
+        d: "Le BDE est de la partie. Communication relayée à toute la promo et une équipe de bénévoles staffés sur la soirée.",
         logo: "/assets/logos/bde-efrei.jpg",
         href: "https://www.bde-efrei.fr",
       },
@@ -65,7 +65,7 @@ const TIERS: Array<{
       {
         n: "Live EFREI",
         d: "L'asso musique du campus prend le pont supérieur. Instruments en direct, voix, setlist exclusive composée pour la péniche.",
-        logo: "/assets/logos/live-efrei.jpg",
+        logo: "/assets/logos/live-efrei.png",
         href: "https://www.instagram.com/live.efrei/",
       },
       {

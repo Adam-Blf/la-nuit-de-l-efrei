@@ -44,7 +44,7 @@ export function VenueGallery() {
       <div className="mx-auto max-w-[1280px]">
         <div className="mb-12 flex flex-col gap-4 sm:flex-row sm:items-baseline sm:justify-between md:mb-16">
           <h2 className="fraunces-display text-[clamp(40px,6vw,64px)] tracking-[-0.03em] text-cream">
-            Trois ponts.
+            Deux ponts.
             <br />
             <GoldText>Une nuit.</GoldText>
           </h2>
