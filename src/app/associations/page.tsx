@@ -26,6 +26,8 @@ type Item = {
   d: string;
   logo?: string;
   href?: string;
+  /** Use this when the logo has heavy whitespace and looks too small in the standard frame */
+  bigLogo?: boolean;
 };
 
 const TIERS: Array<{
@@ -136,6 +138,7 @@ const TIERS: Array<{
         d: "Deux places offertes au meilleur joueur des Ovalies et au meilleur supporter. La péniche récompense ceux qui ont tout donné sur le terrain.",
         logo: "/assets/logos/efrei-rugby.png",
         href: "https://www.instagram.com/rugbiere.efrei/",
+        bigLogo: true,
       },
       {
         n: "Efrei Ultras",
@@ -205,13 +208,21 @@ export default function AssociationsPage() {
                       const inner = (
                         <>
                           {item.logo && (
-                            <div className="mb-5 flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-sm border border-brass-400/30 bg-cream/5 p-2">
+                            <div
+                              className={`mb-5 flex shrink-0 items-center justify-center overflow-hidden rounded-sm border border-brass-400/30 bg-cream/5 ${
+                                item.bigLogo
+                                  ? "h-28 w-28 p-0"
+                                  : "h-20 w-20 p-2"
+                              }`}
+                            >
                               <Image
                                 src={item.logo}
                                 alt={`${item.n} · logo`}
-                                width={72}
-                                height={72}
-                                className="h-auto w-auto max-h-full max-w-full object-contain"
+                                width={item.bigLogo ? 112 : 72}
+                                height={item.bigLogo ? 112 : 72}
+                                className={`h-auto w-auto max-h-full max-w-full object-contain ${
+                                  item.bigLogo ? "scale-110" : ""
+                                }`}
                               />
                             </div>
                           )}
