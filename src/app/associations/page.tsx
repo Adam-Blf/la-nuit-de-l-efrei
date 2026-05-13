@@ -18,7 +18,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Associations présentes",
   description:
-    "Toutes les associations à bord de La Péniche le 28 mai 2026 · Prom EFREI, BDA, BDE, Live EFREI, New Lix, DJ Shinny, Voltage Contrôle, EPS Picture Studio, Toudoom, Le Continental, Art'Efrei, La Taverne du Troll, Efrei Ultras et Rugbière EFREI.",
+    "Toutes les associations à bord de La Péniche le 28 mai 2026 · Prom EFREI, BDA, BDE, Live EFREI, New Lix, DJ Shinny, Voltage Contrôle, EPS Picture Studio, Toudoom, Le Continental, Art'Efrei, La Taverne du Troll, Efrei Rugby et Efrei Ultras.",
 };
 
 type Item = {
@@ -97,6 +97,7 @@ const TIERS: Array<{
         d: "EPS shoote toute la nuit. Photos officielles + photobooth installé sur le pont principal pour repartir avec ses tirages.",
         logo: "/assets/logos/eps.png",
         href: "https://www.instagram.com/efreipicturestudio/",
+        bigLogo: true,
       },
       {
         n: "Toudoom",
@@ -132,9 +133,10 @@ const TIERS: Array<{
         d: "Atelier JDR ouvert à tous le jour du gala, de 10h jusqu'en fin d'après-midi. Allez-venez libre, même si vous avez cours entre deux.",
         logo: "/assets/logos/taverne-du-troll.png",
         href: "https://www.instagram.com/la_taverne_du_troll/",
+        bigLogo: true,
       },
       {
-        n: "Rugbière EFREI",
+        n: "Efrei Rugby",
         d: "Deux places offertes au meilleur joueur des Ovalies et au meilleur supporter. La péniche récompense ceux qui ont tout donné sur le terrain.",
         logo: "/assets/logos/efrei-rugby.png",
         href: "https://www.instagram.com/rugbiere.efrei/",
@@ -142,9 +144,10 @@ const TIERS: Array<{
       },
       {
         n: "Efrei Ultras",
-        d: "Les supporters du campus. Concours de places relayé à leur communauté avant la soirée.",
+        d: "Place remise au meilleur chant de supporter. La voix qui a porté la tribune décroche son billet pour la péniche.",
         logo: "/assets/logos/efrei-ultras.png",
         href: "https://www.instagram.com/efrei.ultras/",
+        bigLogo: true,
       },
     ],
   },
@@ -164,7 +167,7 @@ export default function AssociationsPage() {
               <GoldText>à quai.</GoldText>
             </>
           }
-          lead="Quinze associations à bord pour la nuit. Live EFREI ouvre le pont supérieur en concert, New Lix lance la soirée, DJ Shinny prend les platines de 00h à 02h en guest, Voltage Contrôle envoie la tech et la tek jusqu'à 04h. EPS shoote tout, Toudoom monte l'after-movie, Le Continental tient le bar. Art'Efrei, La Taverne du Troll, Efrei Ultras et Rugbière EFREI ont fait gagner des places à leurs communautés. Prom EFREI, BDA et BDE portent le projet."
+          lead="Quinze associations à bord pour la nuit. Live EFREI ouvre le pont supérieur en concert, New Lix lance la soirée, DJ Shinny prend les platines de 00h à 02h en guest, Voltage Contrôle envoie la tech et la tek jusqu'à 04h. EPS shoote tout, Toudoom monte l'after-movie, Le Continental tient le bar. Art'Efrei, La Taverne du Troll, Efrei Rugby et Efrei Ultras ont fait gagner des places à leurs communautés. Prom EFREI, BDA et BDE portent le projet."
         />
 
         <section className="relative overflow-hidden bg-navy-900 px-6 py-28 md:px-12 md:py-32 lg:px-20 lg:py-40 xl:px-[120px]">
