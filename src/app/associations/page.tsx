@@ -121,27 +121,27 @@ const TIERS: Array<{
     items: [
       {
         n: "Art'Efrei",
-        d: "Plusieurs places gagnées via leurs concours sur Insta. Suivez-les, ils relancent un tirage avant la soirée.",
+        d: "Concours de dessin sur le thème du gala. Places tirées au sort parmi les participants. On garde les œuvres pour la nuit.",
         logo: "/assets/logos/art-efrei.svg",
         href: "https://www.instagram.com/artefrei/",
       },
       {
         n: "La Taverne du Troll",
-        d: "Le club JDR du campus. Concours de places sur leur compte, dés, cartes, soirées entre deux quêtes.",
+        d: "Atelier JDR ouvert à tous le jour du gala, de 10h jusqu'en fin d'après-midi. Allez-venez libre, même si vous avez cours entre deux.",
         logo: "/assets/logos/taverne-du-troll.png",
         href: "https://www.instagram.com/la_taverne_du_troll/",
       },
       {
-        n: "Efrei Ultras",
-        d: "Les supporters du campus. Ils mettent leur communauté à contribution pour faire gagner des places à la péniche.",
-        logo: "/assets/logos/efrei-ultras.png",
-        href: "https://www.instagram.com/efrei.ultras/",
-      },
-      {
         n: "Rugbière EFREI",
-        d: "Le club rugby version festive. Concours sur leur Insta, plusieurs billets offerts à leur audience.",
+        d: "Deux places offertes au meilleur joueur des Ovalies et au meilleur supporter. La péniche récompense ceux qui ont tout donné sur le terrain.",
         logo: "/assets/logos/efrei-rugby.png",
         href: "https://www.instagram.com/rugbiere.efrei/",
+      },
+      {
+        n: "Efrei Ultras",
+        d: "Les supporters du campus. Concours de places relayé à leur communauté avant la soirée.",
+        logo: "/assets/logos/efrei-ultras.png",
+        href: "https://www.instagram.com/efrei.ultras/",
       },
     ],
   },
