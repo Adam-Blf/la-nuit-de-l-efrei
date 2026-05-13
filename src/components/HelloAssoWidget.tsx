@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { Corners, Eyebrow } from "@/components/primitives/Decor";
 import { EVENT } from "@/lib/tokens";
@@ -9,6 +9,7 @@ const BASE = "https://www.helloasso.com/associations/bureau-des-arts-efrei/evene
 
 export function HelloAssoWidget() {
   const ref = useRef<HTMLIFrameElement | null>(null);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     const onMsg = (e: MessageEvent) => {
@@ -20,10 +21,11 @@ export function HelloAssoWidget() {
       if (data.height > cur) {
         f.style.height = `${data.height}px`;
       }
+      if (!loaded) setLoaded(true);
     };
     window.addEventListener("message", onMsg);
     return () => window.removeEventListener("message", onMsg);
-  }, []);
+  }, [loaded]);
 
   return (
     <section
@@ -42,8 +44,21 @@ export function HelloAssoWidget() {
           </p>
         </div>
 
-        <div className="relative border border-brass-400/30 bg-cream p-3 sm:p-5 md:p-6">
+        <div className="relative border border-brass-400/30 bg-navy-900 p-3 sm:p-5 md:p-6">
           <Corners size={32} opacity={0.55} />
+          {!loaded && (
+            <div
+              aria-hidden="true"
+              className="absolute inset-3 z-10 flex items-center justify-center bg-navy-900 sm:inset-5 md:inset-6"
+            >
+              <div className="text-center">
+                <div className="mx-auto mb-4 h-10 w-10 animate-spin rounded-full border-2 border-brass-400/30 border-t-brass-400" />
+                <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-cream/55">
+                  Chargement de la billetterie HelloAsso…
+                </div>
+              </div>
+            </div>
+          )}
           <iframe
             ref={ref}
             id="haWidget"
@@ -51,7 +66,13 @@ export function HelloAssoWidget() {
             src={`${BASE}/widget`}
             allowTransparency
             scrolling="auto"
-            style={{ width: "100%", height: 750, border: "none", display: "block" }}
+            style={{
+              width: "100%",
+              height: 750,
+              border: "none",
+              display: "block",
+              backgroundColor: loaded ? "#FFFFFF" : "transparent",
+            }}
           />
         </div>
 

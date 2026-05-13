@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+// Rebuild every hour so the date-aware descriptions (eventDate + dPast) auto-flip
+// without needing a manual git push after each gala event passes.
+export const revalidate = 3600;
+
 import { SiteNav } from "@/components/SiteNav";
 import { Footer } from "@/components/Footer";
 import { PageHeader } from "@/components/PageHeader";

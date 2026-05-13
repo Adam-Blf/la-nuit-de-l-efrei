@@ -13,7 +13,7 @@ export function HomeHero() {
   return (
     <section
       id="accueil"
-      className="relative min-h-[1100px] overflow-hidden bg-navy-900"
+      className="relative min-h-[100svh] overflow-hidden bg-navy-900 md:min-h-[900px] lg:min-h-[1100px]"
     >
       <Stars count={50} seed={528} width={1440} height={1100} density={0.7} />
       <LightWash x="20%" y="80%" size={1400} color="rgba(212, 164, 55, 0.18)" />
@@ -40,7 +40,7 @@ export function HomeHero() {
         <span>2016 · → · 2026</span>
       </div>
 
-      <div className="relative mx-auto flex min-h-[1100px] max-w-[1600px] flex-col justify-end px-6 pb-24 md:px-12 lg:px-20 xl:px-[120px]">
+      <div className="relative mx-auto flex min-h-[100svh] max-w-[1600px] flex-col justify-end px-6 pb-24 md:min-h-[900px] md:px-12 lg:min-h-[1100px] lg:px-20 xl:px-[120px]">
         <p className="mb-10 max-w-[720px] text-lg leading-[1.45] text-cream/78 md:text-[22px]">
           Le retour,{" "}
           <em className="fraunces-display glyph-safe font-medium not-italic text-brass-200 [font-style:italic]">

@@ -73,7 +73,7 @@ const ITEMS = [
   },
   {
     q: "Comment devenir partenaire ou sponsor ?",
-    a: "Voir la page /associations · 4 niveaux d'engagement (Mécène · Partenaire · Soutien · Bienfaiteur) avec contreparties dédiées. Contact partenariats · prom@bda-efrei.fr avec « PARTENARIAT » dans l'objet, on revient sous 48h.",
+    a: "Voir la page /associations pour la liste des assos déjà à bord. Si tu portes une asso EFREI, un club étudiant ou un BDE partenaire et que tu veux nous rejoindre, écris-nous à prom@bda-efrei.fr avec « PARTENARIAT » dans l'objet · on revient sous 48h pour discuter des contreparties.",
   },
 ];
 
