@@ -30,6 +30,10 @@ type Item = {
   bigLogo?: boolean;
   /** Extra-large scale (1.75x) for logos with even more whitespace */
   xlLogo?: boolean;
+  /** Description to use once `eventDate` is past (rendered server-side) */
+  dPast?: string;
+  /** ISO timestamp · when this date is past, render `dPast` instead of `d` */
+  eventDate?: string;
 };
 
 const TIERS: Array<{
@@ -132,6 +136,9 @@ const TIERS: Array<{
       {
         n: "La Taverne du Troll",
         d: "Atelier peinture Warhammer le jeudi 21 mai au Student Hub, de 10h à 18h. Ouvert à tous, allez-venez libre. Places gagnées sur place avant le gala.",
+        dPast:
+          "Atelier peinture Warhammer du 21 mai terminé. Merci aux participants · rendez-vous le 28 mai sur la péniche pour ceux qui ont gagné leur place.",
+        eventDate: "2026-05-21T18:00:00+02:00",
         logo: "/assets/logos/taverne-du-troll.png",
         href: "https://www.instagram.com/la_taverne_du_troll/",
       },
@@ -208,6 +215,12 @@ export default function AssociationsPage() {
                   </div>
                   <ul className="grid gap-x-10 gap-y-8 sm:grid-cols-2">
                     {t.items.map((item) => {
+                      const isEventPast =
+                        item.eventDate &&
+                        item.dPast &&
+                        new Date() > new Date(item.eventDate);
+                      const description =
+                        isEventPast && item.dPast ? item.dPast : item.d;
                       const inner = (
                         <>
                           {item.logo && (
@@ -231,7 +244,7 @@ export default function AssociationsPage() {
                             {item.n}
                           </div>
                           <div className="mt-2 text-[13px] leading-[1.6] text-cream/60">
-                            {item.d}
+                            {description}
                           </div>
                         </>
                       );
