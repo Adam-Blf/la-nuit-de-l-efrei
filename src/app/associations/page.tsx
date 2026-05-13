@@ -64,13 +64,13 @@ const TIERS: Array<{
     items: [
       {
         n: "Live EFREI",
-        d: "Le club musique du BDA prend le pont supérieur. Instruments en direct, voix, setlist exclusive composée pour la péniche.",
-        logo: "/assets/logos/live-efrei.png",
+        d: "L'asso musique du campus prend le pont supérieur. Instruments en direct, voix, setlist exclusive composée pour la péniche.",
+        logo: "/assets/logos/live-efrei.jpg",
         href: "https://www.instagram.com/live.efrei/",
       },
       {
-        n: "New Lix",
-        d: "C'est lui qui ouvre la nuit. DJing et beatmaking dès l'embarquement pour chauffer les trois ponts.",
+        n: "New Lixx",
+        d: "L'asso DJ du campus ouvre la nuit. Plusieurs platines à bord, mix et beatmaking dès l'embarquement pour chauffer les trois ponts.",
         logo: "/assets/logos/new-lix.png",
         href: "https://www.instagram.com/new.lixx/",
       },
@@ -82,7 +82,7 @@ const TIERS: Array<{
       },
       {
         n: "Voltage Contrôle EFREI",
-        d: "Ils prennent la fin de soirée. Tech et tek non-stop jusqu'à 04h00, pour ceux qui veulent danser jusqu'au bout.",
+        d: "Ils prennent la fin de soirée. Tech et tek non-stop jusqu'à 04h00, pour ceux qui veulent taper du pied jusqu'au bout de la nuit.",
         logo: "/assets/logos/voltage.png",
         href: "https://www.instagram.com/voltagecontrole.efrei/",
       },
