@@ -205,13 +205,13 @@ export default function AssociationsPage() {
                       const inner = (
                         <>
                           {item.logo && (
-                            <div className="mb-5 flex h-24 w-24 shrink-0 items-center justify-center overflow-hidden rounded-sm border border-brass-400/30 bg-cream/5 p-2">
+                            <div className="mb-5 flex h-24 w-24 shrink-0 items-center justify-center overflow-hidden rounded-sm border border-brass-400/30 bg-cream/5">
                               <Image
                                 src={item.logo}
                                 alt={`${item.n} · logo`}
                                 width={96}
                                 height={96}
-                                className="h-auto w-auto max-h-full max-w-full object-contain"
+                                className="h-full w-full object-contain"
                               />
                             </div>
                           )}
