@@ -299,12 +299,12 @@ export default function AssociationsPage() {
                 la place sur les ponts.
               </p>
               <a
-                href="https://www.instagram.com/promefrei/"
+                href="https://ig.me/m/promefrei"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 inline-block bg-brass-400 px-9 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.32em] text-navy-900 transition-transform hover:-translate-y-px"
               >
-                DM @promefrei ↗
+                Envoyer un DM ↗
               </a>
             </div>
           </div>
