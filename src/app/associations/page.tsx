@@ -18,7 +18,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Associations présentes",
   description:
-    "Toutes les associations EFREI à bord de La Péniche le 28 mai 2026 · BDA, BDE, Prom EFREI, Live EFREI, New Lix, Voltage Contrôle, Toudoom, EPS, Art'Efrei, Picture Studio et DJ Shinny en guest.",
+    "Toutes les associations EFREI à bord de La Péniche le 28 mai 2026 · BDA, BDE, Prom EFREI, Live EFREI, New Lix, Voltage Contrôle, Toudoom, Art'Efrei, EPS Efrei Picture Studio et DJ Shinny en guest.",
 };
 
 type Item = {
@@ -84,8 +84,8 @@ const TIERS: Array<{
     ],
   },
   {
-    l: "Animation & sport",
-    s: "Énergie à bord",
+    l: "Animation & visuel",
+    s: "Énergie et image",
     items: [
       {
         n: "Toudoom",
@@ -94,26 +94,15 @@ const TIERS: Array<{
         href: "https://www.instagram.com/toudoom/",
       },
       {
-        n: "EPS · Efrei Photo Studio",
-        d: "Équipe sport et performance · animations et démonstrations à bord.",
-        logo: "/assets/logos/eps.png",
-        href: "https://www.bda-efrei.fr",
-      },
-    ],
-  },
-  {
-    l: "Visuel & déco",
-    s: "Le décor de la nuit",
-    items: [
-      {
         n: "Art'Efrei",
         d: "Décoration de la péniche · ambiance et installations sur les trois ponts.",
         logo: "/assets/logos/art-efrei.png",
         href: "https://www.instagram.com/artefrei/",
       },
       {
-        n: "Efrei Picture Studio",
+        n: "EPS · Efrei Picture Studio",
         d: "Photographie et reportage de soirée · captation officielle du gala.",
+        logo: "/assets/logos/eps.png",
         href: "https://www.instagram.com/efreipicturestudio/",
       },
     ],
@@ -134,7 +123,7 @@ export default function AssociationsPage() {
               <GoldText>à quai.</GoldText>
             </>
           }
-          lead="Prom EFREI, BDA et BDE portent la nuit. Live EFREI sur le pont supérieur, New Lix au mix, DJ Shinny en guest de 00h à 02h, Voltage Contrôle à la régie, Art'Efrei et Picture Studio au visuel, Toudoom et EPS à l'animation."
+          lead="Prom EFREI, BDA et BDE portent la nuit. Live EFREI sur le pont supérieur, New Lix au mix, DJ Shinny en guest de 00h à 02h, Voltage Contrôle à la régie, Toudoom à l'animation, Art'Efrei à la déco et EPS (Efrei Picture Studio) à la captation officielle."
         />
 
         <section className="relative overflow-hidden bg-navy-900 px-6 py-28 md:px-12 md:py-32 lg:px-20 lg:py-40 xl:px-[120px]">
