@@ -33,13 +33,13 @@ type Stop = {
 const STOPS: Stop[] = [
   {
     l: "Métro",
-    v: "Maubert-Mutualité · 8 min",
+    v: "Maubert-Mutualité | 8 min",
     modeIcon: <ModeIcon mode="metro" />,
     badges: <MetroBadge line="10" />,
   },
   {
     l: "RER",
-    v: "Saint-Michel · 12 min",
+    v: "Saint-Michel | 12 min",
     modeIcon: <ModeIcon mode="rer" />,
     badges: (
       <span className="flex gap-1.5">
@@ -50,7 +50,7 @@ const STOPS: Stop[] = [
   },
   {
     l: "Bus",
-    v: "Pont de la Tournelle · 3 min",
+    v: "Pont de la Tournelle | 3 min",
     modeIcon: <ModeIcon mode="bus" />,
     badges: (
       <span className="flex flex-wrap gap-1">
@@ -63,7 +63,7 @@ const STOPS: Stop[] = [
   },
   {
     l: "Vélib",
-    v: "Station 50403 · 50 m",
+    v: "Station 50403 | 50 m",
     modeIcon: (
       <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-[6px] bg-[#A6CE39] text-white">
         <Bike size={16} strokeWidth={2.4} aria-hidden="true" />
@@ -77,7 +77,7 @@ const STOPS: Stop[] = [
   },
   {
     l: "Noctilien",
-    v: "Saint-Michel · 00h30 → 05h30",
+    v: "Saint-Michel | 00h30 → 05h30",
     modeIcon: (
       <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#252958] text-white">
         <Moon size={15} strokeWidth={2} aria-hidden="true" />
@@ -93,8 +93,8 @@ const STOPS: Stop[] = [
     ),
   },
   {
-    l: "Taxi · VTC",
-    v: "Sur le quai · toute la nuit",
+    l: "Taxi | VTC",
+    v: "Sur le quai | toute la nuit",
     modeIcon: (
       <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-[6px] bg-[#0F2E55] text-[#F4D03F]">
         <CarTaxiFront size={15} strokeWidth={2} aria-hidden="true" />
@@ -102,7 +102,7 @@ const STOPS: Stop[] = [
     ),
     badges: (
       <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-cream/55">
-        Uber · G7
+        Uber | G7
       </span>
     ),
   },
@@ -115,9 +115,9 @@ export function VenueMap() {
       <div className="relative mx-auto max-w-[1280px]">
         <div className="mb-10 flex flex-wrap items-baseline justify-between gap-4">
           <div>
-            <Eyebrow>· Situation · 2 quai de la Tournelle</Eyebrow>
+            <Eyebrow>Situation | 2 quai de la Tournelle</Eyebrow>
             <h2 className="fraunces-display mt-3 text-[clamp(28px,3.6vw,40px)] leading-[1.1] tracking-[-0.02em] text-cream">
-              Paris V · face à Notre-Dame.
+              Paris V | face à Notre-Dame.
             </h2>
           </div>
           <div className="flex flex-wrap gap-3 font-mono text-[10px] uppercase tracking-[0.28em] text-brass-200">
@@ -150,7 +150,7 @@ export function VenueMap() {
 
         <div className="relative h-[420px] overflow-hidden border border-brass-400/30 bg-navy-900 md:h-[520px]">
           <iframe
-            title="Plan d'accès · La Péniche, 2 quai de la Tournelle, 75005 Paris"
+            title="Plan d'accès | La Péniche, 2 quai de la Tournelle, 75005 Paris"
             src={OSM_EMBED}
             loading="lazy"
             className="absolute inset-0 h-full w-full"
@@ -164,7 +164,7 @@ export function VenueMap() {
           <Corners size={48} opacity={0.7} />
           <div className="pointer-events-none absolute bottom-4 left-4 max-w-[260px] border border-brass-400/40 bg-navy-900/85 px-4 py-3 backdrop-blur-md">
             <div className="font-mono text-[9px] uppercase tracking-[0.32em] text-brass-200">
-              · Embarquement
+              Embarquement
             </div>
             <div className="fraunces-display mt-1 text-lg leading-tight text-cream">
               La Péniche
@@ -173,7 +173,7 @@ export function VenueMap() {
               2 quai de la Tournelle, 75005 Paris
             </div>
             <div className="mt-1 font-mono text-[9px] tracking-[0.28em] text-brass-200">
-              48.8505°N · 2.3528°E
+              48.8505°N | 2.3528°E
             </div>
           </div>
         </div>
@@ -195,7 +195,7 @@ export function VenueMap() {
           ))}
         </div>
         <p className="mt-8 max-w-[640px] text-[13px] leading-[1.7] text-cream/55">
-          Le métro ferme vers 01h en semaine · le Noctilien prend le relais
+          Le métro ferme vers 01h en semaine | le Noctilien prend le relais
           depuis Saint-Michel jusqu&apos;à 05h30. Taxis et VTC accessibles
           directement en pied de passerelle à la sortie.
         </p>

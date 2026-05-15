@@ -33,11 +33,11 @@ export function HomeHero() {
       </div>
 
       <div className="absolute left-6 right-6 top-7 flex flex-wrap items-center justify-between gap-3 font-mono text-[10px] uppercase tracking-[0.32em] text-cream/55 md:left-12 md:right-12 lg:left-[120px] lg:right-[120px]">
-        <span>Fait par Prom EFREI · {EVENT.edition}</span>
+        <span>Fait par Prom EFREI | {EVENT.edition}</span>
         <span className="hidden text-brass-200 md:inline">
-          ·· La Nuit de l&apos;EFREI ··
+          La Nuit de l&apos;EFREI
         </span>
-        <span>2016 · → · 2026</span>
+        <span>2016 - 2026</span>
       </div>
 
       <div className="relative mx-auto flex min-h-[100svh] max-w-[1600px] flex-col justify-end px-6 pb-24 md:min-h-[900px] md:px-12 lg:min-h-[1100px] lg:px-20 xl:px-[120px]">
@@ -64,7 +64,7 @@ export function HomeHero() {
             {
               l: "Lieu",
               v: EVENT.venue,
-              s: `${EVENT.city} · Tournelle`,
+              s: `${EVENT.city} | Tournelle`,
             },
           ].map((d) => (
             <div key={d.l}>

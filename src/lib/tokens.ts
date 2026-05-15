@@ -19,7 +19,7 @@ export const EVENT = {
   email: "prom@bda-efrei.fr",
   insta: "@promefrei",
   hashtag: "#LaNuitDeLEFREI",
-  date: "28 · 05 · 2026",
+  date: "28 / 05 / 2026",
   dateLong: "jeudi 28 mai 2026",
   startISO: "2026-05-28T22:00:00+02:00",
   doors: "22:00",

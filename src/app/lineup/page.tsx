@@ -16,7 +16,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Line-up",
   description:
-    "La programmation musicale de La Nuit de l'EFREI · 28 mai 2026 · Les Lovers, Le Live (The Usuals, Groove Nation, Nameless Faceless, Pink Love), DJ Shinny, Voltage Contrôle · de 22h à 04h sur La Péniche.",
+    "La programmation musicale de La Nuit de l'EFREI | 28 mai 2026 | Les Lovers, Le Live (The Usuals, Groove Nation, Nameless Faceless, Pink Love), DJ Shinny, Voltage Contrôle | de 22h à 04h sur La Péniche.",
 };
 
 /* ─── DJ / Artist acts ──────────────────────────────────────── */
@@ -33,17 +33,17 @@ type Act = {
 const DJ_ACTS: Act[] = [
   {
     n: "Les Lovers",
-    d: "Ils balancent le premier son dès que vous posez le pied sur le pont. L'idéal pour commencer la soirée tranquille avec un verre en découvrant les trois ponts.",
+    d: "Ils balancent de la musique commerciale dès que vous posez le pied sur le pont. L'idéal pour commencer la soirée tranquille avec un verre en découvrant les trois ponts.",
     logo: "/assets/logos/les-lovers.png",
     time: "22h → 23h",
-    tag: "Ouverture · DJ set",
+    tag: "Ouverture | DJ set",
   },
   {
     n: "Le Live",
     d: "Oubliez les platines deux minutes, là c'est du vrai live sur le pont supérieur. Des instruments, de l'énergie et des morceaux réarrangés exprès pour le gala.",
     logo: "/assets/logos/live-efrei.png",
     time: "23h → 00h",
-    tag: "Concert · live",
+    tag: "Concert | live",
     href: "https://www.instagram.com/live.efrei/",
   },
   {
@@ -51,7 +51,7 @@ const DJ_ACTS: Act[] = [
     d: "C'est le moment où la péniche se transforme en karaoké géant. Pop, shatta, reggaeton : le genre de set où vous connaissez toutes les paroles.",
     logo: "/assets/logos/dj-shinny.jpg",
     time: "00h → 02h",
-    tag: "DJ set · invité",
+    tag: "DJ set | invité",
     href: "https://www.instagram.com/dj_shinny/",
   },
   {
@@ -59,7 +59,7 @@ const DJ_ACTS: Act[] = [
     d: "Le gros son pour finir la nuit. Techno et tek pure jusqu'à 4h. Avis aux plus motivés qui ne comptent pas dormir tout de suite.",
     logo: "/assets/logos/voltage.png",
     time: "02h → 04h",
-    tag: "Closing · tech & tek",
+    tag: "Closing | tech & tek",
     href: "https://www.instagram.com/voltagecontrole.efrei/",
   },
 ];
@@ -77,51 +77,51 @@ const LIVE_BANDS: Band[] = [
     n: "The Usuals",
     duration: "≈ 45 min",
     songs: [
-      "Long Train Runnin' — Doobie Brothers",
-      "Mr Blue Sky — ELO",
-      "Besoin d'amour — Starmania",
-      "The Final Countdown — Europe",
-      "Hold the Line — Toto",
-      "Don't Stop Me Now — Queen",
-      "It's Raining Men — The Weather Girls",
-      "Careless Whisper — George Michael",
-      "Sara Perché Ti Amo — Ricchi e Poveri",
-      "We Are the Champions — Queen",
-      "Maniac — Michael Sembello",
-      "I'm So Excited — The Pointer Sisters",
-      "Wake Me Up Before You Go-Go — Wham!",
+      "Long Train Runnin' - Doobie Brothers",
+      "Mr Blue Sky - ELO",
+      "Besoin d'amour - Starmania",
+      "The Final Countdown - Europe",
+      "Hold the Line - Toto",
+      "Don't Stop Me Now - Queen",
+      "It's Raining Men - The Weather Girls",
+      "Careless Whisper - George Michael",
+      "Sara Perché Ti Amo - Ricchi e Poveri",
+      "We Are the Champions - Queen",
+      "Maniac - Michael Sembello",
+      "I'm So Excited - The Pointer Sisters",
+      "Wake Me Up Before You Go-Go - Wham!",
     ],
   },
   {
     n: "Groove Nation",
     duration: "≈ 40 min",
     songs: [
-      "Superstition — Stevie Wonder",
+      "Superstition - Stevie Wonder",
       "Tallulah",
-      "Get Lucky — Daft Punk",
-      "Locked Out of Heaven — Bruno Mars",
-      "Happy — Pharrell Williams",
-      "About Damn Time — Lizzo",
-      "Something's Got a Hold on Me — Etta James",
+      "Get Lucky - Daft Punk",
+      "Locked Out of Heaven - Bruno Mars",
+      "Happy - Pharrell Williams",
+      "About Damn Time - Lizzo",
+      "Something's Got a Hold on Me - Etta James",
       "YK I'm Not Good",
       "Bella",
-      "I Wanna Be Your Slave — Måneskin",
-      "Moves Like Jagger — Maroon 5",
+      "I Wanna Be Your Slave - Måneskin",
+      "Moves Like Jagger - Maroon 5",
     ],
   },
   {
     n: "Nameless Faceless",
     duration: "≈ 40 min",
     songs: [
-      "Everlong — Foo Fighters",
-      "My Hero — Foo Fighters",
-      "Heaven Beside You — Alice in Chains",
-      "Would? — Alice in Chains",
-      "Slither — Velvet Revolver",
-      "In Bloom — Nirvana",
-      "About a Girl — Nirvana",
-      "Lithium — Nirvana",
-      "Tomorrow — Silverchair",
+      "Everlong - Foo Fighters",
+      "My Hero - Foo Fighters",
+      "Heaven Beside You - Alice in Chains",
+      "Would? - Alice in Chains",
+      "Slither - Velvet Revolver",
+      "In Bloom - Nirvana",
+      "About a Girl - Nirvana",
+      "Lithium - Nirvana",
+      "Tomorrow - Silverchair",
     ],
   },
   {
@@ -137,7 +137,7 @@ export default function LineupPage() {
       <SiteNav />
       <main>
         <PageHeader
-          eyebrow="LINE-UP · 28 MAI 2026"
+          eyebrow="LINE-UP | 28 MAI 2026"
           title={
             <>
               La programmation
@@ -157,7 +157,7 @@ export default function LineupPage() {
           <div className="relative mx-auto max-w-[1280px]">
             <div className="mb-16 flex items-center gap-6 md:mb-20">
               <GoldRule width={64} />
-              <Eyebrow>DJ sets · aux platines</Eyebrow>
+              <Eyebrow>DJ sets | aux platines</Eyebrow>
             </div>
 
             <div className="space-y-0">
@@ -234,7 +234,7 @@ export default function LineupPage() {
           <div className="relative mx-auto max-w-[1280px]">
             <div className="mb-6 flex items-center gap-6">
               <GoldRule width={64} />
-              <Eyebrow>Le Live · concert</Eyebrow>
+              <Eyebrow>Le Live | concert</Eyebrow>
             </div>
 
             <div className="mb-16 flex items-center gap-6 md:mb-20">
@@ -247,7 +247,7 @@ export default function LineupPage() {
                 <div className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-sm border border-brass-400/25 bg-navy-800/60">
                   <Image
                     src="/assets/logos/live-efrei.png"
-                    alt="Le Live · logo"
+                    alt="Le Live | logo"
                     width={80}
                     height={80}
                     className="h-full w-full object-contain p-2"
@@ -258,7 +258,7 @@ export default function LineupPage() {
                     Le Live
                   </h2>
                   <p className="mt-1 text-[13px] text-cream/55">
-                    Quatre groupes · pont supérieur · instruments en direct
+                    Quatre groupes | pont supérieur | instruments en direct
                   </p>
                 </div>
               </a>
@@ -315,7 +315,7 @@ export default function LineupPage() {
           <div className="relative mx-auto max-w-[1280px]">
             <div className="relative border border-brass-400 px-8 py-16 text-center md:px-14 md:py-20">
               <Corners size={32} opacity={0.6} />
-              <Eyebrow>· 350 places · jamais une de plus</Eyebrow>
+              <Eyebrow>| 350 places | jamais une de plus</Eyebrow>
               <h3 className="fraunces-display mt-5 pb-[0.08em] text-[clamp(32px,4.5vw,48px)] leading-[1.05] tracking-[-0.02em] text-cream">
                 Réserver sa place.
               </h3>

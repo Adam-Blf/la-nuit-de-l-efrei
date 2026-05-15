@@ -7,7 +7,7 @@ export function About() {
       <div className="mx-auto max-w-[1280px]">
         <div className="grid gap-16 lg:grid-cols-[1.4fr_1fr] lg:gap-24">
           <div>
-            <Eyebrow>· I · L&apos;événement</Eyebrow>
+            <Eyebrow>I - L&apos;événement</Eyebrow>
             <h2 className="fraunces-display mt-8 pb-[0.1em] text-[clamp(48px,9vw,144px)] font-medium leading-[1.02] tracking-[-0.035em] text-cream">
               Une nuit où
               <br />
@@ -25,11 +25,11 @@ export function About() {
             <Photo
               src="/assets/peniche/pont-superieur-nuit.webp"
               alt="Pont supérieur de La Péniche, nuit, vue Notre-Dame"
-              caption="Pont supérieur · nuit"
+              caption="Pont supérieur | nuit"
               height={520}
             />
             <div className="absolute -bottom-7 -right-3 bg-plum-500 px-7 py-5 fraunces-display text-xl font-medium text-cream md:-right-7 md:text-[22px]">
-              48.852°N · 2.353°E
+              48.852°N | 2.353°E
             </div>
           </div>
         </div>

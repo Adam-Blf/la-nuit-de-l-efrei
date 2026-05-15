@@ -56,7 +56,7 @@ export function Footer() {
                 {EVENT.name}
               </div>
               <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.32em] text-brass-200">
-                PROM EFREI · {EVENT.edition}
+                PROM EFREI | {EVENT.edition}
               </div>
             </div>
           </div>
@@ -65,13 +65,13 @@ export function Footer() {
           </p>
           <div className="mt-8 flex items-center gap-4 border-t border-brass-400/15 pt-6">
             <div className="font-mono text-[9px] uppercase tracking-[0.32em] text-brass-200">
-              · En partenariat
+              En partenariat
             </div>
             <a
               href="https://www.efrei.fr"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="EFREI · efrei.fr"
+              aria-label="EFREI | efrei.fr"
               className="transition-opacity hover:opacity-100"
             >
               <EfreiLogo
@@ -108,9 +108,9 @@ export function Footer() {
         })}
       </div>
       <div className="mx-auto mt-16 flex max-w-[1280px] flex-col gap-3 border-t border-brass-400/10 pt-7 font-mono text-[10px] uppercase tracking-[0.32em] text-cream/45 md:flex-row md:items-center md:justify-between">
-        <span>FAIT PAR PROM EFREI · {EVENT.edition}</span>
+        <span>FAIT PAR PROM EFREI | {EVENT.edition}</span>
         <span>
-          {EVENT.date} · {EVENT.doors} → {EVENT.end}
+          {EVENT.date} | {EVENT.doors} → {EVENT.end}
         </span>
       </div>
     </footer>

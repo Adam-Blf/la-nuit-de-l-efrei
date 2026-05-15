@@ -6,13 +6,13 @@ export function VideoTeaser() {
       <div className="mx-auto max-w-[1280px]">
         <div className="mb-10 flex flex-wrap items-baseline justify-between gap-4 md:mb-14">
           <div>
-            <Eyebrow>·· Aperçu · La Péniche en mouvement ··</Eyebrow>
+            <Eyebrow>Aperçu | La Péniche en mouvement</Eyebrow>
             <h2 className="fraunces-display mt-5 pb-[0.08em] text-[clamp(32px,5vw,56px)] leading-[1.05] tracking-[-0.03em] text-cream">
               La Seine, <GoldText>vue de bord</GoldText>.
             </h2>
           </div>
           <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-cream/45">
-            Captation officielle · 28 · 05 · 2026
+            Captation officielle | 28 / 05 / 2026
           </div>
         </div>
 

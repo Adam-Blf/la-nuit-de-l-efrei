@@ -20,7 +20,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Associations présentes",
   description:
-    "Toutes les associations à bord de La Péniche le 28 mai 2026 · Prom EFREI, BDA, BDE, Le Live, Voltage Contrôle, EPS Picture Studio, Toudoom, Le Continental, BDE ISIT, Art'Efrei, La Taverne du Troll, Efrei Rugby et Efrei Ultras.",
+    "Toutes les associations à bord de La Péniche le 28 mai 2026 | Prom EFREI, BDA, BDE, Le Live, Voltage Contrôle, EPS Picture Studio, Toudoom, Le Continental, BDE ISIT, Art'Efrei, La Taverne du Troll, Efrei Rugby et Efrei Ultras.",
 };
 
 type Item = {
@@ -168,7 +168,7 @@ export default function AssociationsPage() {
       <SiteNav />
       <main>
         <PageHeader
-          eyebrow="ASSOCIATIONS · PRÉSENTES À BORD"
+          eyebrow="ASSOCIATIONS | PRÉSENTES À BORD"
           title={
             <>
               Toutes les assos
@@ -186,7 +186,7 @@ export default function AssociationsPage() {
               href="https://www.efrei.fr"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="EFREI · Université Paris-Panthéon-Assas · efrei.fr"
+              aria-label="EFREI | Université Paris-Panthéon-Assas | efrei.fr"
               className="mb-16 flex flex-col items-center gap-5 border-y border-brass-400/30 py-10 transition-opacity hover:opacity-90 md:mb-20 md:flex-row md:justify-between"
             >
               <div className="font-mono text-[10px] uppercase tracking-[0.42em] text-brass-200">

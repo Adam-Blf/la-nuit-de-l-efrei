@@ -130,7 +130,7 @@ export function SiteNav() {
               </motion.div>
             </div>
             <div className="border-t border-brass-400/15 px-8 py-6 font-mono text-[10px] uppercase tracking-[0.28em] text-cream/45">
-              {EVENT.date} · {EVENT.doors} → {EVENT.end}
+              {EVENT.date} | {EVENT.doors} → {EVENT.end}
             </div>
           </motion.div>
         )}
