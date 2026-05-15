@@ -27,7 +27,7 @@ type Act = {
   logo: string;
   time: string;
   tag: string;
-  href?: string;
+  igs?: { handle: string; url: string }[];
 };
 
 const DJ_ACTS: Act[] = [
@@ -37,6 +37,10 @@ const DJ_ACTS: Act[] = [
     logo: "/assets/logos/les-lovers.png",
     time: "22h → 00h",
     tag: "Ouverture | DJ set",
+    igs: [
+      { handle: "@cyp_amr", url: "https://www.instagram.com/cyp_amr/" },
+      { handle: "@clem_dbsf", url: "https://www.instagram.com/clem_dbsf/" },
+    ],
   },
   {
     n: "DJ Shinny",
@@ -44,7 +48,7 @@ const DJ_ACTS: Act[] = [
     logo: "/assets/logos/dj-shinny.jpg",
     time: "00h → 02h",
     tag: "DJ set | invité",
-    href: "https://www.instagram.com/dj_shinny/",
+    igs: [{ handle: "@dj_shinny", url: "https://www.instagram.com/dj_shinny/" }],
   },
   {
     n: "Voltage Contrôle",
@@ -52,7 +56,7 @@ const DJ_ACTS: Act[] = [
     logo: "/assets/logos/voltage.png",
     time: "02h → 04h",
     tag: "Closing | tech & tek",
-    href: "https://www.instagram.com/voltagecontrole.efrei/",
+    igs: [{ handle: "@voltagecontrole.efrei", url: "https://www.instagram.com/voltagecontrole.efrei/" }],
   },
 ];
 
@@ -153,67 +157,65 @@ export default function LineupPage() {
             </div>
 
             <div className="space-y-0">
-              {DJ_ACTS.map((act, i) => {
-                const inner = (
-                  <div className="group grid items-center gap-8 py-12 md:py-16 lg:grid-cols-[1fr_auto_1fr] lg:gap-16">
-                    {/* Info */}
-                    <div className={i % 2 === 0 ? "lg:order-1" : "lg:order-3"}>
-                      <div className="font-mono text-[10px] uppercase tracking-[0.42em] text-brass-200">
-                        {act.tag}
-                      </div>
-                      <h2 className="fraunces-display mt-4 text-[clamp(36px,5vw,64px)] font-medium leading-[1.05] tracking-[-0.02em] text-cream">
-                        {act.n}
-                      </h2>
-                      <p className="mt-4 max-w-[440px] text-[14px] leading-[1.65] text-cream/65">
-                        {act.d}
-                      </p>
-                    </div>
-
-                    {/* Time pill */}
-                    <div className="flex flex-col items-center gap-3 lg:order-2">
-                      <div className="hidden h-12 w-px bg-gradient-to-b from-transparent via-brass-400/40 to-transparent lg:block" />
-                      <div className="rounded-full border border-brass-400/40 bg-navy-800/80 px-5 py-2.5 font-mono text-[11px] font-medium tracking-[0.22em] text-brass-200">
-                        {act.time}
-                      </div>
-                      <div className="hidden h-12 w-px bg-gradient-to-b from-transparent via-brass-400/40 to-transparent lg:block" />
-                    </div>
-
-                    {/* Logo */}
-                    <div className={`flex justify-center ${i % 2 === 0 ? "lg:order-3" : "lg:order-1"}`}>
-                      <div className="relative flex h-48 w-48 items-center justify-center overflow-hidden rounded-sm border border-brass-400/25 bg-navy-800/60 md:h-56 md:w-56 lg:h-64 lg:w-64">
-                        <Corners size={28} opacity={0.4} />
-                        <Image
-                          src={act.logo}
-                          alt={`${act.n} · logo`}
-                          width={256}
-                          height={256}
-                          className="h-full w-full object-contain p-4 transition-transform duration-500 group-hover:scale-105"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                );
-
-                return (
+              {DJ_ACTS.map((act, i) => (
                   <div
                     key={act.n}
                     className="border-t border-brass-400/20 first:border-t-0"
                   >
-                    {act.href ? (
-                      <a
-                        href={act.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block transition-opacity hover:opacity-90"
-                      >
-                        {inner}
-                      </a>
-                    ) : (
-                      inner
-                    )}
+                    <div className="group grid items-center gap-8 py-12 md:py-16 lg:grid-cols-[1fr_auto_1fr] lg:gap-16">
+                      {/* Info */}
+                      <div className={i % 2 === 0 ? "lg:order-1" : "lg:order-3"}>
+                        <div className="font-mono text-[10px] uppercase tracking-[0.42em] text-brass-200">
+                          {act.tag}
+                        </div>
+                        <h2 className="fraunces-display mt-4 text-[clamp(36px,5vw,64px)] font-medium leading-[1.05] tracking-[-0.02em] text-cream">
+                          {act.n}
+                        </h2>
+                        <p className="mt-4 max-w-[440px] text-[14px] leading-[1.65] text-cream/65">
+                          {act.d}
+                        </p>
+                        {act.igs && act.igs.length > 0 && (
+                          <div className="mt-6 flex flex-wrap gap-3">
+                            {act.igs.map((ig) => (
+                              <a
+                                key={ig.handle}
+                                href={ig.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 rounded-full border border-brass-400/30 bg-navy-800/40 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.05em] text-cream/80 transition-colors hover:border-brass-400/60 hover:bg-brass-400/10 hover:text-cream"
+                              >
+                                {ig.handle}
+                              </a>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Time pill */}
+                      <div className="flex flex-col items-center gap-3 lg:order-2">
+                        <div className="hidden h-12 w-px bg-gradient-to-b from-transparent via-brass-400/40 to-transparent lg:block" />
+                        <div className="rounded-full border border-brass-400/40 bg-navy-800/80 px-5 py-2.5 font-mono text-[11px] font-medium tracking-[0.22em] text-brass-200">
+                          {act.time}
+                        </div>
+                        <div className="hidden h-12 w-px bg-gradient-to-b from-transparent via-brass-400/40 to-transparent lg:block" />
+                      </div>
+
+                      {/* Logo */}
+                      <div className={`flex justify-center ${i % 2 === 0 ? "lg:order-3" : "lg:order-1"}`}>
+                        <div className="relative flex h-48 w-48 items-center justify-center overflow-hidden rounded-sm border border-brass-400/25 bg-navy-800/60 md:h-56 md:w-56 lg:h-64 lg:w-64">
+                          <Corners size={28} opacity={0.4} />
+                          <Image
+                            src={act.logo}
+                            alt={`${act.n} · logo`}
+                            width={256}
+                            height={256}
+                            className="h-full w-full object-contain p-4 transition-transform duration-500 group-hover:scale-105"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                );
-              })}
+                ))}
             </div>
           </div>
         </section>
