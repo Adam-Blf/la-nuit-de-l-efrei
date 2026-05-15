@@ -149,7 +149,7 @@ export default function LineupPage() {
           <div className="relative mx-auto max-w-[1280px]">
             <div className="mb-16 flex items-center gap-6 md:mb-20">
               <GoldRule width={64} />
-              <Eyebrow>DJ sets | Pont principal</Eyebrow>
+              <Eyebrow>DJ sets | Pont inférieur</Eyebrow>
             </div>
 
             <div className="space-y-0">

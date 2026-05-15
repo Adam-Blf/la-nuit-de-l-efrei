@@ -90,7 +90,7 @@ const TIERS: Array<{
     items: [
       {
         n: "EPS · Efrei Picture Studio",
-        d: "EPS shoote toute la nuit. Photos officielles + photobooth installé sur le pont principal pour repartir avec ses tirages.",
+        d: "EPS shoote toute la nuit. Photos officielles + photobooth installé sur le pont inférieur pour repartir avec ses tirages.",
         logo: "/assets/logos/eps.png",
         href: "https://www.instagram.com/efreipicturestudio/",
       },
