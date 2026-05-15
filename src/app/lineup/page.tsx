@@ -12,6 +12,7 @@ import {
 } from "@/components/primitives/Decor";
 import { Stars } from "@/components/primitives/Stars";
 import Image from "next/image";
+import { Instagram } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Line-up",
@@ -203,6 +204,7 @@ export default function LineupPage() {
                                   rel="noopener noreferrer"
                                   className="inline-flex items-center gap-2 rounded-full border border-brass-400/30 bg-navy-800/40 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.05em] text-cream/80 transition-colors hover:border-brass-400/60 hover:bg-brass-400/10 hover:text-cream"
                                 >
+                                  <Instagram size={12} className="opacity-80" />
                                   {ig.handle}
                                 </a>
                               ))}
