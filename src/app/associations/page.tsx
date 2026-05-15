@@ -72,13 +72,13 @@ const TIERS: Array<{
     items: [
       {
         n: "Le Live",
-        d: "L'asso musique du campus prend le pont supérieur. Instruments en direct, voix, setlist exclusive composée pour la péniche.",
+        d: "Ils délaissent les platines pour de vrais instruments sur le pont supérieur. Un concert avec une setlist préparée uniquement pour la péniche.",
         logo: "/assets/logos/live-efrei.png",
         href: "https://www.instagram.com/live.efrei/",
       },
       {
         n: "Voltage Contrôle",
-        d: "Ils prennent la fin de soirée. Tech et tek non-stop jusqu'à 04h00, pour ceux qui veulent taper du pied jusqu'au bout de la nuit.",
+        d: "Les gardiens de la fin de nuit. Ils balancent de la techno et de la tek sans s'arrêter jusqu'à 4h du mat, pour ceux qui ont encore de l'énergie à revendre.",
         logo: "/assets/logos/voltage.png",
         href: "https://www.instagram.com/voltagecontrole.efrei/",
       },
@@ -176,7 +176,7 @@ export default function AssociationsPage() {
               <GoldText>à quai.</GoldText>
             </>
           }
-          lead="Treize associations à bord pour la nuit. Le Live ouvre le pont supérieur en concert, Voltage Contrôle envoie la tech et la tek jusqu'à 04h. EPS shoote tout, Toudoom monte l'after-movie, Le Continental tient le bar, BDE ISIT relaie la com. Art'Efrei, La Taverne du Troll, Efrei Rugby et Efrei Ultras ont fait gagner des places à leurs communautés. Prom EFREI, BDA et BDE portent le projet."
+          lead="Treize associations embarquent avec nous pour la nuit. Le Live s'installe sur le pont supérieur pour un concert live, pendant que Voltage Contrôle prépare le closing techno jusqu'à 4h du matin. EPS s'occupe des photos, Toudoom filme l'after-movie et Le Continental gère le bar. Entre les concours d'Art'Efrei, de la Taverne du Troll ou du Rugby, tout le monde a mis la main à la pâte. Prom EFREI, le BDA et le BDE pilotent le tout."
         />
 
         <section className="relative overflow-hidden bg-navy-900 px-6 py-28 md:px-12 md:py-32 lg:px-20 lg:py-40 xl:px-[120px]">

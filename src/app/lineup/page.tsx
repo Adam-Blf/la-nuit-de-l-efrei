@@ -33,14 +33,22 @@ type Act = {
 const DJ_ACTS: Act[] = [
   {
     n: "Les Lovers",
-    d: "Le duo DJ ouvre la nuit. Platines en place dès l'embarquement, mix et ambiance pour chauffer les trois ponts avant la suite.",
+    d: "Ils balancent le premier son dès que vous posez le pied sur le pont. L'idéal pour commencer la soirée tranquille avec un verre en découvrant les trois ponts.",
     logo: "/assets/logos/les-lovers.png",
     time: "22h → 23h",
     tag: "Ouverture · DJ set",
   },
   {
+    n: "Le Live",
+    d: "Oubliez les platines deux minutes, là c'est du vrai live sur le pont supérieur. Des instruments, de l'énergie et des morceaux réarrangés exprès pour le gala.",
+    logo: "/assets/logos/live-efrei.png",
+    time: "23h → 00h",
+    tag: "Concert · live",
+    href: "https://www.instagram.com/live.efrei/",
+  },
+  {
     n: "DJ Shinny",
-    d: "Pop, shatta, reggaeton, commercial : le set qui fait chanter la péniche. Le milieu de soirée lui appartient.",
+    d: "C'est le moment où la péniche se transforme en karaoké géant. Pop, shatta, reggaeton : le genre de set où vous connaissez toutes les paroles.",
     logo: "/assets/logos/dj-shinny.jpg",
     time: "00h → 02h",
     tag: "DJ set · invité",
@@ -48,7 +56,7 @@ const DJ_ACTS: Act[] = [
   },
   {
     n: "Voltage Contrôle",
-    d: "Tech et tek non-stop jusqu'à la fermeture. Pour ceux qui veulent taper du pied jusqu'au bout de la nuit.",
+    d: "Le gros son pour finir la nuit. Techno et tek pure jusqu'à 4h. Avis aux plus motivés qui ne comptent pas dormir tout de suite.",
     logo: "/assets/logos/voltage.png",
     time: "02h → 04h",
     tag: "Closing · tech & tek",
