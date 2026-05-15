@@ -1,12 +1,13 @@
 "use client";
 
+import { Suspense } from "react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { Corners, Eyebrow, GoldText, LightWash } from "@/components/primitives/Decor";
 import { Stars } from "@/components/primitives/Stars";
 import { PromBlason, BDAHorizontal, EfreiLogo } from "@/components/primitives/Logos";
 
-export default function StoryKit() {
+function StoryKitContent() {
   const searchParams = useSearchParams();
   const title = searchParams.get("title") || "J-13";
   const subtitle = searchParams.get("subtitle") || "Pensez aux RDV coiffeur...";
@@ -71,5 +72,13 @@ export default function StoryKit() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function StoryKit() {
+  return (
+    <Suspense fallback={null}>
+      <StoryKitContent />
+    </Suspense>
   );
 }

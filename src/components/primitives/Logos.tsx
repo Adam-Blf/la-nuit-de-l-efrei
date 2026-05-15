@@ -74,3 +74,23 @@ export function Barney({
     />
   );
 }
+
+export function BDAHorizontal({
+  width = 160,
+  height = 40,
+  className,
+}: {
+  width?: number;
+  height?: number;
+  className?: string;
+}) {
+  return (
+    <Image
+      src="/assets/logos/bda_logo_horizontal.svg"
+      alt="Bureau des Arts EFREI"
+      width={width}
+      height={height}
+      className={`block h-auto w-auto ${className ?? ""}`}
+    />
+  );
+}

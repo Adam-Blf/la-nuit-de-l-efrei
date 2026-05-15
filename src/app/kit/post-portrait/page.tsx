@@ -1,12 +1,13 @@
 "use client";
 
+import { Suspense } from "react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { Corners, Eyebrow, GoldText, LightWash } from "@/components/primitives/Decor";
 import { Stars } from "@/components/primitives/Stars";
 import { PromBlason, BDAHorizontal, EfreiLogo } from "@/components/primitives/Logos";
 
-export default function PostPortraitKit() {
+function PostPortraitKitContent() {
   const searchParams = useSearchParams();
   const title = searchParams.get("title") || "Titre Hero";
   const subtitle = searchParams.get("subtitle") || "Sous-titre descriptif";
@@ -71,5 +72,13 @@ export default function PostPortraitKit() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function PostPortraitKit() {
+  return (
+    <Suspense fallback={null}>
+      <PostPortraitKitContent />
+    </Suspense>
   );
 }
