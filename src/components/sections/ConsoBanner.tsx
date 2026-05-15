@@ -14,8 +14,7 @@ export function ConsoBanner() {
           </div>
         </div>
         <div className="max-w-[460px] text-[13px] text-cream/60 md:text-right">
-          1<sup className="text-brass-200">re</sup> conso (cocktail ou
-          champagne) et 1 soft offerts à l&apos;embarquement, puis tout à 2 €.
+          2 consos offertes à l&apos;embarquement (1 mousseux ou cocktail de vin + 1 soft au choix), puis tout à 2 €.
           Eau gratuite à volonté · cocktails déclinés en version sans alcool
           sur demande. Service stoppé à 03h30 · soirée jusqu&apos;à 04h.
         </div>

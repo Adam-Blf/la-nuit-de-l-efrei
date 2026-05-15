@@ -113,11 +113,11 @@ export function MenuCarte() {
               </div>
               <div className="rounded-sm border border-brass-400/40 bg-navy-800/50 px-6 py-7 text-center">
                 <div className="font-mono text-[9px] uppercase tracking-[0.42em] text-brass-200">
-                  À l&apos;embarquement · offert
+                  À l&apos;embarquement · offert 2 conso
                 </div>
                 <div className="fraunces-display mt-3 text-xl leading-tight tracking-[-0.02em] text-cream md:text-[24px]">
                   1 coupe de mousseux{" "}
-                  <span className="italic text-brass-200">ou</span> verre de vin
+                  <span className="italic text-brass-200">ou</span> verre de cocktail de vin
                   <span className="block text-base text-cream/65 md:text-[18px]">
                     + 1 soft au choix (5 références)
                   </span>
