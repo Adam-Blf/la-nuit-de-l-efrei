@@ -144,165 +144,163 @@ export default function LineupPage() {
           lead="De 22h à 04h, DJ sets et concerts jouent en simultané sur les deux ponts de La Péniche. Six heures de musique en parallèle, quatre groupes du Live et trois DJ."
         />
 
-        {/* ═══ DJ SETS ═══ */}
-        <section className="relative overflow-hidden bg-navy-900 px-6 py-28 md:px-12 md:py-32 lg:px-20 lg:py-40 xl:px-[120px]">
-          <Stars count={90} seed={2828} width={1440} height={1200} density={0.5} />
-          <LightWash x="30%" y="10%" size={1000} color="rgba(226, 69, 108, 0.08)" />
-          <LightWash x="80%" y="60%" size={900} color="rgba(212, 164, 55, 0.06)" />
+        <div className="xl:grid xl:grid-cols-2 xl:items-start xl:divide-x xl:divide-brass-400/15">
+          {/* ═══ DJ SETS ═══ */}
+          <section className="relative overflow-hidden bg-navy-900 px-6 py-28 md:px-12 md:py-32 lg:px-20 lg:py-40 xl:px-12 2xl:px-20">
+            <Stars count={90} seed={2828} width={1440} height={1200} density={0.5} />
+            <LightWash x="30%" y="10%" size={1000} color="rgba(226, 69, 108, 0.08)" />
+            <LightWash x="80%" y="60%" size={900} color="rgba(212, 164, 55, 0.06)" />
 
-          <div className="relative mx-auto max-w-[1280px]">
-            <div className="mb-16 flex items-center gap-6 md:mb-20">
-              <GoldRule width={64} />
-              <Eyebrow>DJ sets | Pont inférieur</Eyebrow>
-            </div>
+            <div className="relative mx-auto max-w-[1280px]">
+              <div className="mb-16 flex items-center gap-6 md:mb-20">
+                <GoldRule width={64} />
+                <Eyebrow>DJ sets | Pont inférieur</Eyebrow>
+              </div>
 
-            <div className="space-y-0">
-              {DJ_ACTS.map((act, i) => (
+              <div className="space-y-0">
+                {DJ_ACTS.map((act) => (
                   <div
                     key={act.n}
-                    className="border-t border-brass-400/20 first:border-t-0"
+                    className="border-t border-brass-400/20 py-10 first:border-t-0 md:py-14"
                   >
-                    <div className="group grid items-center gap-8 py-12 md:py-16 lg:grid-cols-[1fr_auto_1fr] lg:gap-16">
-                      {/* Info */}
-                      <div className={i % 2 === 0 ? "lg:order-1" : "lg:order-3"}>
-                        <div className="font-mono text-[10px] uppercase tracking-[0.42em] text-brass-200">
-                          {act.tag}
-                        </div>
-                        <h2 className="fraunces-display mt-4 text-[clamp(36px,5vw,64px)] font-medium leading-[1.05] tracking-[-0.02em] text-cream">
-                          {act.n}
-                        </h2>
-                        <p className="mt-4 max-w-[440px] text-[14px] leading-[1.65] text-cream/65">
-                          {act.d}
-                        </p>
-                        {act.igs && act.igs.length > 0 && (
-                          <div className="mt-6 flex flex-wrap gap-3">
-                            {act.igs.map((ig) => (
-                              <a
-                                key={ig.handle}
-                                href={ig.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 rounded-full border border-brass-400/30 bg-navy-800/40 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.05em] text-cream/80 transition-colors hover:border-brass-400/60 hover:bg-brass-400/10 hover:text-cream"
-                              >
-                                {ig.handle}
-                              </a>
-                            ))}
-                          </div>
-                        )}
-                      </div>
-
-                      {/* Time pill */}
-                      <div className="flex flex-col items-center gap-3 lg:order-2">
-                        <div className="hidden h-12 w-px bg-gradient-to-b from-transparent via-brass-400/40 to-transparent lg:block" />
-                        <div className="rounded-full border border-brass-400/40 bg-navy-800/80 px-5 py-2.5 font-mono text-[11px] font-medium tracking-[0.22em] text-brass-200">
+                    <div className="flex flex-col items-start gap-8">
+                      {/* Info & Time Header */}
+                      <div className="flex w-full flex-wrap items-center gap-4">
+                        <div className="rounded-full border border-brass-400/40 bg-navy-800/80 px-4 py-2 font-mono text-[10px] font-medium tracking-[0.2em] text-brass-200">
                           {act.time}
                         </div>
-                        <div className="hidden h-12 w-px bg-gradient-to-b from-transparent via-brass-400/40 to-transparent lg:block" />
+                        <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-brass-200/70">
+                          {act.tag}
+                        </div>
                       </div>
 
-                      {/* Logo */}
-                      <div className={`flex justify-center ${i % 2 === 0 ? "lg:order-3" : "lg:order-1"}`}>
-                        <div className="relative flex h-48 w-48 items-center justify-center overflow-hidden rounded-sm border border-brass-400/25 bg-navy-800/60 md:h-56 md:w-56 lg:h-64 lg:w-64">
-                          <Corners size={28} opacity={0.4} />
+                      {/* Content */}
+                      <div className="flex flex-col gap-8 md:flex-row md:items-center lg:gap-10">
+                        <div className="relative flex h-32 w-32 shrink-0 items-center justify-center overflow-hidden rounded-sm border border-brass-400/25 bg-navy-800/60 md:h-40 md:w-40 lg:h-48 lg:w-48 xl:h-40 xl:w-40">
+                          <Corners size={24} opacity={0.4} />
                           <Image
                             src={act.logo}
                             alt={`${act.n} · logo`}
                             width={256}
                             height={256}
-                            className="h-full w-full object-contain p-4 transition-transform duration-500 group-hover:scale-105"
+                            className="h-full w-full object-contain p-4 transition-transform duration-500 hover:scale-105"
                           />
+                        </div>
+                        <div>
+                          <h2 className="fraunces-display text-[clamp(32px,4vw,48px)] font-medium leading-[1.05] tracking-[-0.02em] text-cream">
+                            {act.n}
+                          </h2>
+                          <p className="mt-4 max-w-[440px] text-[13px] leading-[1.65] text-cream/65">
+                            {act.d}
+                          </p>
+                          {act.igs && act.igs.length > 0 && (
+                            <div className="mt-6 flex flex-wrap gap-3">
+                              {act.igs.map((ig) => (
+                                <a
+                                  key={ig.handle}
+                                  href={ig.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center gap-2 rounded-full border border-brass-400/30 bg-navy-800/40 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.05em] text-cream/80 transition-colors hover:border-brass-400/60 hover:bg-brass-400/10 hover:text-cream"
+                                >
+                                  {ig.handle}
+                                </a>
+                              ))}
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>
                   </div>
                 ))}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* ═══ LE LIVE · CONCERTS ═══ */}
-        <section className="relative overflow-hidden border-t border-brass-400/15 bg-navy-950 px-6 py-28 md:px-12 md:py-32 lg:px-20 lg:py-40 xl:px-[120px]">
-          <Stars count={60} seed={1010} width={1440} height={900} density={0.4} />
-          <LightWash x="50%" y="30%" size={1100} color="rgba(91, 42, 134, 0.1)" />
+          {/* ═══ LE LIVE · CONCERTS ═══ */}
+          <section className="relative overflow-hidden border-t border-brass-400/15 bg-navy-950 px-6 py-28 md:px-12 md:py-32 lg:px-20 lg:py-40 xl:border-t-0 xl:px-12 2xl:px-20">
+            <Stars count={60} seed={1010} width={1440} height={900} density={0.4} />
+            <LightWash x="50%" y="30%" size={1100} color="rgba(91, 42, 134, 0.1)" />
 
-          <div className="relative mx-auto max-w-[1280px]">
-            <div className="mb-6 flex items-center gap-6">
-              <GoldRule width={64} />
-              <Eyebrow>Le Live | Pont supérieur</Eyebrow>
-            </div>
+            <div className="relative mx-auto max-w-[1280px]">
+              <div className="mb-6 flex items-center gap-6">
+                <GoldRule width={64} />
+                <Eyebrow>Le Live | Pont supérieur</Eyebrow>
+              </div>
 
-            <div className="mb-16 flex items-center gap-6 md:mb-20">
-              <a
-                href="https://www.instagram.com/live.efrei/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-5 transition-opacity hover:opacity-90"
-              >
-                <div className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-sm border border-brass-400/25 bg-navy-800/60">
-                  <Image
-                    src="/assets/logos/live-efrei.png"
-                    alt="Le Live | logo"
-                    width={80}
-                    height={80}
-                    className="h-full w-full object-contain p-2"
-                  />
-                </div>
-                <div>
-                  <h2 className="fraunces-display text-[clamp(32px,4vw,56px)] font-medium leading-[1.05] tracking-[-0.02em] text-cream">
-                    Le Live
-                  </h2>
-                  <p className="mt-1 text-[13px] text-cream/55">
-                    Quatre groupes | pont supérieur | en parallèle des DJ
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            {/* Bands grid */}
-            <div className="grid gap-10 md:grid-cols-2">
-              {LIVE_BANDS.map((band) => (
-                <div
-                  key={band.n}
-                  className="relative border border-brass-400/20 bg-navy-900/60 px-7 py-8 md:px-9 md:py-10"
+              <div className="mb-16 flex items-center gap-6 md:mb-20">
+                <a
+                  href="https://www.instagram.com/live.efrei/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-5 transition-opacity hover:opacity-90"
                 >
-                  <Corners size={24} opacity={0.35} />
-                  <div className="flex items-baseline justify-between gap-4">
-                    <h3 className="fraunces-display text-2xl font-medium tracking-[-0.01em] text-cream md:text-[28px]">
-                      {band.n}
-                    </h3>
-                    <span className="shrink-0 font-mono text-[10px] uppercase tracking-[0.32em] text-brass-200/70">
-                      {band.duration}
-                    </span>
+                  <div className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-sm border border-brass-400/25 bg-navy-800/60">
+                    <Image
+                      src="/assets/logos/live-efrei.png"
+                      alt="Le Live | logo"
+                      width={80}
+                      height={80}
+                      className="h-full w-full object-contain p-2"
+                    />
                   </div>
-
-                  {band.songs.length > 0 ? (
-                    <ol className="mt-6 space-y-2">
-                      {band.songs.map((song, j) => (
-                        <li
-                          key={song}
-                          className="flex items-baseline gap-3 text-[13px] leading-[1.5]"
-                        >
-                          <span className="shrink-0 font-mono text-[10px] text-brass-400/50">
-                            {String(j + 1).padStart(2, "0")}
-                          </span>
-                          <span className="text-cream/70">{song}</span>
-                        </li>
-                      ))}
-                    </ol>
-                  ) : (
-                    <p className="mt-6 text-[13px] italic text-cream/40">
-                      Setlist à venir.
+                  <div>
+                    <h2 className="fraunces-display text-[clamp(32px,4vw,56px)] font-medium leading-[1.05] tracking-[-0.02em] text-cream">
+                      Le Live
+                    </h2>
+                    <p className="mt-1 text-[13px] text-cream/55">
+                      Quatre groupes | pont supérieur | en parallèle des DJ
                     </p>
-                  )}
-                </div>
-              ))}
-            </div>
+                  </div>
+                </a>
+              </div>
 
-            <p className="mt-10 text-center text-[13px] text-cream/45">
-              Ordre de passage et horaires à confirmer.
-            </p>
-          </div>
-        </section>
+              {/* Bands grid */}
+              <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-1 2xl:grid-cols-2">
+                {LIVE_BANDS.map((band) => (
+                  <div
+                    key={band.n}
+                    className="relative border border-brass-400/20 bg-navy-900/60 px-7 py-8 md:px-9 md:py-10"
+                  >
+                    <Corners size={24} opacity={0.35} />
+                    <div className="flex items-baseline justify-between gap-4">
+                      <h3 className="fraunces-display text-2xl font-medium tracking-[-0.01em] text-cream md:text-[28px]">
+                        {band.n}
+                      </h3>
+                      <span className="shrink-0 font-mono text-[10px] uppercase tracking-[0.32em] text-brass-200/70">
+                        {band.duration}
+                      </span>
+                    </div>
+
+                    {band.songs.length > 0 ? (
+                      <ol className="mt-6 space-y-2">
+                        {band.songs.map((song, j) => (
+                          <li
+                            key={song}
+                            className="flex items-baseline gap-3 text-[13px] leading-[1.5]"
+                          >
+                            <span className="shrink-0 font-mono text-[10px] text-brass-400/50">
+                              {String(j + 1).padStart(2, "0")}
+                            </span>
+                            <span className="text-cream/70">{song}</span>
+                          </li>
+                        ))}
+                      </ol>
+                    ) : (
+                      <p className="mt-6 text-[13px] italic text-cream/40">
+                        Setlist à venir.
+                      </p>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              <p className="mt-10 text-center text-[13px] text-cream/45">
+                Ordre de passage et horaires à confirmer.
+              </p>
+            </div>
+          </section>
+        </div>
 
         {/* ═══ CTA ═══ */}
         <section className="relative overflow-hidden bg-navy-900 px-6 py-20 md:px-12 md:py-28 lg:px-20 xl:px-[120px]">
