@@ -28,11 +28,11 @@ const SITE_URL =
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "La Nuit de l'EFREI · MMXXVI",
-    template: "%s · La Nuit de l'EFREI",
+    default: "La Nuit de l'EFREI | MMXXVI",
+    template: "%s | La Nuit de l'EFREI",
   },
   description:
-    "Le retour, dix ans plus tard. Jeudi 28 mai 2026 · La Péniche, 2 quai de la Tournelle · 22h → 04h. Une nuit, 350 invités, une promo dans la lumière. Fait par PROM EFREI.",
+    "Le retour, dix ans plus tard. Jeudi 28 mai 2026 | La Péniche, 2 quai de la Tournelle | 22h → 04h. Une nuit, 350 invités, une promo dans la lumière. Fait par PROM EFREI.",
   keywords: [
     "La Nuit de l'EFREI",
     "Prom EFREI",
@@ -49,9 +49,9 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     url: SITE_URL,
     siteName: "La Nuit de l'EFREI",
-    title: "La Nuit de l'EFREI · MMXXVI",
+    title: "La Nuit de l'EFREI | MMXXVI",
     description:
-      "Le retour, dix ans plus tard. Jeudi 28 mai 2026 · La Péniche · 22h → 04h.",
+      "Le retour, dix ans plus tard. Jeudi 28 mai 2026 | La Péniche | 22h → 04h.",
     images: [
       {
         url: "/opengraph-image",
@@ -63,8 +63,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "La Nuit de l'EFREI · MMXXVI",
-    description: "Le retour, dix ans plus tard. 28 · 05 · 2026.",
+    title: "La Nuit de l'EFREI | MMXXVI",
+    description: "Le retour, dix ans plus tard. 28 / 05 / 2026.",
     images: ["/opengraph-image"],
   },
 };

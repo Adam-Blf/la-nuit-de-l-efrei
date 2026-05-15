@@ -39,9 +39,9 @@ export function Countdown() {
       <div className="relative mx-auto max-w-[1280px]">
         <div className="mb-12 flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between md:mb-16">
           <Eyebrow>
-            Lever de rideau · {EVENT.date} · {EVENT.doors}
+            Lever de rideau | {EVENT.date} | {EVENT.doors}
           </Eyebrow>
-          <Eyebrow color="rgba(245,230,211,0.5)">· Compte à rebours ·</Eyebrow>
+          <Eyebrow color="rgba(245,230,211,0.5)">Compte à rebours</Eyebrow>
         </div>
         <div
           className="grid grid-cols-2 gap-y-10 md:grid-cols-4 md:gap-y-0"

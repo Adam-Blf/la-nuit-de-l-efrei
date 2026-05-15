@@ -54,18 +54,20 @@ export function Corners({
   size = 56,
   opacity = 0.6,
   only,
+  className,
 }: {
   size?: number;
   opacity?: number;
   only?: CornerPos[];
+  className?: string;
 }) {
   const positions: CornerPos[] = only ?? ["tl", "tr", "br", "bl"];
   return (
-    <>
+    <div className={`absolute inset-0 pointer-events-none ${className ?? ""}`}>
       {positions.map((p) => (
         <Corner key={p} pos={p} size={size} opacity={opacity} />
       ))}
-    </>
+    </div>
   );
 }
 

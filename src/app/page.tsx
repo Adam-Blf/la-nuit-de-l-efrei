@@ -6,6 +6,7 @@ import { Countdown } from "@/components/sections/Countdown";
 import { Marquee } from "@/components/sections/Marquee";
 import { About } from "@/components/sections/About";
 import { HomeCTA } from "@/components/sections/HomeCTA";
+import { LatestNews } from "@/components/sections/LatestNews";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <HomeHero />
         <ComebackBanner />
         <Countdown />
+        <LatestNews />
         <Marquee />
         <About />
         <HomeCTA />
