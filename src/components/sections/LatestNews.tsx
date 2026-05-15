@@ -12,7 +12,7 @@ const NEWS: NewsItem[] = [
   {
     tag: "Aujourd'hui | J-13",
     title: "Checkez vos tenues.",
-    content: "Un petit coup de pressing, deux-trois retouches ou le choix des accessoires... bref, gérez ça maintenant pour ne pas courir partout le jour J.",
+    content: "Cirer les chaussures, préparer les tenues au pressing, aller chez le coiffeur... bref, gérez ça maintenant pour ne pas courir partout le jour J.",
     date: "15 / 05 / 2026",
   },
   {
