@@ -11,20 +11,20 @@ interface NewsItem {
 const NEWS: NewsItem[] = [
   {
     tag: "Aujourd'hui | J-13",
-    title: "Le détail qui compte.",
-    content: "Pensez aux rendez-vous coiffeur, barbier et manucure dès maintenant. Mai est un mois chargé, ne vous laissez pas surprendre par le timing.",
+    title: "Checkez vos tenues.",
+    content: "Un petit coup de pressing, deux-trois retouches ou le choix des accessoires... bref, gérez ça maintenant pour ne pas courir partout le jour J.",
     date: "15 / 05 / 2026",
   },
   {
     tag: "Style | Dress Code",
-    title: "Élégance exigée.",
-    content: "Thème : Élégant. Une nuit à quai sous les étoiles mérite votre plus belle tenue. Costume, robe, smoking, paillettes... sortez le grand jeu.",
+    title: "Sortez le grand jeu.",
+    content: "Le thème est simple : élégant. C'est le moment de sortir votre tenue la plus classe. On veut que ça brille sur le pont.",
     date: "12 / 05 / 2026",
   },
   {
     tag: "Alerte | Billetterie",
     title: "Dernière ligne droite.",
-    content: "Plus de 50% des 350 places sont déjà parties. Il n'y aura pas de guichet d'urgence le soir même. Réservez tant qu'il en reste.",
+    content: "Plus de la moitié des places sont déjà parties. Il n'y aura pas de vente sur place le soir même, donc ne traînez pas trop pour prendre la vôtre.",
     date: "12 / 05 / 2026",
   },
 ];
