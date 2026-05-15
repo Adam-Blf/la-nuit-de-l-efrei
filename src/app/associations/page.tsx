@@ -20,7 +20,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Associations présentes",
   description:
-    "Toutes les associations à bord de La Péniche le 28 mai 2026 · Prom EFREI, BDA, BDE, Live EFREI, New Lixx, DJ Shinny, Voltage Contrôle, EPS Picture Studio, Toudoom, Le Continental, BDE ISIT, Art'Efrei, La Taverne du Troll, Efrei Rugby et Efrei Ultras.",
+    "Toutes les associations à bord de La Péniche le 28 mai 2026 · Prom EFREI, BDA, BDE, Le Live, Les Lovers, DJ Shinny, Voltage Contrôle, EPS Picture Studio, Toudoom, Le Continental, BDE ISIT, Art'Efrei, La Taverne du Troll, Efrei Rugby et Efrei Ultras.",
 };
 
 type Item = {
@@ -71,16 +71,15 @@ const TIERS: Array<{
     s: "Le son de la nuit",
     items: [
       {
-        n: "Live EFREI",
+        n: "Le Live",
         d: "L'asso musique du campus prend le pont supérieur. Instruments en direct, voix, setlist exclusive composée pour la péniche.",
         logo: "/assets/logos/live-efrei.png",
         href: "https://www.instagram.com/live.efrei/",
       },
       {
-        n: "New Lixx",
-        d: "L'asso DJ du campus ouvre la nuit. Plusieurs platines à bord, mix et beatmaking dès l'embarquement pour chauffer les trois ponts.",
-        logo: "/assets/logos/new-lix.png",
-        href: "https://www.instagram.com/new.lixx/",
+        n: "Les Lovers",
+        d: "Le duo DJ ouvre la nuit. Platines en place dès l'embarquement, mix et ambiance pour chauffer les trois ponts avant la suite.",
+        logo: "/assets/logos/les-lovers.png",
       },
       {
         n: "DJ Shinny · invité",
@@ -188,7 +187,7 @@ export default function AssociationsPage() {
               <GoldText>à quai.</GoldText>
             </>
           }
-          lead="Seize associations à bord pour la nuit. Live EFREI ouvre le pont supérieur en concert, New Lixx lance la soirée, DJ Shinny prend les platines en milieu de soirée (pop, shatta, reggaeton, commercial), Voltage Contrôle envoie la tech et la tek jusqu'à 04h. EPS shoote tout, Toudoom monte l'after-movie, Le Continental tient le bar, BDE ISIT relaie la com. Art'Efrei, La Taverne du Troll, Efrei Rugby et Efrei Ultras ont fait gagner des places à leurs communautés. Prom EFREI, BDA et BDE portent le projet."
+          lead="Seize associations à bord pour la nuit. Le Live ouvre le pont supérieur en concert, Les Lovers lancent la soirée aux platines, DJ Shinny prend le relais en milieu de soirée (pop, shatta, reggaeton, commercial), Voltage Contrôle envoie la tech et la tek jusqu'à 04h. EPS shoote tout, Toudoom monte l'after-movie, Le Continental tient le bar, BDE ISIT relaie la com. Art'Efrei, La Taverne du Troll, Efrei Rugby et Efrei Ultras ont fait gagner des places à leurs communautés. Prom EFREI, BDA et BDE portent le projet."
         />
 
         <section className="relative overflow-hidden bg-navy-900 px-6 py-28 md:px-12 md:py-32 lg:px-20 lg:py-40 xl:px-[120px]">
