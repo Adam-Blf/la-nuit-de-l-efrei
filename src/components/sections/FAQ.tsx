@@ -49,7 +49,7 @@ const ITEMS = [
   },
   {
     q: "Y a-t-il des photos ou un aftermovie ?",
-    a: "Oui · un photographe officiel couvre toute la nuit, et un aftermovie est tourné par Efrei Picture Studio. Les photos seront publiées sur @promefrei dans la semaine qui suit. En achetant ta place tu acceptes l'usage de ton image dans la com post-event. Pour t'opposer · prom@bda-efrei.fr avant le 28 mai.",
+    a: "Oui · un photographe officiel couvre toute la nuit, et un aftermovie est tourné par Efrei Picture Studio. En achetant ta place tu acceptes l'usage de ton image dans la com post-event. Pour t'opposer · prom@bda-efrei.fr avant le 28 mai.",
   },
   {
     q: "Puis-je commander un cocktail sans alcool ?",
