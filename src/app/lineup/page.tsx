@@ -141,7 +141,7 @@ export default function LineupPage() {
               <GoldText>de la nuit.</GoldText>
             </>
           }
-          lead="De 22h à 04h, DJ sets et concerts live se relaient sur La Péniche. Six heures de musique sans interruption, deux ponts, quatre groupes du Live et trois DJ."
+          lead="De 22h à 04h, DJ sets et concerts jouent en simultané sur les deux ponts de La Péniche. Six heures de musique en parallèle, quatre groupes du Live et trois DJ."
         />
 
         {/* ═══ DJ SETS ═══ */}
@@ -252,7 +252,7 @@ export default function LineupPage() {
                     Le Live
                   </h2>
                   <p className="mt-1 text-[13px] text-cream/55">
-                    Quatre groupes | pont supérieur | instruments en direct
+                    Quatre groupes | pont supérieur | en parallèle des DJ
                   </p>
                 </div>
               </a>
