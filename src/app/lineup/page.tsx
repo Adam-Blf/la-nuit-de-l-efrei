@@ -35,16 +35,8 @@ const DJ_ACTS: Act[] = [
     n: "Les Lovers",
     d: "Ils balancent de la musique commerciale dès que vous posez le pied sur le pont. L'idéal pour commencer la soirée tranquille avec un verre en découvrant les deux ponts.",
     logo: "/assets/logos/les-lovers.png",
-    time: "22h → 23h",
+    time: "22h → 00h",
     tag: "Ouverture | DJ set",
-  },
-  {
-    n: "Le Live",
-    d: "Oubliez les platines deux minutes, là c'est du vrai live sur le pont supérieur. Des instruments, de l'énergie et des morceaux réarrangés exprès pour le gala.",
-    logo: "/assets/logos/live-efrei.png",
-    time: "23h → 00h",
-    tag: "Concert | live",
-    href: "https://www.instagram.com/live.efrei/",
   },
   {
     n: "DJ Shinny",
