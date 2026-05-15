@@ -21,6 +21,7 @@ export function Footer() {
         { label: "Accueil", href: "/" },
         { label: "Lieu", href: "/lieu" },
         { label: "Billetterie", href: "/billetterie" },
+        { label: "Line-up", href: "/lineup" },
         { label: "Carte du bar", href: "/carte" },
         { label: "Associations", href: "/associations" },
         { label: "FAQ", href: "/faq" },
