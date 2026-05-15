@@ -33,7 +33,7 @@ type Act = {
 const DJ_ACTS: Act[] = [
   {
     n: "Les Lovers",
-    d: "Ils balancent de la musique commerciale dès que vous posez le pied sur le pont. L'idéal pour commencer la soirée tranquille avec un verre en découvrant les trois ponts.",
+    d: "Ils balancent de la musique commerciale dès que vous posez le pied sur le pont. L'idéal pour commencer la soirée tranquille avec un verre en découvrant les deux ponts.",
     logo: "/assets/logos/les-lovers.png",
     time: "22h → 23h",
     tag: "Ouverture | DJ set",
@@ -145,7 +145,7 @@ export default function LineupPage() {
               <GoldText>de la nuit.</GoldText>
             </>
           }
-          lead="De 22h à 04h, DJ sets et concerts live se relaient sur La Péniche. Six heures de musique sans interruption, trois ponts, quatre groupes du Live et trois DJ."
+          lead="De 22h à 04h, DJ sets et concerts live se relaient sur La Péniche. Six heures de musique sans interruption, deux ponts, quatre groupes du Live et trois DJ."
         />
 
         {/* ═══ DJ SETS ═══ */}
