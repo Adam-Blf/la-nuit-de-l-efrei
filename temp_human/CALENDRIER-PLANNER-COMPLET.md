@@ -373,14 +373,14 @@ Stickers · countdown · mention `@promefrei` `@bda_efrei`.
 
 Voir fiche `CONCOURS-VIDEO-INVITATION.md`.
 
-#### 🟢 20h00 · POST FEED CARROUSEL 3 SLIDES · `post-J10-djreveal`
+#### 🟢 20h00 · POST FEED CARROUSEL 6 SLIDES · `post-J10-djreveal`
 
-Visuel · 3 slides 1080×1350 (brief #15).
+Visuel · 6 slides 1080×1350 (brief #15).
 
 Caption ·
 
 ```
-Le plateau est calé. Trois actes DJ et un live en parallèle toute la nuit.
+Le plateau est calé.
 
 22h-00h · Les Lovers (@cyp_amr & @clem_dbsf)
 00h-02h · DJ Shinny (@dj_shinny)
