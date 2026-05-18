@@ -375,16 +375,18 @@ Voir fiche `CONCOURS-VIDEO-INVITATION.md`.
 
 #### 🟢 20h00 · POST FEED CARROUSEL 3 SLIDES · `post-J10-djreveal`
 
-Visuel · 3 slides 1080×1350 (brief #15) **après confirmation nom DJ**.
+Visuel · 3 slides 1080×1350 (brief #15).
 
-Caption (remplacer `[NOM DJ]`) ·
+Caption ·
 
 ```
-Le plateau est calé.
+Le plateau est calé. Trois actes DJ et un live en parallèle toute la nuit.
 
-[NOM DJ] derrière les platines de La Nuit de l'EFREI le 28 mai. Set continu de minuit à 04h. Closing live à confirmer.
+22h-00h · Les Lovers (@cyp_amr & @clem_dbsf)
+00h-02h · DJ Shinny (@dj_shinny)
+02h-04h · Voltage Contrôle (@voltagecontrole.efrei)
 
-Avant ça · première partie acoustique sur le pont supérieur. À 22h, montez sur le pont, on commence là.
+En parallèle sur le pont supérieur · Le Live (The Usuals, Groove Nation, Nameless Faceless, Pink Love) pour de l'acoustique et des instruments en direct.
 
 J-10. La billetterie ferme bientôt.
 
@@ -392,7 +394,13 @@ J-10. La billetterie ferme bientôt.
 #LaNuitDeLEFREI #PromEfrei2026 #10ansaprès #EfreiParis #LaPeniche #BDAEfrei #SeineÉtoilée
 ```
 
-Tag visuel · `@bda_efrei` · `@[NOM DJ HANDLE]`.
+Tag visuel · `@bda_efrei` · `@cyp_amr` · `@clem_dbsf` · `@dj_shinny` · `@voltagecontrole.efrei` · `@live.efrei`.
+
+#### 🟡 20h05 · STORY · `story-J10-djreveal`
+
+Visuel · `story-J10-djreveal.png` 1080x1920.
+
+Stickers · sticker "LA LINE UP EST LÀ !" · mention `@bda_efrei`.
 
 ---
 

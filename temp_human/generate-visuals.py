@@ -1123,6 +1123,23 @@ def main():
         {"photo": "peniche-soiree-1.jpg", "eyebrow": "TA PLACE", "hero": "Lien en bio", "hero_size": 140, "body": "Réserve sur HelloAsso.", "barney": False, "cta": "BILLETTERIE  ·  LIEN EN BIO"},
     ], photo_default, "post-J19-recap")
 
+    print("== post-J10-djreveal (3 slides 1080x1350)")
+    gen_post_carousel([
+        {"photo": "pont-superieur-nuit.webp", "stars": True, "eyebrow": "PROGRAMMATION", "hero": "LA\nLINE UP", "hero_size": 130, "body": "Trois actes DJ.\nUn pont acoustique Live.\nToute la nuit.", "barney": False},
+        {"photo": "interieur-nuit.webp", "eyebrow": "PONT INFÉRIEUR", "hero": "DJ SETS", "hero_size": 130, "body": "22h-00h · Les Lovers\n00h-02h · DJ Shinny\n02h-04h · Voltage Contrôle", "barney": False},
+        {"photo": "peniche-soiree-1.jpg", "eyebrow": "PONT SUPÉRIEUR", "hero": "LE LIVE", "hero_size": 130, "body": "Instruments en direct.\nEn parallèle des DJ.", "barney": False, "cta": "RÉSERVER  ·  LIEN EN BIO"},
+    ], photo_default, "post-J10-djreveal")
+
+    print("== story-J10-djreveal (1 story 1080x1920)")
+    gen_story({
+        "photo": "pont-superieur-nuit.webp", "stars": True,
+        "eyebrow": "PROGRAMMATION",
+        "hero": "LINE UP\nDÉVOILÉE", "hero_size": 120,
+        "body": "Les Lovers · DJ Shinny · Voltage Contrôle\net Le Live en acoustique.",
+        "barney_variant": "dance",
+        "cta": "VOIR LE POST  ·  LIEN EN BIO"
+    }, "story-J10-djreveal")
+
     print("== post-J13-prep (3 slides 1080x1350)")
     gen_post_carousel([
         {"photo": "pont-superieur-nuit.webp", "stars": True, "eyebrow": "J - 13", "hero": "DERNIÈRE\nLIGNE DROITE", "hero_size": 110, "body": "On checke les tenues.\nTout doit être prêt pour le 28.", "barney": True},
