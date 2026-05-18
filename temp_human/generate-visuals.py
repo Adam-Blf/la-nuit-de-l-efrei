@@ -1168,20 +1168,24 @@ def main():
 
     print("== post-J10-djreveal (6 slides 1080x1350)")
     gen_post_carousel([
-        {"photo": "pont-superieur-nuit.webp", "stars": True, "eyebrow": "PROGRAMMATION", "hero": "QUI\nMIX ?", "hero_size": 130, "hero_y": 350, "body": "Le 28 mai de 22h à 04h.", "body_y": 880, "barney": False},
-        {"photo": "interieur-nuit.webp", "eyebrow": "PONT INFÉRIEUR", "hero": "LES LOVERS", "hero_size": 110, "hero_y": 350, "body": "22h - 00h", "body_y": 880, "barney": False, "custom_logos": [
-            {"file": "les-lovers.png", "h": 390, "x": 345, "y": 470, "is_photo": True}
+        {"photo": "pont-superieur-nuit.webp", "stars": True, "eyebrow": "PROGRAMMATION", "hero": "QUI MIX ?", "hero_size": 110, "hero_y": 320, "body": "Le 28 mai de 22h à 04h.", "body_y": 860, "barney": False, "custom_logos": [
+            {"file": "barney-dance.png", "h": 380, "x": 350, "y": 450, "is_photo": False}
         ]},
-        {"photo": "interieur-nuit.webp", "eyebrow": "PONT INFÉRIEUR", "hero": "DJ SHINNY", "hero_size": 110, "hero_y": 350, "body": "00h - 02h", "body_y": 880, "barney": False, "custom_logos": [
-            {"file": "dj-shinny.jpg", "h": 390, "x": 345, "y": 470, "is_photo": True}
+        {"photo": "interieur-nuit.webp", "eyebrow": "PONT INFÉRIEUR", "hero": "LES LOVERS", "hero_size": 110, "hero_y": 320, "body": "22h - 00h", "body_y": 860, "barney": False, "custom_logos": [
+            {"file": "les-lovers.png", "h": 380, "x": 350, "y": 450, "is_photo": True}
         ]},
-        {"photo": "interieur-nuit.webp", "eyebrow": "PONT INFÉRIEUR", "hero": "VOLTAGE", "hero_size": 110, "hero_y": 350, "body": "02h - 04h", "body_y": 880, "barney": False, "custom_logos": [
-            {"file": "voltage.png", "h": 390, "x": 345, "y": 470, "is_photo": True}
+        {"photo": "interieur-nuit.webp", "eyebrow": "PONT INFÉRIEUR", "hero": "DJ SHINNY", "hero_size": 110, "hero_y": 320, "body": "00h - 02h", "body_y": 860, "barney": False, "custom_logos": [
+            {"file": "dj-shinny.jpg", "h": 380, "x": 350, "y": 450, "is_photo": True}
         ]},
-        {"photo": "pont-superieur-nuit.webp", "eyebrow": "PONT SUPÉRIEUR", "hero": "LE LIVE", "hero_size": 110, "hero_y": 350, "body": "Acoustique en parallèle des DJ.", "body_y": 880, "barney": False, "custom_logos": [
-            {"file": "live-efrei.png", "h": 390, "x": 345, "y": 470, "is_photo": False}
+        {"photo": "interieur-nuit.webp", "eyebrow": "PONT INFÉRIEUR", "hero": "VOLTAGE", "hero_size": 110, "hero_y": 320, "body": "02h - 04h", "body_y": 860, "barney": False, "custom_logos": [
+            {"file": "voltage.png", "h": 380, "x": 350, "y": 450, "is_photo": True}
         ]},
-        {"photo": "peniche-soiree-1.jpg", "eyebrow": "TA PLACE", "hero": "BILLETTERIE", "hero_size": 110, "hero_y": 350, "body": "La billetterie ferme bientôt.\nLien dans la bio.", "body_y": 850, "barney": False, "cta": "PRENDS TA PLACE  ·  LIEN EN BIO"}
+        {"photo": "pont-superieur-nuit.webp", "eyebrow": "PONT SUPÉRIEUR", "hero": "LE LIVE", "hero_size": 110, "hero_y": 320, "body": "Acoustique en parallèle des DJ.", "body_y": 860, "barney": False, "custom_logos": [
+            {"file": "live-efrei.png", "h": 380, "x": 350, "y": 450, "is_photo": False}
+        ]},
+        {"photo": "peniche-soiree-1.jpg", "eyebrow": "TA PLACE", "hero": "BILLETTERIE", "hero_size": 110, "hero_y": 320, "body": "La billetterie ferme bientôt.\nLien dans la bio.", "body_y": 850, "barney": False, "custom_logos": [
+            {"file": "barney.png", "h": 380, "x": 350, "y": 450, "is_photo": False}
+        ], "cta": "PRENDS TA PLACE  ·  LIEN EN BIO"}
     ], photo_default, "post-J10-djreveal")
 
     print("== story-J10-djreveal (1 story 1080x1920)")
