@@ -139,6 +139,39 @@ def paste_logo(canvas: Image.Image, logo_path: Path, target_w: int, x: int, y: i
     canvas.paste(logo, (x, y), logo)
 
 
+def paste_artist_photo(canvas: Image.Image, img_path: Path, size: int, x: int, y: int):
+    """Découpe une photo en cercle parfait, ajoute un double contour doré ultra-premium et la colle."""
+    try:
+        img = Image.open(img_path).convert("RGBA")
+        w, h = img.size
+        # Crop carré centré
+        min_dim = min(w, h)
+        left = (w - min_dim) // 2
+        top = (h - min_dim) // 2
+        img = img.crop((left, top, left + min_dim, top + min_dim))
+        img = img.resize((size, size), Image.LANCZOS)
+
+        # Masque circulaire pour couper les bords
+        mask = Image.new("L", (size, size), 0)
+        draw_mask = ImageDraw.Draw(mask)
+        draw_mask.ellipse((0, 0, size, size), fill=255)
+
+        # Création du profil rond
+        profile = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+        profile.paste(img, (0, 0), mask)
+
+        # Tracé des cercles dorés
+        draw_prof = ImageDraw.Draw(profile)
+        # Cercle extérieur fin or clair
+        draw_prof.ellipse((2, 2, size - 3, size - 3), outline=GOLD_LIGHT, width=4)
+        # Cercle intérieur très fin or chaud
+        draw_prof.ellipse((8, 8, size - 9, size - 9), outline=GOLD, width=1)
+
+        canvas.paste(profile, (x, y), profile)
+    except Exception as e:
+        print(f"Erreur intégration photo {img_path}: {e}")
+
+
 def cta_banner(canvas: Image.Image, top: int, label: str = "LIEN EN BIO", font: ImageFont.ImageFont = None, width_ratio: float = 0.74, mode: str = "text"):
     """Compat shim · ne dessine RIEN (zone CTA retiree par Adam 2026-05-09)."""
     return canvas
@@ -358,7 +391,10 @@ def gen_post_carousel(slides_data: list, photo_default: str, output_id: str):
             for cl in slide["custom_logos"]:
                 logo_path = LOGOS / cl["file"]
                 if logo_path.exists():
-                    paste_logo(canvas, logo_path, cl["h"], cl["x"], cl["y"])
+                    if cl.get("is_photo", False):
+                        paste_artist_photo(canvas, logo_path, cl["h"], cl["x"], cl["y"])
+                    else:
+                        paste_logo(canvas, logo_path, cl["h"], cl["x"], cl["y"])
 
         # Bloc info pied · skip si slide.no_footer = True (mode triptyque epure)
         if not slide.get("no_footer", False):
@@ -1134,16 +1170,16 @@ def main():
     gen_post_carousel([
         {"photo": "pont-superieur-nuit.webp", "stars": True, "eyebrow": "PROGRAMMATION", "hero": "QUI\nMIX ?", "hero_size": 160, "body": "Le 28 mai de 22h à 04h.", "barney": False},
         {"photo": "interieur-nuit.webp", "eyebrow": "PONT INFÉRIEUR", "hero": "LES LOVERS", "hero_size": 130, "body": "22h - 00h", "barney": False, "custom_logos": [
-            {"file": "les-lovers.png", "h": 320, "x": 380, "y": 550}
+            {"file": "les-lovers.png", "h": 340, "x": 370, "y": 550, "is_photo": True}
         ]},
         {"photo": "interieur-nuit.webp", "eyebrow": "PONT INFÉRIEUR", "hero": "DJ SHINNY", "hero_size": 130, "body": "00h - 02h", "barney": False, "custom_logos": [
-            {"file": "dj-shinny.jpg", "h": 320, "x": 380, "y": 550}
+            {"file": "dj-shinny.jpg", "h": 340, "x": 370, "y": 550, "is_photo": True}
         ]},
         {"photo": "interieur-nuit.webp", "eyebrow": "PONT INFÉRIEUR", "hero": "VOLTAGE", "hero_size": 130, "body": "02h - 04h", "barney": False, "custom_logos": [
-            {"file": "voltage.png", "h": 320, "x": 380, "y": 550}
+            {"file": "voltage.png", "h": 340, "x": 370, "y": 550, "is_photo": True}
         ]},
         {"photo": "pont-superieur-nuit.webp", "eyebrow": "PONT SUPÉRIEUR", "hero": "LE LIVE", "hero_size": 130, "body": "Acoustique en parallèle des DJ.", "barney": False, "custom_logos": [
-            {"file": "live-efrei.png", "h": 320, "x": 380, "y": 550}
+            {"file": "live-efrei.png", "h": 340, "x": 370, "y": 550, "is_photo": False}
         ]},
         {"photo": "peniche-soiree-1.jpg", "eyebrow": "TA PLACE", "hero": "BILLETTERIE", "hero_size": 120, "body": "La billetterie ferme bientôt.\nLien dans la bio.", "barney": False, "cta": "PRENDS TA PLACE  ·  LIEN EN BIO"}
     ], photo_default, "post-J10-djreveal")
@@ -1246,13 +1282,6 @@ def main():
         "body": "ca va frapper.\nReveal · J-10",
         "cta": "REGLEMENT  ·  LIEN EN STORY"
     }, "story-J14-dj-indice")
-
-    print("== post-J10-djreveal (3 slides 1080x1350)")
-    gen_post_carousel([
-        {"photo": "interieur-nuit.webp", "stars": True, "eyebrow": "DJ REVEAL", "hero": "DJ SHINNY", "hero_size": 130, "body": "Pop, Shatta & Reggaeton de minuit à 02h", "barney": True},
-        {"photo": "peniche-soiree-2.jpg", "eyebrow": "CLOSING", "hero": "VOLTAGE", "hero_size": 130, "body": "Techno & Tek de 02h à 04h", "barney": False},
-        {"photo": "peniche-soiree-1.jpg", "eyebrow": "TA PLACE", "hero": "Lien en bio", "hero_size": 140, "body": "Dernières places dispos.", "barney": False},
-    ], photo_default, "post-J10-djreveal")
 
     print("== post-J7-recap (6 slides 1080x1350)")
     gen_post_carousel([
