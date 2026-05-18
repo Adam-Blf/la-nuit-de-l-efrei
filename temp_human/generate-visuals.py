@@ -353,6 +353,13 @@ def gen_post_carousel(slides_data: list, photo_default: str, output_id: str):
                 paste_logo(canvas, sil_homme, target_h, 110, 180)
                 paste_logo(canvas, sil_femme, target_h, w - 110 - target_h, 180)
 
+        # Ajout de logos customisés (ex: lineup DJ)
+        if slide.get("custom_logos"):
+            for cl in slide["custom_logos"]:
+                logo_path = LOGOS / cl["file"]
+                if logo_path.exists():
+                    paste_logo(canvas, logo_path, cl["h"], cl["x"], cl["y"])
+
         # Bloc info pied · skip si slide.no_footer = True (mode triptyque epure)
         if not slide.get("no_footer", False):
             fonts_footer = {
@@ -1126,8 +1133,14 @@ def main():
     print("== post-J10-djreveal (3 slides 1080x1350)")
     gen_post_carousel([
         {"photo": "pont-superieur-nuit.webp", "stars": True, "eyebrow": "PROGRAMMATION", "hero": "LA\nLINE UP", "hero_size": 130, "body": "Trois actes DJ.\nUn pont acoustique Live.\nToute la nuit.", "barney": False},
-        {"photo": "interieur-nuit.webp", "eyebrow": "PONT INFÉRIEUR", "hero": "DJ SETS", "hero_size": 130, "body": "22h-00h · Les Lovers\n00h-02h · DJ Shinny\n02h-04h · Voltage Contrôle", "barney": False},
-        {"photo": "peniche-soiree-1.jpg", "eyebrow": "PONT SUPÉRIEUR", "hero": "LE LIVE", "hero_size": 130, "body": "Instruments en direct.\nEn parallèle des DJ.", "barney": False, "cta": "RÉSERVER  ·  LIEN EN BIO"},
+        {"photo": "interieur-nuit.webp", "eyebrow": "PONT INFÉRIEUR", "hero": "DJ SETS", "hero_size": 130, "body": "22h-00h · Les Lovers\n00h-02h · DJ Shinny\n02h-04h · Voltage Contrôle", "barney": False, "custom_logos": [
+            {"file": "les-lovers.png", "h": 220, "x": 140, "y": 660},
+            {"file": "dj-shinny.jpg", "h": 220, "x": 430, "y": 660},
+            {"file": "voltage.png", "h": 220, "x": 720, "y": 660}
+        ]},
+        {"photo": "peniche-soiree-1.jpg", "eyebrow": "PONT SUPÉRIEUR", "hero": "LE LIVE", "hero_size": 130, "body": "Instruments en direct.\nEn parallèle des DJ.", "barney": False, "cta": "RÉSERVER  ·  LIEN EN BIO", "custom_logos": [
+            {"file": "live-efrei.png", "h": 260, "x": 410, "y": 620}
+        ]},
     ], photo_default, "post-J10-djreveal")
 
     print("== story-J10-djreveal (1 story 1080x1920)")
