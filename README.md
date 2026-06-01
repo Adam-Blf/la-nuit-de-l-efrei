@@ -19,6 +19,32 @@ Le retour, dix ans plus tard.
 
 ---
 
+## Architecture
+
+```mermaid
+flowchart TB
+    L["app/layout.tsx<br/>polices · metadata SEO · providers"]
+    NAV["SiteNav · Footer<br/>sticky · hamburger mobile · active state"]
+    PAGES["Pages App Router<br/>/ · /lieu · /billetterie · /faq · /sponsors · not-found"]
+    SEC["sections/<br/>Hero · Countdown · Venue · Tarifs · FAQ · Sponsors"]
+    PRIM["primitives/<br/>Stars seed-based · Decor · Logos"]
+    TOK["lib/tokens.ts<br/>couleurs · EVENT · NAV_ITEMS · EASE"]
+    CSS["globals.css<br/>Tailwind 4 @theme · keyframes · fonts"]
+    HA["HelloAssoWidget<br/>iframe · postMessage resize"]
+    V["Vercel<br/>Image Optimization · Edge"]
+
+    L --> NAV
+    L --> PAGES
+    PAGES --> SEC
+    SEC --> PRIM
+    SEC --> TOK
+    L --> CSS
+    PAGES --> HA
+    L --> V
+```
+
+---
+
 ## Stack
 
 - **Next.js 16** App Router · React 19 · TypeScript strict
