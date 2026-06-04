@@ -145,3 +145,14 @@ public/
 
 Fait par **Prom EFREI** · MMXXVI.
 Web · Adam Beloucif · `adam.beloucif@efrei.net` · [adam.beloucif.com](https://adam.beloucif.com).
+
+
+## Star History
+
+<a href="https://www.star-history.com/?repos=Adam-Blf%2Fla-nuit-de-l-efrei&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Adam-Blf/la-nuit-de-l-efrei&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Adam-Blf/la-nuit-de-l-efrei&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Adam-Blf/la-nuit-de-l-efrei&type=date&legend=top-left" />
+ </picture>
+</a>
