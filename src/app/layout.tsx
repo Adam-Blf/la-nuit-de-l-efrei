@@ -73,7 +73,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#001329",
+  themeColor: SITE_EN_PREPARATION ? "#0b0b0b" : "#001329",
   colorScheme: "dark",
   width: "device-width",
   initialScale: 1,
@@ -87,6 +87,7 @@ export default function RootLayout({
   return (
     <html
       lang="fr"
+      data-mode={SITE_EN_PREPARATION ? "preparation" : undefined}
       className={`${caslon.variable} ${hanken.variable} ${mono.variable} antialiased`}
     >
       <body className="bg-navy-900 text-cream">

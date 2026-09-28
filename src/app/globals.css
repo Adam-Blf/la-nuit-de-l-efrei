@@ -141,3 +141,11 @@ button {
     animation: none;
   }
 }
+
+/* Mode prochaine edition : les pages encore en ligne passent au noir des coulisses. */
+html[data-mode="preparation"] {
+  --navy-950: #050505;
+  --navy-900: #0b0b0b;
+  --navy-800: #141414;
+  --navy-700: #1c1c1c;
+}

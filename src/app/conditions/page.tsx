@@ -10,7 +10,7 @@ import { EVENT } from "@/lib/tokens";
 export const metadata: Metadata = {
   title: "Conditions de vente",
   description:
-    "Politique d'achat de La Nuit de l'EFREI · billet nominatif, aucun remboursement, aucune cession, contrôle d'identité à l'embarquement.",
+    "Politique d'achat de La Nuit de l'EFREI | billet nominatif, aucun remboursement, aucune cession, contrôle d'identité à l'embarquement.",
   robots: { index: false, follow: true },
 };
 
@@ -35,9 +35,9 @@ const BLOCKS: Array<{ t: string; body: React.ReactNode }> = [
           ce site.
         </p>
         <p className="mt-3">
-          Trois tarifs · 14&nbsp;€ Promo 2025 (diplômés EFREI sortis en juin
-          2025) · 18&nbsp;€ Étudiants &amp; Alumni EFREI et étudiants du
-          groupe Assas · 22&nbsp;€ Externe. Une fois la commande validée, un
+          Trois tarifs | 14&nbsp;€ Promo 2025 (diplômés EFREI sortis en juin
+          2025) | 18&nbsp;€ Étudiants &amp; Alumni EFREI et étudiants du
+          groupe Assas | 22&nbsp;€ Externe. Une fois la commande validée, un
           billet nominatif est envoyé par mail sous 24h.
         </p>
       </>
@@ -53,7 +53,7 @@ const BLOCKS: Array<{ t: string; body: React.ReactNode }> = [
         </p>
         <p className="mt-3">
           Si vous ne pouvez pas venir le 28 mai 2026, votre place est perdue.
-          Aucun remboursement, partiel ou total, ne sera accordé · y compris
+          Aucun remboursement, partiel ou total, ne sera accordé | y compris
           en cas d&apos;empêchement personnel, professionnel, médical, de
           retard, de transport, ou de force majeure individuelle.
         </p>
@@ -72,7 +72,7 @@ const BLOCKS: Array<{ t: string; body: React.ReactNode }> = [
       <>
         <p>
           Le billet est strictement nominatif (article 11 du contrat de mise
-          à disposition Inwee S00116 · clause &laquo; intuitu personae &raquo;).
+          à disposition Inwee S00116 | clause &laquo; intuitu personae &raquo;).
           Il ne peut être ni cédé, ni revendu, ni transmis à un tiers.
         </p>
         <p className="mt-3">
@@ -90,24 +90,24 @@ const BLOCKS: Array<{ t: string; body: React.ReactNode }> = [
     body: (
       <>
         <p>
-          Selon le tarif choisi, un justificatif est demandé à l&apos;entrée ·
+          Selon le tarif choisi, un justificatif est demandé à l&apos;entrée |
         </p>
         <ul className="mt-3 ml-5 list-disc space-y-2">
           <li>
-            <strong>14 € Promo 2025</strong> · diplôme ou attestation de
+            <strong>14 € Promo 2025</strong> | diplôme ou attestation de
             réussite EFREI promotion 2025 (juin 2025).
           </li>
           <li>
-            <strong>18 € Étudiants &amp; Alumni</strong> · carte étudiante en
+            <strong>18 € Étudiants &amp; Alumni</strong> | carte étudiante en
             cours de validité (EFREI, Assas, CFJ, École W, INA, ISIT) ou
             justificatif alumni (diplôme, mail @efrei.net, badge alumni).
           </li>
           <li>
-            <strong>22 € Externe</strong> · pièce d&apos;identité.
+            <strong>22 € Externe</strong> | pièce d&apos;identité.
           </li>
         </ul>
         <p className="mt-3">
-          Tarif acheté sans justificatif équivalent · majoration au tarif
+          Tarif acheté sans justificatif équivalent | majoration au tarif
           Externe (22 €) à régler à l&apos;entrée, ou refus d&apos;accès. Sans
           remboursement.
         </p>
@@ -120,7 +120,7 @@ const BLOCKS: Array<{ t: string; body: React.ReactNode }> = [
       <>
         <p>
           La direction de l&apos;établissement (La Péniche) se réserve le
-          droit de refuser ou d&apos;exclure tout invité qui · ne pourrait
+          droit de refuser ou d&apos;exclure tout invité qui | ne pourrait
           prouver sa majorité ou son identité, manifesterait un comportement
           contraire à la sécurité du lieu ou des autres invités, ou
           contreviendrait au règlement intérieur de l&apos;établissement
@@ -133,7 +133,7 @@ const BLOCKS: Array<{ t: string; body: React.ReactNode }> = [
         </p>
         <p className="mt-3">
           Le vestiaire est géré par l&apos;établissement et{" "}
-          <strong>payable en liquide uniquement</strong> · veste 3 €, sac
+          <strong>payable en liquide uniquement</strong> | veste 3 €, sac
           ou casque 5 €, valise ou sac à dos 7 €.
         </p>
         <p className="mt-3">
@@ -177,11 +177,11 @@ const BLOCKS: Array<{ t: string; body: React.ReactNode }> = [
         <Link className="underline" href="/mentions-legales">
           mentions légales
         </Link>{" "}
-        · les données personnelles collectées via HelloAsso (nom, prénom,
+        | les données personnelles collectées via HelloAsso (nom, prénom,
         email) servent uniquement au contrôle d&apos;accès et à la
         communication post-événement (aftermovie, photos officielles). Droit
         d&apos;accès, de rectification et de suppression conformément au
-        RGPD · <a className="underline" href={`mailto:${EVENT.email}`}>
+        RGPD | <a className="underline" href={`mailto:${EVENT.email}`}>
           {EVENT.email}
         </a>
         .
@@ -216,7 +216,7 @@ export default function ConditionsPage() {
       <SiteNav />
       <main>
         <PageHeader
-          eyebrow="CONDITIONS · POLITIQUE D'ACHAT"
+          eyebrow="CONDITIONS | POLITIQUE D'ACHAT"
           title={
             <>
               Une fois acheté,
@@ -238,7 +238,7 @@ export default function ConditionsPage() {
                 }`}
               >
                 <div className="font-mono text-[10px] uppercase tracking-[0.42em] text-brass-200">
-                  {String(i + 1).padStart(2, "0")} · {b.t}
+                  {String(i + 1).padStart(2, "0")} | {b.t}
                 </div>
                 <div className="prose prose-invert max-w-[640px] text-base leading-[1.75] text-cream/75">
                   {b.body}

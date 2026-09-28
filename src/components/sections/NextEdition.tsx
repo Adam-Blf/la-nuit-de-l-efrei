@@ -1,14 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { EVENT } from "@/lib/tokens";
 
 // Palette de la direction « Coulisses de nuit ».
 const NOIR = "#0b0b0b";
 const TUNGSTENE = "#f2c14e";
-const VELOURS = "#8e1b2c";
 const CRAIE = "#f4ebdd";
 
 type Indice = {
@@ -16,18 +15,20 @@ type Indice = {
   pos: string;
   genre: "scotch" | "craie" | "etiquette";
   rot?: string;
+  /** Page cachee que l'indice ouvre. */
+  href?: string;
 };
 
 // Semes dans le noir, visibles seulement sous la lampe. Chacun se lit sur un
 // chantier et se relit autrement une fois le theme devine.
 const INDICES: Indice[] = [
-  { texte: "Loge 5 : ne pas louer", pos: "left-[5%] top-[15%]", genre: "etiquette", rot: "-rotate-3" },
-  { texte: "Accès au paradis par l'escalier B", pos: "right-[6%] top-[12%]", genre: "craie", rot: "rotate-2" },
-  { texte: "Ne pas toucher au lustre", pos: "left-[5%] bottom-[30%]", genre: "scotch", rot: "rotate-1" },
-  { texte: "Port des jumelles recommandé", pos: "right-[6%] bottom-[34%]", genre: "etiquette", rot: "-rotate-2" },
+  { texte: "Local 5 : ne jamais attribuer", pos: "left-[5%] top-[15%]", genre: "etiquette", rot: "-rotate-3", href: "/local-5" },
+  { texte: "Escalier B : accès au dernier niveau", pos: "right-[6%] top-[12%]", genre: "craie", rot: "rotate-2", href: "/escalier-b" },
+  { texte: "Suspension centrale : ne pas toucher", pos: "left-[5%] bottom-[30%]", genre: "scotch", rot: "rotate-1" },
+  { texte: "Tests acoustiques en soirée", pos: "right-[6%] bottom-[34%]", genre: "etiquette", rot: "-rotate-2" },
   { texte: "Reprise après les trois coups", pos: "left-[5%] top-[46%]", genre: "craie", rot: "-rotate-1" },
-  { texte: "1875", pos: "right-[9%] top-[48%]", genre: "craie", rot: "rotate-6" },
-  { texte: "Nuisances sonores : quelques airs", pos: "left-[8%] bottom-[9%]", genre: "scotch", rot: "-rotate-2" },
+  { texte: "Réf. plan 1875", pos: "right-[9%] top-[48%]", genre: "craie", rot: "rotate-6", href: "/1875" },
+  { texte: "Livraison en retard, rideau compris", pos: "left-[8%] bottom-[9%]", genre: "scotch", rot: "-rotate-2" },
 ];
 
 const STYLE_INDICE: Record<Indice["genre"], string> = {
@@ -82,6 +83,7 @@ function Titre({ allume }: { allume: boolean }) {
 
 export function NextEdition() {
   const scene = useRef<HTMLDivElement>(null);
+  const [rideau, setRideau] = useState(false);
 
   useEffect(() => {
     const el = scene.current;
@@ -118,6 +120,10 @@ export function NextEdition() {
       poser(e.clientX - r.left, e.clientY - r.top);
     };
     el.addEventListener("pointermove", bouger);
+    console.log(
+      "%cIl y a plus de portes que de pièces sur ce chantier.",
+      "color:#f2c14e;font-size:13px",
+    );
     return () => {
       cancelAnimationFrame(raf);
       el.removeEventListener("pointermove", bouger);
@@ -131,7 +137,12 @@ export function NextEdition() {
     <div className="min-h-[100svh]" style={{ background: NOIR, color: CRAIE }}>
       <div
         ref={scene}
-        className="relative h-[100svh] min-h-[560px] cursor-crosshair touch-pan-y overflow-hidden [--x:50%] [--y:50%] [--r:190px] md:[--r:260px] motion-reduce:[--r:2000px]"
+        onClick={(e) => {
+          if (e.detail !== 3) return;
+          setRideau(true);
+          window.setTimeout(() => setRideau(false), 3500);
+        }}
+        className={`relative h-[100svh] min-h-[560px] cursor-crosshair touch-pan-y overflow-hidden [--x:50%] [--y:50%] [--r:190px] md:[--r:260px] motion-reduce:[--r:2000px] ${rideau ? "[--r:3000px]!" : ""}`}
         style={{ background: NOIR }}
       >
         {/* Plateau dans le noir : on devine a peine le titre. */}
@@ -152,14 +163,6 @@ export function NextEdition() {
           className="absolute inset-0"
           style={{ WebkitMaskImage: masque, maskImage: masque }}
         >
-          <div
-            aria-hidden="true"
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `radial-gradient(${VELOURS}33 1px, transparent 1px)`,
-              backgroundSize: "22px 22px",
-            }}
-          />
           {MARQUES.map((p) => (
             <div key={p} aria-hidden="true" className={`absolute ${p} h-8 w-8`}>
               <span className="absolute left-0 top-1/2 h-1.5 w-8 -translate-y-1/2 rotate-45" style={{ background: TUNGSTENE }} />
@@ -173,11 +176,26 @@ export function NextEdition() {
                 key={i.texte}
                 className={`absolute ${i.pos} ${i.rot ?? ""} ${STYLE_INDICE[i.genre]} max-w-[16rem] hidden sm:block`}
               >
-                {i.texte}
+                {i.href ? (
+                  <Link href={i.href} className="hover:text-[#f2c14e]">
+                    {i.texte}
+                  </Link>
+                ) : (
+                  i.texte
+                )}
               </li>
             ))}
           </ul>
         </div>
+
+        {rideau && (
+          <div
+            role="status"
+            className="pointer-events-none absolute inset-x-0 bottom-10 text-center font-mono text-xs uppercase tracking-[0.3em] text-[#f2c14e]"
+          >
+            Trois coups. Le rideau se lèvera bientôt.
+          </div>
+        )}
 
         <div
           aria-hidden="true"

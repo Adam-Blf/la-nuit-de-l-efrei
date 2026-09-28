@@ -7,7 +7,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ListIcon, XIcon } from "@phosphor-icons/react";
 
 import { PromBlason } from "@/components/primitives/Logos";
+import { SITE_EN_PREPARATION } from "@/lib/site-status";
 import { EVENT, NAV_ITEMS, EASE } from "@/lib/tokens";
+
+const CTA = SITE_EN_PREPARATION
+  ? { href: "/", label: "Le chantier" }
+  : { href: "/billetterie", label: "Réserver" };
 
 export function SiteNav() {
   const pathname = usePathname();
@@ -65,10 +70,10 @@ export function SiteNav() {
 
         <div className="flex items-center gap-3">
           <Link
-            href="/billetterie"
+            href={CTA.href}
             className="hidden bg-brass-400 px-5 py-3 font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-navy-900 transition-transform hover:-translate-y-px md:inline-block"
           >
-            Réserver
+            {CTA.label}
           </Link>
           <button
             type="button"
@@ -121,11 +126,11 @@ export function SiteNav() {
                 className="mt-8"
               >
                 <Link
-                  href="/billetterie"
+                  href={CTA.href}
                   onClick={closeMenu}
                   className="inline-block bg-brass-400 px-8 py-4 font-sans text-xs font-bold uppercase tracking-[0.22em] text-navy-900"
                 >
-                  Réserver →
+                  {CTA.label} →
                 </Link>
               </motion.div>
             </div>

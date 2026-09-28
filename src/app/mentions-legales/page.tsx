@@ -9,7 +9,7 @@ import { EVENT } from "@/lib/tokens";
 export const metadata: Metadata = {
   title: "Mentions légales",
   description:
-    "Mentions légales et politique de confidentialité du site La Nuit de l'EFREI. Édité par Prom EFREI · Bureau des Arts EFREI.",
+    "Mentions légales et politique de confidentialité du site La Nuit de l'EFREI. Édité par Prom EFREI | Bureau des Arts EFREI.",
   robots: { index: false, follow: true },
 };
 
@@ -24,10 +24,10 @@ const BLOCKS: Array<{ t: string; body: React.ReactNode }> = [
           association loi 1901 affiliée à l&apos;EFREI.
         </p>
         <p className="mt-3">
-          Adresse postale · 30-32 avenue de la République, 94800 Villejuif.
+          Adresse postale | 30-32 avenue de la République, 94800 Villejuif.
           <br />
-          Contact · <a className="underline" href={`mailto:${EVENT.email}`}>{EVENT.email}</a>{" "}
-          · BDA · <a className="underline" href="mailto:bureau@bda-efrei.fr">bureau@bda-efrei.fr</a>.
+          Contact | <a className="underline" href={`mailto:${EVENT.email}`}>{EVENT.email}</a>{" "}
+          | BDA | <a className="underline" href="mailto:bureau@bda-efrei.fr">bureau@bda-efrei.fr</a>.
         </p>
       </>
     ),
@@ -36,8 +36,8 @@ const BLOCKS: Array<{ t: string; body: React.ReactNode }> = [
     t: "Hébergement",
     body: (
       <p>
-        Hébergeur · <strong>Vercel Inc.</strong>, 440 N Barranca Ave #4133,
-        Covina, CA 91723, États-Unis · vercel.com.
+        Hébergeur | <strong>Vercel Inc.</strong>, 440 N Barranca Ave #4133,
+        Covina, CA 91723, États-Unis | vercel.com.
       </p>
     ),
   },
@@ -88,8 +88,8 @@ const BLOCKS: Array<{ t: string; body: React.ReactNode }> = [
     t: "Crédits",
     body: (
       <p>
-        Conception et développement · Adam Beloucif (Prom EFREI). Photos · La
-        Péniche / Inwee. Mascotte Barney · Prom EFREI 2026. Code source ouvert ·{" "}
+        Conception et développement | Adam Beloucif (Prom EFREI). Photos | La
+        Péniche / Inwee. Mascotte Barney | Prom EFREI 2026. Code source ouvert |{" "}
         <a
           className="underline"
           href="https://github.com/Adam-Blf/la-nuit-de-l-efrei"
@@ -110,7 +110,7 @@ export default function MentionsLegalesPage() {
       <SiteNav />
       <main>
         <PageHeader
-          eyebrow="MENTIONS LÉGALES · CONFIDENTIALITÉ"
+          eyebrow="MENTIONS LÉGALES | CONFIDENTIALITÉ"
           title={
             <>
               Tout, <GoldText>en clair.</GoldText>
@@ -128,7 +128,7 @@ export default function MentionsLegalesPage() {
                 }`}
               >
                 <div className="font-mono text-[10px] uppercase tracking-[0.42em] text-brass-200">
-                  {String(i + 1).padStart(2, "0")} · {b.t}
+                  {String(i + 1).padStart(2, "0")} | {b.t}
                 </div>
                 <div className="prose prose-invert max-w-[640px] text-base leading-[1.7] text-cream/75">
                   {b.body}
