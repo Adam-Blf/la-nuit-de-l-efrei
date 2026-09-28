@@ -35,7 +35,7 @@ export function HelloAssoWidget() {
       <div className="relative mx-auto max-w-[1100px]">
         <div className="mb-10 text-center md:mb-14">
           <Eyebrow>HELLOASSO · BILLETTERIE OFFICIELLE</Eyebrow>
-          <h2 className="fraunces-display mt-6 text-[clamp(40px,6vw,80px)] font-medium leading-[0.96] tracking-[-0.03em] text-cream">
+          <h2 className="display-serif mt-6 text-[clamp(40px,6vw,80px)] font-medium leading-[0.96] tracking-[-0.03em] text-cream">
             Réserver <span className="gold-text italic">maintenant</span>.
           </h2>
           <p className="mx-auto mt-5 max-w-[520px] text-sm leading-[1.65] text-cream/65 md:text-base">

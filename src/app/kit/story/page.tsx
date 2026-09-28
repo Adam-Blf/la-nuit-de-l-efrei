@@ -3,7 +3,7 @@
 import { Suspense } from "react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
-import { Corners, Eyebrow, GoldText, LightWash } from "@/components/primitives/Decor";
+import { Corners, GoldText, LightWash } from "@/components/primitives/Decor";
 import { Stars } from "@/components/primitives/Stars";
 import { PromBlason, BDAHorizontal, EfreiLogo } from "@/components/primitives/Logos";
 
@@ -54,7 +54,7 @@ function StoryKitContent() {
           </div>
         )}
 
-        <h1 className="fraunces-display text-[120px] font-medium leading-[0.95] tracking-[-0.05em] text-cream drop-shadow-2xl">
+        <h1 className="display-serif text-[120px] font-medium leading-[0.95] tracking-[-0.05em] text-cream drop-shadow-2xl">
           <GoldText>{title}</GoldText>
         </h1>
         

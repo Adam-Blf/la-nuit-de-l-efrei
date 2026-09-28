@@ -19,11 +19,11 @@ export function HomeCTA() {
       <div className="relative mx-auto grid max-w-[1280px] items-center gap-10 lg:grid-cols-[1fr_320px]">
         <div className="text-center lg:text-left">
           <Eyebrow>·· III · Dernier acte ··</Eyebrow>
-          <h3 className="fraunces-display mx-auto mt-12 max-w-[12ch] pb-[0.12em] text-[clamp(56px,10vw,144px)] font-medium leading-[1.05] tracking-[-0.035em] text-cream lg:mx-0">
+          <h3 className="display-serif mx-auto mt-12 max-w-[12ch] pb-[0.12em] text-[clamp(56px,10vw,144px)] font-medium leading-[1.05] tracking-[-0.035em] text-cream lg:mx-0">
             La place.
             <br />
             Ou{" "}
-            <em className="fraunces-display font-semibold [font-style:italic]">
+            <em className="display-serif font-semibold [font-style:italic]">
               <FestiveText className="inline-block pb-[0.18em] pr-[0.2em]">
                 le regret
               </FestiveText>

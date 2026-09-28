@@ -8,13 +8,22 @@
 [![React 19](https://img.shields.io/badge/React-19-149ECA?logo=react)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript)](https://typescriptlang.org)
 [![Tailwind CSS 4](https://img.shields.io/badge/Tailwind-4-38BDF8?logo=tailwindcss)](https://tailwindcss.com)
+[![Phosphor Icons](https://img.shields.io/badge/icons-Phosphor-D4A437)](https://phosphoricons.com)
 [![framer-motion 11](https://img.shields.io/badge/framer--motion-11-0055FF?logo=framer)](https://motion.dev)
 [![License MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Version 0.1.0](https://img.shields.io/badge/version-0.1.0-blue)](package.json)
+[![Version 0.2.0](https://img.shields.io/badge/version-0.2.0-blue)](package.json)
 
 Site officiel du gala **La Nuit de l'EFREI** - jeudi 28 mai 2026 - La Péniche, 2 quai de la Tournelle - Paris V - 22h → 04h - 300 invités - privatisation totale.
 
 Le retour, dix ans plus tard.
+
+## Etat actuel : prochaine édition en préparation
+
+Depuis la v0.2.0, le site est en mode chantier : l'accueil annonce la prochaine édition et cache des indices sur son thème dans le noir, les pages de l'édition 2026 (billetterie, line-up, carte, lieu, FAQ, associations, kit) redirigent vers l'accueil, et les pages légales restent en ligne.
+
+Tout tient à un drapeau, `SITE_EN_PREPARATION` dans `src/lib/site-status.ts`. Le repasser à `false` rend le site complet de l'édition, sans autre modification.
+
+Direction « Coulisses de nuit » : écran noir, une baladeuse suit la souris et révèle les indices sur le thème. Typographie : Libre Caslon Display (titres), Hanken Grotesk (texte), Victor Mono (étiquettes). Icônes : Phosphor.
 
 ---
 

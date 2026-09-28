@@ -204,10 +204,10 @@ export default function AssociationsPage() {
               >
                 <div className="grid items-baseline gap-y-8 lg:grid-cols-[260px_1fr] lg:gap-x-16">
                   <div>
-                    <div className="fraunces-display text-lg text-brass-400">
+                    <div className="display-serif text-lg text-brass-400">
                       {String(i + 1).padStart(2, "0")}
                     </div>
-                    <div className="fraunces-display mt-2 text-[clamp(28px,3.6vw,40px)] leading-[1.1] tracking-[-0.02em] text-cream">
+                    <div className="display-serif mt-2 text-[clamp(28px,3.6vw,40px)] leading-[1.1] tracking-[-0.02em] text-cream">
                       {t.l}
                     </div>
                     <div className="mt-2 text-[13px] text-cream/55">{t.s}</div>
@@ -242,7 +242,7 @@ export default function AssociationsPage() {
                               />
                             </div>
                           )}
-                          <div className="fraunces-display text-xl tracking-[-0.01em] text-cream md:text-[24px]">
+                          <div className="display-serif text-xl tracking-[-0.01em] text-cream md:text-[24px]">
                             {item.n}
                           </div>
                           <div className="mt-2 text-[13px] leading-[1.6] text-cream/60">
@@ -278,7 +278,7 @@ export default function AssociationsPage() {
             <div className="relative mt-24 border border-brass-400 px-8 py-16 text-center md:px-14 md:py-20">
               <Corners size={32} opacity={0.6} />
               <Eyebrow>· Votre asso à bord ?</Eyebrow>
-              <h3 className="fraunces-display mt-5 pb-[0.08em] text-[clamp(32px,4.5vw,48px)] leading-[1.05] tracking-[-0.02em] text-cream">
+              <h3 className="display-serif mt-5 pb-[0.08em] text-[clamp(32px,4.5vw,48px)] leading-[1.05] tracking-[-0.02em] text-cream">
                 Embarquez avec nous.
               </h3>
               <p className="mx-auto mt-4 max-w-[480px] text-[14px] leading-[1.6] text-cream/65">

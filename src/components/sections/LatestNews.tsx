@@ -38,8 +38,8 @@ export function LatestNews() {
       <div className="relative mx-auto max-w-[1280px]">
         <div className="mb-16 flex flex-col items-baseline justify-between gap-6 md:mb-24 md:flex-row">
           <div>
-            <Eyebrow>Actualités | Direct d'Instagram</Eyebrow>
-            <h2 className="fraunces-display mt-6 pb-[0.08em] text-[clamp(40px,6vw,80px)] leading-[1.02] tracking-[-0.03em] text-cream">
+            <Eyebrow>Actualités | Direct d&apos;Instagram</Eyebrow>
+            <h2 className="display-serif mt-6 pb-[0.08em] text-[clamp(40px,6vw,80px)] leading-[1.02] tracking-[-0.03em] text-cream">
               Le fil de <br />
               <GoldText>la préparation.</GoldText>
             </h2>
@@ -72,7 +72,7 @@ export function LatestNews() {
                 </span>
               </div>
 
-              <h3 className="fraunces-display mb-6 text-2xl font-medium leading-tight text-cream group-hover:text-brass-100 md:text-3xl">
+              <h3 className="display-serif mb-6 text-2xl font-medium leading-tight text-cream group-hover:text-brass-100 md:text-3xl">
                 {item.title}
               </h3>
 

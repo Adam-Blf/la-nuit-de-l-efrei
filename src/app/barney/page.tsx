@@ -60,12 +60,12 @@ export default function BarneyPage() {
           <div className="relative mx-auto grid min-h-[100svh] max-w-[1400px] items-center gap-12 px-6 py-24 md:px-12 md:py-28 lg:grid-cols-[1fr_440px] lg:gap-20 lg:px-20 lg:py-32 xl:px-[120px]">
             <div>
               <Eyebrow>·· La mascotte officielle ··</Eyebrow>
-              <h1 className="fraunces-display mt-6 pb-[0.08em] text-[clamp(72px,16vw,260px)] font-medium leading-[0.94] tracking-[-0.04em] text-cream">
+              <h1 className="display-serif mt-6 pb-[0.08em] text-[clamp(72px,16vw,260px)] font-medium leading-[0.94] tracking-[-0.04em] text-cream">
                 <GoldText>Barney</GoldText>.
               </h1>
               <p className="mt-8 max-w-[520px] text-lg leading-[1.55] text-cream/72 md:text-[22px]">
                 Chouette effraie en{" "}
-                <em className="fraunces-display glyph-safe text-brass-200 [font-style:italic]">
+                <em className="display-serif glyph-safe text-brass-200 [font-style:italic]">
                   smoking bleu nuit
                 </em>
                 . Hôte de la nuit, garde-temps de la promo, ami discret du
@@ -99,9 +99,9 @@ export default function BarneyPage() {
             <div className="grid items-start gap-12 lg:grid-cols-[260px_1fr] lg:gap-20">
               <div>
                 <Eyebrow>· Bio</Eyebrow>
-                <h2 className="fraunces-display mt-4 pb-[0.06em] text-[clamp(36px,4.5vw,56px)] leading-[1.05] tracking-[-0.02em] text-cream">
+                <h2 className="display-serif mt-4 pb-[0.06em] text-[clamp(36px,4.5vw,56px)] leading-[1.05] tracking-[-0.02em] text-cream">
                   Quelqu&apos;un<br />
-                  <em className="fraunces-display [font-style:italic]">
+                  <em className="display-serif [font-style:italic]">
                     <GoldText className="inline-block pb-[0.12em] pr-[0.2em]">
                       vous attend
                     </GoldText>
@@ -155,13 +155,13 @@ export default function BarneyPage() {
                     i < 3 ? "lg:border-r lg:border-brass-400/20" : ""
                   }`}
                 >
-                  <div className="fraunces-display text-5xl leading-none text-brass-400">
+                  <div className="display-serif text-5xl leading-none text-brass-400">
                     {f.n}
                   </div>
                   <div className="mt-6">
                     <Eyebrow>{f.l}</Eyebrow>
                   </div>
-                  <div className="fraunces-display mt-3 text-2xl tracking-[-0.02em] text-cream md:text-[28px]">
+                  <div className="display-serif mt-3 text-2xl tracking-[-0.02em] text-cream md:text-[28px]">
                     {f.v}
                   </div>
                   <p className="mt-3 text-[13px] leading-[1.6] text-cream/55">
@@ -179,9 +179,9 @@ export default function BarneyPage() {
           <div className="relative mx-auto grid max-w-[1280px] items-center gap-12 lg:grid-cols-[1fr_320px]">
             <div className="text-center lg:text-left">
               <Eyebrow>·· Le voir, en vrai ··</Eyebrow>
-              <h3 className="fraunces-display mx-auto mt-8 max-w-[14ch] pb-[0.1em] text-[clamp(48px,8vw,112px)] leading-[1.05] tracking-[-0.035em] text-cream lg:mx-0">
+              <h3 className="display-serif mx-auto mt-8 max-w-[14ch] pb-[0.1em] text-[clamp(48px,8vw,112px)] leading-[1.05] tracking-[-0.035em] text-cream lg:mx-0">
                 Une seule nuit{" "}
-                <em className="fraunces-display [font-style:italic]">
+                <em className="display-serif [font-style:italic]">
                   <GoldText className="inline-block pb-[0.15em] pr-[0.2em]">
                     pour le croiser
                   </GoldText>

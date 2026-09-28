@@ -4,7 +4,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { EfreiLogo, PromBlason } from "@/components/primitives/Logos";
+import { PAGES_EDITION, SITE_EN_PREPARATION } from "@/lib/site-status";
 import { EVENT } from "@/lib/tokens";
+
+const masquee = (href: string) =>
+  SITE_EN_PREPARATION && (PAGES_EDITION as readonly string[]).includes(href);
 
 export function Footer() {
   const pathname = usePathname();
@@ -53,7 +57,7 @@ export function Footer() {
           <div className="flex items-center gap-4">
             <PromBlason size={56} />
             <div>
-              <div className="fraunces-display text-2xl font-medium tracking-tight text-cream">
+              <div className="display-serif text-2xl font-medium tracking-tight text-cream">
                 {EVENT.name}
               </div>
               <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.32em] text-brass-200">
@@ -85,7 +89,9 @@ export function Footer() {
           </div>
         </div>
         {cols.map((col) => {
-          const visible = col.links.filter((l) => !isCurrent(l.href));
+          const visible = col.links.filter(
+            (l) => !isCurrent(l.href) && !masquee(l.href),
+          );
           if (visible.length === 0) return null;
           return (
             <div key={col.title}>
@@ -111,7 +117,9 @@ export function Footer() {
       <div className="mx-auto mt-16 flex max-w-[1280px] flex-col gap-3 border-t border-brass-400/10 pt-7 font-mono text-[10px] uppercase tracking-[0.32em] text-cream/45 md:flex-row md:items-center md:justify-between">
         <span>FAIT PAR PROM EFREI | {EVENT.edition}</span>
         <span>
-          {EVENT.date} | {EVENT.doors} → {EVENT.end}
+          {SITE_EN_PREPARATION
+            ? "Prochaine édition en préparation"
+            : `${EVENT.date} | ${EVENT.doors} → ${EVENT.end}`}
         </span>
       </div>
     </footer>

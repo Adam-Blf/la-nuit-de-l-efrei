@@ -19,14 +19,14 @@ export function ComebackBanner() {
 
         <div className="relative mt-12 inline-block overflow-visible px-[0.12em] pb-[0.18em] pt-[0.12em]">
           <div
-            className="fraunces-display inline-block overflow-visible pb-[0.05em] pr-[0.08em] font-bold leading-[1.05] tracking-[-0.02em]"
+            className="display-serif inline-block overflow-visible pb-[0.05em] pr-[0.08em] font-bold leading-[1.05] tracking-[-0.02em]"
             style={{ fontSize: "clamp(180px, 32vw, 520px)" }}
           >
             <GoldText>10</GoldText>
           </div>
         </div>
 
-        <div className="fraunces-display mt-6 text-3xl font-medium tracking-[-0.02em] text-cream md:text-4xl">
+        <div className="display-serif mt-6 text-3xl font-medium tracking-[-0.02em] text-cream md:text-4xl">
           années de silence.
         </div>
 
@@ -42,7 +42,7 @@ export function ComebackBanner() {
 
         <p className="mx-auto mt-12 max-w-[560px] text-lg leading-[1.5] text-cream/72 md:text-[22px]">
           Une seule nuit pour{" "}
-          <em className="fraunces-display glyph-safe text-plum-300 [font-style:italic]">
+          <em className="display-serif glyph-safe text-plum-300 [font-style:italic]">
             les rompre
           </em>
           .

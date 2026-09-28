@@ -87,7 +87,7 @@ export function FAQ() {
     >
       <div className="mx-auto max-w-[1100px]">
         <div className="mb-16 flex flex-col gap-3 sm:flex-row sm:items-baseline sm:justify-between md:mb-20">
-          <h2 className="fraunces-display text-[clamp(40px,7vw,72px)] tracking-[-0.03em] text-cream">
+          <h2 className="display-serif text-[clamp(40px,7vw,72px)] tracking-[-0.03em] text-cream">
             Questions <GoldText>fréquentes.</GoldText>
           </h2>
           <div className="font-mono text-[11px] tracking-[0.28em] text-cream/50">
@@ -127,11 +127,11 @@ export function FAQ() {
                           fill="#EAC97B"
                         />
                       </svg>
-                      <span className="fraunces-display text-sm text-brass-200">
+                      <span className="display-serif text-sm text-brass-200">
                         {String(i + 1).padStart(2, "0")}
                       </span>
                     </div>
-                    <span className="fraunces-display text-lg tracking-[-0.01em] text-cream md:text-2xl">
+                    <span className="display-serif text-lg tracking-[-0.01em] text-cream md:text-2xl">
                       {it.q}
                     </span>
                   </div>

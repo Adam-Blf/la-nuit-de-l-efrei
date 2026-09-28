@@ -1,3 +1,5 @@
+import { SITE_EN_PREPARATION } from "@/lib/site-status";
+
 export const C = {
   navy900: "#001329",
   navy800: "#001f3f",
@@ -33,7 +35,7 @@ export const EVENT = {
     "https://www.helloasso.com/associations/bureau-des-arts-efrei/evenements/gala-de-fin-d-annee",
 } as const;
 
-export const NAV_ITEMS = [
+const NAV_EDITION = [
   { id: "/", label: "Accueil" },
   { id: "/lieu", label: "Lieu" },
   { id: "/billetterie", label: "Billetterie" },
@@ -42,5 +44,9 @@ export const NAV_ITEMS = [
   { id: "/faq", label: "FAQ" },
   { id: "/associations", label: "Associations" },
 ] as const;
+
+export const NAV_ITEMS = SITE_EN_PREPARATION
+  ? NAV_EDITION.slice(0, 1)
+  : NAV_EDITION;
 
 export const EASE = [0.22, 1, 0.36, 1] as const;

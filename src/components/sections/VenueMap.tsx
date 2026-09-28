@@ -1,8 +1,8 @@
 import {
-  Bike,
-  Moon,
-  CarTaxiFront,
-} from "lucide-react";
+  BicycleIcon,
+  MoonIcon,
+  TaxiIcon,
+} from "@phosphor-icons/react/ssr";
 import type { ReactNode } from "react";
 
 import { Corners, Eyebrow } from "@/components/primitives/Decor";
@@ -66,7 +66,7 @@ const STOPS: Stop[] = [
     v: "Station 50403 | 50 m",
     modeIcon: (
       <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-[6px] bg-[#A6CE39] text-white">
-        <Bike size={16} strokeWidth={2.4} aria-hidden="true" />
+        <BicycleIcon size={16} weight="bold" aria-hidden="true" />
       </span>
     ),
     badges: (
@@ -80,7 +80,7 @@ const STOPS: Stop[] = [
     v: "Saint-Michel | 00h30 → 05h30",
     modeIcon: (
       <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#252958] text-white">
-        <Moon size={15} strokeWidth={2} aria-hidden="true" />
+        <MoonIcon size={15} weight="bold" aria-hidden="true" />
       </span>
     ),
     badges: (
@@ -97,7 +97,7 @@ const STOPS: Stop[] = [
     v: "Sur le quai | toute la nuit",
     modeIcon: (
       <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-[6px] bg-[#0F2E55] text-[#F4D03F]">
-        <CarTaxiFront size={15} strokeWidth={2} aria-hidden="true" />
+        <TaxiIcon size={15} weight="bold" aria-hidden="true" />
       </span>
     ),
     badges: (
@@ -116,7 +116,7 @@ export function VenueMap() {
         <div className="mb-10 flex flex-wrap items-baseline justify-between gap-4">
           <div>
             <Eyebrow>Situation | 2 quai de la Tournelle</Eyebrow>
-            <h2 className="fraunces-display mt-3 text-[clamp(28px,3.6vw,40px)] leading-[1.1] tracking-[-0.02em] text-cream">
+            <h2 className="display-serif mt-3 text-[clamp(28px,3.6vw,40px)] leading-[1.1] tracking-[-0.02em] text-cream">
               Paris V | face à Notre-Dame.
             </h2>
           </div>
@@ -166,7 +166,7 @@ export function VenueMap() {
             <div className="font-mono text-[9px] uppercase tracking-[0.32em] text-brass-200">
               Embarquement
             </div>
-            <div className="fraunces-display mt-1 text-lg leading-tight text-cream">
+            <div className="display-serif mt-1 text-lg leading-tight text-cream">
               La Péniche
             </div>
             <div className="mt-1 text-[12px] text-cream/65">
@@ -187,7 +187,7 @@ export function VenueMap() {
                   {s.l}
                 </div>
               </div>
-              <div className="fraunces-display mt-3 text-lg leading-tight text-cream md:text-[20px]">
+              <div className="display-serif mt-3 text-lg leading-tight text-cream md:text-[20px]">
                 {s.v}
               </div>
               <div className="mt-3 flex items-center">{s.badges}</div>

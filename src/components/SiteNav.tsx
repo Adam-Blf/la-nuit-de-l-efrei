@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { ListIcon, XIcon } from "@phosphor-icons/react";
 
 import { PromBlason } from "@/components/primitives/Logos";
 import { EVENT, NAV_ITEMS, EASE } from "@/lib/tokens";
@@ -31,7 +31,7 @@ export function SiteNav() {
         <Link href="/" className="flex items-center gap-3 group">
           <PromBlason size={36} />
           <span className="flex flex-col leading-tight">
-            <span className="fraunces-display text-base font-medium tracking-tight text-cream md:text-lg">
+            <span className="display-serif text-base font-medium tracking-tight text-cream md:text-lg">
               {EVENT.name}
             </span>
             <span className="font-mono text-[9px] font-medium uppercase tracking-[0.32em] text-brass-200">
@@ -77,7 +77,7 @@ export function SiteNav() {
             onClick={() => setOpen((o) => !o)}
             className="flex h-10 w-10 items-center justify-center text-cream lg:hidden"
           >
-            {open ? <X size={22} /> : <Menu size={22} />}
+            {open ? <XIcon size={22} weight="bold" /> : <ListIcon size={22} weight="bold" />}
           </button>
         </div>
       </nav>
@@ -106,7 +106,7 @@ export function SiteNav() {
                   <Link
                     href={item.id}
                     onClick={closeMenu}
-                    className={`block py-4 fraunces-display text-3xl font-medium tracking-tight ${
+                    className={`block py-4 display-serif text-3xl font-medium tracking-tight ${
                       isActive(item.id) ? "text-cream" : "text-cream/70"
                     }`}
                   >

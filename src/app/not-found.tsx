@@ -9,7 +9,7 @@ export default function NotFound() {
       <Stars count={70} seed={404} width={1440} height={900} density={0.6} />
       <div className="relative">
         <Eyebrow>404 · PAS À QUAI</Eyebrow>
-        <h1 className="fraunces-display mt-6 text-[clamp(80px,18vw,220px)] font-medium leading-none tracking-[-0.04em] text-cream">
+        <h1 className="display-serif mt-6 text-[clamp(80px,18vw,220px)] font-medium leading-none tracking-[-0.04em] text-cream">
           <GoldText>Perdu</GoldText>.
         </h1>
         <p className="mx-auto mt-6 max-w-[420px] text-base text-cream/70 md:text-lg">

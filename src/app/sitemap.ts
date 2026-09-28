@@ -1,10 +1,12 @@
 import type { MetadataRoute } from "next";
 
+import { PAGES_EDITION, SITE_EN_PREPARATION } from "@/lib/site-status";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const base =
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://la-nuit-de-l-efrei.vercel.app";
   const lastModified = new Date("2026-05-02");
-  return [
+  const pages: MetadataRoute.Sitemap = [
     { url: `${base}/`, lastModified, priority: 1, changeFrequency: "weekly" },
     { url: `${base}/lieu`, lastModified, priority: 0.8, changeFrequency: "monthly" },
     { url: `${base}/billetterie`, lastModified, priority: 0.95, changeFrequency: "weekly" },
@@ -16,4 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/conditions`, lastModified, priority: 0.4, changeFrequency: "yearly" },
     { url: `${base}/mentions-legales`, lastModified, priority: 0.2, changeFrequency: "yearly" },
   ];
+  if (!SITE_EN_PREPARATION) return pages;
+  const masquees = new Set<string>(PAGES_EDITION.map((p) => `${base}${p}`));
+  return pages.filter((p) => !masquees.has(p.url));
 }

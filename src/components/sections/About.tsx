@@ -8,12 +8,12 @@ export function About() {
         <div className="grid gap-16 lg:grid-cols-[1.4fr_1fr] lg:gap-24">
           <div>
             <Eyebrow>I - L&apos;événement</Eyebrow>
-            <h2 className="fraunces-display mt-8 pb-[0.1em] text-[clamp(48px,9vw,144px)] font-medium leading-[1.02] tracking-[-0.035em] text-cream">
+            <h2 className="display-serif mt-8 pb-[0.1em] text-[clamp(48px,9vw,144px)] font-medium leading-[1.02] tracking-[-0.035em] text-cream">
               Une nuit où
               <br />
               la Seine devient
               <br />
-              <em className="fraunces-display font-semibold [font-style:italic]">
+              <em className="display-serif font-semibold [font-style:italic]">
                 <GoldText className="inline-block pb-[0.12em] pr-[0.2em]">
                   scène
                 </GoldText>
@@ -28,7 +28,7 @@ export function About() {
               caption="Pont supérieur | nuit"
               height={520}
             />
-            <div className="absolute -bottom-7 -right-3 bg-plum-500 px-7 py-5 fraunces-display text-xl font-medium text-cream md:-right-7 md:text-[22px]">
+            <div className="absolute -bottom-7 -right-3 bg-plum-500 px-7 py-5 display-serif text-xl font-medium text-cream md:-right-7 md:text-[22px]">
               48.852°N | 2.353°E
             </div>
           </div>
@@ -47,7 +47,7 @@ export function About() {
               }`}
             >
               <div
-                className={`fraunces-display font-medium leading-[0.92] tracking-[-0.04em] ${s.color}`}
+                className={`display-serif font-medium leading-[0.92] tracking-[-0.04em] ${s.color}`}
                 style={{ fontSize: "clamp(72px, 12vw, 188px)" }}
               >
                 {s.v}

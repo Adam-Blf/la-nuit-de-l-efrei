@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 
+import { PAGES_EDITION, SITE_EN_PREPARATION } from "./src/lib/site-status";
+
 const securityHeaders = [
   { key: "X-Frame-Options", value: "SAMEORIGIN" },
   { key: "X-Content-Type-Options", value: "nosniff" },
@@ -18,6 +20,9 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  experimental: {
+    optimizePackageImports: ["@phosphor-icons/react"],
+  },
   compress: true,
   images: {
     formats: ["image/avif", "image/webp"],
@@ -27,6 +32,14 @@ const nextConfig: NextConfig = {
         hostname: "img.helloasso.com",
       },
     ],
+  },
+  async redirects() {
+    if (!SITE_EN_PREPARATION) return [];
+    return PAGES_EDITION.map((source) => ({
+      source,
+      destination: "/",
+      permanent: false,
+    }));
   },
   async headers() {
     return [

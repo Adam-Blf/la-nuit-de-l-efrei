@@ -25,7 +25,7 @@ export function Marquee() {
         {row.map((t, i) => (
           <span
             key={i}
-            className={`fraunces-display font-medium tracking-[-0.01em] ${
+            className={`display-serif font-medium tracking-[-0.01em] ${
               t === "•" ? "text-3xl text-brass-400" : "text-2xl text-cream md:text-[28px]"
             }`}
           >
