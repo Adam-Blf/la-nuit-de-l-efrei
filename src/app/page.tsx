@@ -7,8 +7,18 @@ import { Marquee } from "@/components/sections/Marquee";
 import { About } from "@/components/sections/About";
 import { HomeCTA } from "@/components/sections/HomeCTA";
 import { LatestNews } from "@/components/sections/LatestNews";
+import { NextEdition } from "@/components/sections/NextEdition";
+import { SITE_EN_PREPARATION } from "@/lib/site-status";
 
 export default function Home() {
+  if (SITE_EN_PREPARATION) {
+    return (
+      <main>
+        <NextEdition />
+      </main>
+    );
+  }
+
   return (
     <>
       <SiteNav />

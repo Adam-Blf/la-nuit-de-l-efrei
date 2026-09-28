@@ -1,4 +1,3 @@
-import type { NextRequest } from "next/server";
 
 import { EVENT } from "@/lib/tokens";
 
@@ -10,7 +9,7 @@ const dtUtc = (d: Date) =>
     .replace(/[-:]/g, "")
     .replace(/\.\d{3}Z$/, "Z");
 
-export function GET(_req: NextRequest) {
+export function GET() {
   const start = new Date(EVENT.startISO);
   const end = new Date(start.getTime() + 6 * 60 * 60 * 1000);
   const stamp = new Date();

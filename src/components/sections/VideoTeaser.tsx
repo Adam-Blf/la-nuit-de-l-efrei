@@ -7,7 +7,7 @@ export function VideoTeaser() {
         <div className="mb-10 flex flex-wrap items-baseline justify-between gap-4 md:mb-14">
           <div>
             <Eyebrow>Aperçu | La Péniche en mouvement</Eyebrow>
-            <h2 className="fraunces-display mt-5 pb-[0.08em] text-[clamp(32px,5vw,56px)] leading-[1.05] tracking-[-0.03em] text-cream">
+            <h2 className="display-serif mt-5 pb-[0.08em] text-[clamp(32px,5vw,56px)] leading-[1.05] tracking-[-0.03em] text-cream">
               La Seine, <GoldText>vue de bord</GoldText>.
             </h2>
           </div>

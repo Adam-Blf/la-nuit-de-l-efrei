@@ -7,12 +7,12 @@ export function ContactBlock() {
         <div className="font-sans text-[11px] font-bold uppercase tracking-[0.42em] text-brass-200">
           UNE AUTRE QUESTION
         </div>
-        <h3 className="fraunces-display mt-5 text-[clamp(36px,5vw,56px)] tracking-[-0.03em] text-cream">
+        <h3 className="display-serif mt-5 text-[clamp(36px,5vw,56px)] tracking-[-0.03em] text-cream">
           On répond en moins de 24h.
         </h3>
         <a
           href={`mailto:${EVENT.email}`}
-          className="fraunces-display mt-10 inline-block border-b border-brass-400 pb-2 text-2xl text-brass-200 hover:text-cream md:text-[32px]"
+          className="display-serif mt-10 inline-block border-b border-brass-400 pb-2 text-2xl text-brass-200 hover:text-cream md:text-[32px]"
         >
           {EVENT.email}
         </a>

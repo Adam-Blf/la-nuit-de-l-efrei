@@ -62,7 +62,7 @@ export function MenuCarte() {
       <div className="relative mx-auto max-w-[1200px]">
         <Reveal className="mb-16 text-center md:mb-20">
           <Eyebrow>·· La Carte de la nuit ··</Eyebrow>
-          <h2 className="fraunces-display mx-auto mt-6 max-w-[18ch] pb-[0.1em] text-[clamp(40px,7vw,84px)] font-medium leading-[1.05] tracking-[-0.03em] text-cream">
+          <h2 className="display-serif mx-auto mt-6 max-w-[18ch] pb-[0.1em] text-[clamp(40px,7vw,84px)] font-medium leading-[1.05] tracking-[-0.03em] text-cream">
             Ce qui est <GoldText>compris</GoldText> dans
             <br className="hidden sm:block" /> votre billet.
           </h2>
@@ -89,11 +89,11 @@ export function MenuCarte() {
               <ul className="flex flex-col gap-7">
                 {PETITS_FOURS.map((p) => (
                   <li key={p.n} className="flex gap-5">
-                    <span className="fraunces-display shrink-0 text-2xl font-medium text-brass-400">
+                    <span className="display-serif shrink-0 text-2xl font-medium text-brass-400">
                       {p.n}
                     </span>
                     <div>
-                      <div className="fraunces-display text-xl tracking-[-0.01em] text-cream md:text-[22px]">
+                      <div className="display-serif text-xl tracking-[-0.01em] text-cream md:text-[22px]">
                         {p.t}
                       </div>
                       <div className="mt-1 text-sm leading-[1.55] text-cream/60">
@@ -115,7 +115,7 @@ export function MenuCarte() {
                 <div className="font-mono text-[9px] uppercase tracking-[0.42em] text-brass-200">
                   À l&apos;embarquement · offert 2 conso
                 </div>
-                <div className="fraunces-display mt-3 text-xl leading-tight tracking-[-0.02em] text-cream md:text-[24px]">
+                <div className="display-serif mt-3 text-xl leading-tight tracking-[-0.02em] text-cream md:text-[24px]">
                   1 coupe de mousseux{" "}
                   <span className="italic text-brass-200">ou</span> verre de cocktail de vin
                   <span className="block text-base text-cream/65 md:text-[18px]">
@@ -141,7 +141,7 @@ export function MenuCarte() {
                     className="flex items-baseline gap-3 border-b border-brass-400/15 pb-3"
                   >
                     <span className="text-brass-400">·</span>
-                    <span className="fraunces-display text-base text-cream md:text-lg">
+                    <span className="display-serif text-base text-cream md:text-lg">
                       {p}
                     </span>
                   </li>
@@ -165,7 +165,7 @@ export function MenuCarte() {
                   key={c.l}
                   className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-brass-400/15 pb-3"
                 >
-                  <span className="fraunces-display text-base text-cream md:text-lg">
+                  <span className="display-serif text-base text-cream md:text-lg">
                     {c.l}
                   </span>
                   <span className="text-right text-[12px] text-cream/55">
@@ -180,7 +180,7 @@ export function MenuCarte() {
             <div className="font-mono text-[10px] uppercase tracking-[0.42em] text-brass-200">
               · Vestiaire · à votre charge · liquide uniquement
             </div>
-            <div className="fraunces-display mt-3 text-xl tracking-[-0.01em] text-cream md:text-[22px]">
+            <div className="display-serif mt-3 text-xl tracking-[-0.01em] text-cream md:text-[22px]">
               Géré par l&apos;établissement · veste 3 € · sac 5 € · valise 7 €
             </div>
             <p className="mt-2 text-[13px] leading-[1.6] text-cream/55">

@@ -4,10 +4,15 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { ListIcon, XIcon } from "@phosphor-icons/react";
 
 import { PromBlason } from "@/components/primitives/Logos";
+import { SITE_EN_PREPARATION } from "@/lib/site-status";
 import { EVENT, NAV_ITEMS, EASE } from "@/lib/tokens";
+
+const CTA = SITE_EN_PREPARATION
+  ? { href: "/", label: "Le chantier" }
+  : { href: "/billetterie", label: "Réserver" };
 
 export function SiteNav() {
   const pathname = usePathname();
@@ -31,7 +36,7 @@ export function SiteNav() {
         <Link href="/" className="flex items-center gap-3 group">
           <PromBlason size={36} />
           <span className="flex flex-col leading-tight">
-            <span className="fraunces-display text-base font-medium tracking-tight text-cream md:text-lg">
+            <span className="display-serif text-base font-medium tracking-tight text-cream md:text-lg">
               {EVENT.name}
             </span>
             <span className="font-mono text-[9px] font-medium uppercase tracking-[0.32em] text-brass-200">
@@ -65,10 +70,10 @@ export function SiteNav() {
 
         <div className="flex items-center gap-3">
           <Link
-            href="/billetterie"
+            href={CTA.href}
             className="hidden bg-brass-400 px-5 py-3 font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-navy-900 transition-transform hover:-translate-y-px md:inline-block"
           >
-            Réserver
+            {CTA.label}
           </Link>
           <button
             type="button"
@@ -77,7 +82,7 @@ export function SiteNav() {
             onClick={() => setOpen((o) => !o)}
             className="flex h-10 w-10 items-center justify-center text-cream lg:hidden"
           >
-            {open ? <X size={22} /> : <Menu size={22} />}
+            {open ? <XIcon size={22} weight="bold" /> : <ListIcon size={22} weight="bold" />}
           </button>
         </div>
       </nav>
@@ -106,7 +111,7 @@ export function SiteNav() {
                   <Link
                     href={item.id}
                     onClick={closeMenu}
-                    className={`block py-4 fraunces-display text-3xl font-medium tracking-tight ${
+                    className={`block py-4 display-serif text-3xl font-medium tracking-tight ${
                       isActive(item.id) ? "text-cream" : "text-cream/70"
                     }`}
                   >
@@ -121,11 +126,11 @@ export function SiteNav() {
                 className="mt-8"
               >
                 <Link
-                  href="/billetterie"
+                  href={CTA.href}
                   onClick={closeMenu}
                   className="inline-block bg-brass-400 px-8 py-4 font-sans text-xs font-bold uppercase tracking-[0.22em] text-navy-900"
                 >
-                  Réserver →
+                  {CTA.label} →
                 </Link>
               </motion.div>
             </div>

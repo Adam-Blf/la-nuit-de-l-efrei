@@ -11,7 +11,7 @@ export function Venue() {
       <div className="mx-auto grid max-w-[1280px] gap-16 lg:grid-cols-[1.1fr_1fr] lg:gap-24">
         <div>
           <Eyebrow>LE LIEU</Eyebrow>
-          <h2 className="fraunces-display mt-6 text-[clamp(44px,7vw,84px)] leading-[0.96] tracking-[-0.03em] text-cream">
+          <h2 className="display-serif mt-6 text-[clamp(44px,7vw,84px)] leading-[0.96] tracking-[-0.03em] text-cream">
             La Péniche.
             <br />
             <GoldText>Privatisée.</GoldText>
@@ -32,7 +32,7 @@ export function Venue() {
                 <div className="font-sans text-[10px] font-bold uppercase tracking-[0.32em] text-brass-200">
                   {d.l}
                 </div>
-                <div className="fraunces-display mt-2 text-2xl text-cream md:text-[28px]">
+                <div className="display-serif mt-2 text-2xl text-cream md:text-[28px]">
                   {d.v}
                 </div>
               </div>
@@ -42,7 +42,7 @@ export function Venue() {
             <div className="font-sans text-[10px] font-bold uppercase tracking-[0.32em] text-brass-200 md:whitespace-nowrap">
               DRESS CODE
             </div>
-            <div className="fraunces-display text-xl text-cream [font-style:italic] md:text-[22px]">
+            <div className="display-serif text-xl text-cream [font-style:italic] md:text-[22px]">
               Robe élégante <span className="text-brass-200">|</span> costume
               <span className="mt-2 block font-sans text-[13px] text-cream/55 [font-style:normal] tracking-[0.04em]">
                 Black tie souple | velours encouragé | sneakers refusées.
@@ -58,7 +58,7 @@ export function Venue() {
             height={680}
             priority
           />
-          <div className="absolute -bottom-7 -left-3 bg-brass-400 px-7 py-5 fraunces-display text-xl text-navy-900 md:-left-7 md:text-[22px]">
+          <div className="absolute -bottom-7 -left-3 bg-brass-400 px-7 py-5 display-serif text-xl text-navy-900 md:-left-7 md:text-[22px]">
             48.852°N | 2.353°E
           </div>
         </div>

@@ -9,7 +9,7 @@ export function ConsoBanner() {
             BAR · 22H → 03H30
           </div>
           <div className="hidden h-px w-12 bg-brass-400/40 sm:block" />
-          <div className="fraunces-display text-2xl tracking-[-0.02em] text-cream md:text-[28px]">
+          <div className="display-serif text-2xl tracking-[-0.02em] text-cream md:text-[28px]">
             Toutes les consos à <GoldText>2&nbsp;€</GoldText>
           </div>
         </div>

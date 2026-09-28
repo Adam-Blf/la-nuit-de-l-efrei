@@ -12,7 +12,7 @@ import {
 } from "@/components/primitives/Decor";
 import { Stars } from "@/components/primitives/Stars";
 import Image from "next/image";
-import { Instagram } from "lucide-react";
+import { InstagramLogoIcon } from "@phosphor-icons/react/ssr";
 
 export const metadata: Metadata = {
   title: "Line-up",
@@ -188,7 +188,7 @@ export default function LineupPage() {
                           />
                         </div>
                         <div>
-                          <h2 className="fraunces-display text-[clamp(32px,4vw,48px)] font-medium leading-[1.05] tracking-[-0.02em] text-cream">
+                          <h2 className="display-serif text-[clamp(32px,4vw,48px)] font-medium leading-[1.05] tracking-[-0.02em] text-cream">
                             {act.n}
                           </h2>
                           <p className="mt-4 max-w-[440px] text-[13px] leading-[1.65] text-cream/65">
@@ -204,7 +204,7 @@ export default function LineupPage() {
                                   rel="noopener noreferrer"
                                   className="inline-flex items-center gap-2 rounded-full border border-brass-400/30 bg-navy-800/40 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.05em] text-cream/80 transition-colors hover:border-brass-400/60 hover:bg-brass-400/10 hover:text-cream"
                                 >
-                                  <Instagram size={12} className="opacity-80" />
+                                  <InstagramLogoIcon size={12} weight="bold" className="opacity-80" aria-hidden="true" />
                                   {ig.handle}
                                 </a>
                               ))}
@@ -247,7 +247,7 @@ export default function LineupPage() {
                     />
                   </div>
                   <div>
-                    <h2 className="fraunces-display text-[clamp(32px,4vw,56px)] font-medium leading-[1.05] tracking-[-0.02em] text-cream">
+                    <h2 className="display-serif text-[clamp(32px,4vw,56px)] font-medium leading-[1.05] tracking-[-0.02em] text-cream">
                       Le Live
                     </h2>
                     <p className="mt-1 text-[13px] text-cream/55">
@@ -266,7 +266,7 @@ export default function LineupPage() {
                   >
                     <Corners size={24} opacity={0.35} />
                     <div className="flex items-baseline justify-between gap-4">
-                      <h3 className="fraunces-display text-2xl font-medium tracking-[-0.01em] text-cream md:text-[28px]">
+                      <h3 className="display-serif text-2xl font-medium tracking-[-0.01em] text-cream md:text-[28px]">
                         {band.n}
                       </h3>
                       <span className="shrink-0 font-mono text-[10px] uppercase tracking-[0.32em] text-brass-200/70">
@@ -310,7 +310,7 @@ export default function LineupPage() {
             <div className="relative border border-brass-400 px-8 py-16 text-center md:px-14 md:py-20">
               <Corners size={32} opacity={0.6} />
               <Eyebrow>| 350 places | jamais une de plus</Eyebrow>
-              <h3 className="fraunces-display mt-5 pb-[0.08em] text-[clamp(32px,4.5vw,48px)] leading-[1.05] tracking-[-0.02em] text-cream">
+              <h3 className="display-serif mt-5 pb-[0.08em] text-[clamp(32px,4.5vw,48px)] leading-[1.05] tracking-[-0.02em] text-cream">
                 Réserver sa place.
               </h3>
               <p className="mx-auto mt-4 max-w-[480px] text-[14px] leading-[1.6] text-cream/65">

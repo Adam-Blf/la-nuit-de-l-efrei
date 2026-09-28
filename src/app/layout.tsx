@@ -1,22 +1,24 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
+import { Hanken_Grotesk, Libre_Caslon_Display, Victor_Mono } from "next/font/google";
 import "./globals.css";
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+import { SITE_EN_PREPARATION } from "@/lib/site-status";
+
+const caslon = Libre_Caslon_Display({
+  variable: "--font-caslon",
   subsets: ["latin"],
   display: "swap",
-  axes: ["SOFT", "WONK", "opsz"],
+  weight: "400",
 });
 
-const inter = Inter({
-  variable: "--font-inter",
+const hanken = Hanken_Grotesk({
+  variable: "--font-hanken",
   subsets: ["latin"],
   display: "swap",
 });
 
-const mono = JetBrains_Mono({
-  variable: "--font-jetbrains",
+const mono = Victor_Mono({
+  variable: "--font-victor",
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "500", "700"],
@@ -31,8 +33,9 @@ export const metadata: Metadata = {
     default: "La Nuit de l'EFREI | MMXXVI",
     template: "%s | La Nuit de l'EFREI",
   },
-  description:
-    "Le retour, dix ans plus tard. Jeudi 28 mai 2026 | La Péniche, 2 quai de la Tournelle | 22h → 04h. Une nuit, 350 invités, une promo dans la lumière. Fait par PROM EFREI.",
+  description: SITE_EN_PREPARATION
+    ? "On vous prépare la prochaine édition de La Nuit de l'EFREI. Date, lieu et billetterie annoncés bientôt par Prom EFREI."
+    : "Le retour, dix ans plus tard. Jeudi 28 mai 2026 | La Péniche, 2 quai de la Tournelle | 22h → 04h. Une nuit, 350 invités, une promo dans la lumière. Fait par PROM EFREI.",
   keywords: [
     "La Nuit de l'EFREI",
     "Prom EFREI",
@@ -70,7 +73,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#001329",
+  themeColor: SITE_EN_PREPARATION ? "#0b0b0b" : "#001329",
   colorScheme: "dark",
   width: "device-width",
   initialScale: 1,
@@ -84,7 +87,8 @@ export default function RootLayout({
   return (
     <html
       lang="fr"
-      className={`${fraunces.variable} ${inter.variable} ${mono.variable} antialiased`}
+      data-mode={SITE_EN_PREPARATION ? "preparation" : undefined}
+      className={`${caslon.variable} ${hanken.variable} ${mono.variable} antialiased`}
     >
       <body className="bg-navy-900 text-cream">
         <a

@@ -21,7 +21,7 @@ export function HomeHero() {
 
       <div
         aria-hidden="true"
-        className="fraunces-display pointer-events-none absolute -right-12 top-24 hidden select-none leading-[0.92] tracking-[-0.06em] md:block"
+        className="display-serif pointer-events-none absolute -right-12 top-24 hidden select-none leading-[0.92] tracking-[-0.06em] md:block"
         style={{
           fontSize: "clamp(420px, 56vw, 920px)",
           color: "rgba(212, 164, 55, 0.06)",
@@ -43,13 +43,13 @@ export function HomeHero() {
       <div className="relative mx-auto flex min-h-[100svh] max-w-[1600px] flex-col justify-end px-6 pb-24 md:min-h-[900px] md:px-12 lg:min-h-[1100px] lg:px-20 xl:px-[120px]">
         <p className="mb-10 max-w-[720px] text-lg leading-[1.45] text-cream/78 md:text-[22px]">
           Le retour,{" "}
-          <em className="fraunces-display glyph-safe font-medium not-italic text-brass-200 [font-style:italic]">
+          <em className="display-serif glyph-safe font-medium not-italic text-brass-200 [font-style:italic]">
             dix ans plus tard
           </em>
           .
         </p>
 
-        <h1 className="fraunces-display m-0 pb-[0.08em] text-[clamp(56px,13vw,220px)] font-medium leading-[0.98] tracking-[-0.04em] text-cream">
+        <h1 className="display-serif m-0 pb-[0.08em] text-[clamp(56px,13vw,220px)] font-medium leading-[0.98] tracking-[-0.04em] text-cream">
           La Nuit
           <br />
           <span className="block pl-[6vw] font-bold">
@@ -69,7 +69,7 @@ export function HomeHero() {
           ].map((d) => (
             <div key={d.l}>
               <Eyebrow>{d.l}</Eyebrow>
-              <div className="fraunces-display mt-3 text-[clamp(28px,3.5vw,44px)] font-medium leading-none tracking-[-0.02em] text-cream">
+              <div className="display-serif mt-3 text-[clamp(28px,3.5vw,44px)] font-medium leading-none tracking-[-0.02em] text-cream">
                 {d.v}
               </div>
               <div className="mt-2 text-[13px] text-cream/55">{d.s}</div>

@@ -30,7 +30,7 @@ export function Transports() {
         <div className="mb-10 flex flex-wrap items-baseline justify-between gap-4">
           <div>
             <Eyebrow>·· Comment venir, comment rentrer ··</Eyebrow>
-            <h2 className="fraunces-display mt-3 text-[clamp(28px,3.5vw,40px)] leading-[1.1] tracking-[-0.02em] text-cream">
+            <h2 className="display-serif mt-3 text-[clamp(28px,3.5vw,40px)] leading-[1.1] tracking-[-0.02em] text-cream">
               2 quai de la Tournelle, Paris V.
             </h2>
           </div>
@@ -49,7 +49,7 @@ export function Transports() {
               <div className="font-mono text-[10px] uppercase tracking-[0.42em] text-brass-200">
                 {s.l}
               </div>
-              <div className="fraunces-display mt-2 text-xl tracking-[-0.01em] text-cream md:text-[22px]">
+              <div className="display-serif mt-2 text-xl tracking-[-0.01em] text-cream md:text-[22px]">
                 {s.line}
               </div>
               <div className="mt-2 text-[13px] text-cream/55">{s.v}</div>

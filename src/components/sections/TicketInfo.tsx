@@ -35,7 +35,7 @@ export function TicketInfo() {
             <div className="mb-4 font-sans text-[10px] font-bold uppercase tracking-[0.32em] text-brass-200">
               {b.l}
             </div>
-            <div className="fraunces-display mb-3 text-[28px] tracking-[-0.02em] text-cream md:text-[32px]">
+            <div className="display-serif mb-3 text-[28px] tracking-[-0.02em] text-cream md:text-[32px]">
               {b.v}
             </div>
             <p className="text-[13px] leading-[1.6] text-cream/60">{b.d}</p>

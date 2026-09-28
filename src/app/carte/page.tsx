@@ -90,10 +90,10 @@ function Block({
             key={it.l}
             className="grid grid-cols-[auto_1fr] gap-x-5 gap-y-1 border-b border-brass-400/12 pb-5"
           >
-            <span className="fraunces-display row-span-2 text-base text-brass-400">
+            <span className="display-serif row-span-2 text-base text-brass-400">
               {String(i + 1).padStart(2, "0")}
             </span>
-            <span className="fraunces-display text-lg tracking-[-0.01em] text-cream md:text-[22px]">
+            <span className="display-serif text-lg tracking-[-0.01em] text-cream md:text-[22px]">
               {it.l}
             </span>
             <span className="text-[13px] leading-[1.55] text-cream/55">
@@ -129,7 +129,7 @@ export default function CartePage() {
 
             <div className="mb-10 text-center">
               <Eyebrow>·· La Carte ··</Eyebrow>
-              <h2 className="fraunces-display mx-auto mt-5 max-w-[16ch] text-[clamp(36px,5.5vw,64px)] leading-[1.05] tracking-[-0.03em] text-cream">
+              <h2 className="display-serif mx-auto mt-5 max-w-[16ch] text-[clamp(36px,5.5vw,64px)] leading-[1.05] tracking-[-0.03em] text-cream">
                 Servi à bord <GoldText>toute la nuit</GoldText>.
               </h2>
               <div className="mx-auto mt-6 flex justify-center">
@@ -159,7 +159,7 @@ export default function CartePage() {
             <div className="mt-12 grid gap-8 border-t border-brass-400/20 pt-10 md:grid-cols-3 md:gap-12">
               <div>
                 <Eyebrow>· Tarif unique</Eyebrow>
-                <div className="fraunces-display mt-3 text-2xl tracking-[-0.02em] text-cream md:text-[28px]">
+                <div className="display-serif mt-3 text-2xl tracking-[-0.02em] text-cream md:text-[28px]">
                   <GoldText>2&nbsp;€</GoldText> la conso
                 </div>
                 <p className="mt-2 text-[13px] leading-[1.6] text-cream/55">
@@ -168,7 +168,7 @@ export default function CartePage() {
               </div>
               <div>
                 <Eyebrow>· Service</Eyebrow>
-                <div className="fraunces-display mt-3 text-2xl tracking-[-0.02em] text-cream md:text-[28px]">
+                <div className="display-serif mt-3 text-2xl tracking-[-0.02em] text-cream md:text-[28px]">
                   22h → 03h30
                 </div>
                 <p className="mt-2 text-[13px] leading-[1.6] text-cream/55">
@@ -177,7 +177,7 @@ export default function CartePage() {
               </div>
               <div>
                 <Eyebrow>· Paiement</Eyebrow>
-                <div className="fraunces-display mt-3 text-2xl tracking-[-0.02em] text-cream md:text-[28px]">
+                <div className="display-serif mt-3 text-2xl tracking-[-0.02em] text-cream md:text-[28px]">
                   CB · cash
                 </div>
                 <p className="mt-2 text-[13px] leading-[1.6] text-cream/55">

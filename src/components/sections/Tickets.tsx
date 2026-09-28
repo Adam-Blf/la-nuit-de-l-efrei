@@ -61,7 +61,7 @@ export function Tickets() {
           <div className="font-sans text-[11px] font-bold uppercase tracking-[0.42em] text-brass-200">
             BILLETTERIE | {EVENT.capacity} PLACES | JAMAIS UNE DE PLUS
           </div>
-          <h2 className="fraunces-display mt-6 pb-[0.1em] text-[clamp(40px,8vw,80px)] leading-[1.05] tracking-[-0.03em] text-cream">
+          <h2 className="display-serif mt-6 pb-[0.1em] text-[clamp(40px,8vw,80px)] leading-[1.05] tracking-[-0.03em] text-cream">
             Trois tarifs
             <br />
             pour <GoldText>embarquer.</GoldText>
@@ -84,11 +84,11 @@ export function Tickets() {
               }`}
             >
               {t.featured && <Corners size={32} opacity={0.7} />}
-              <div className="fraunces-display mb-4 text-5xl leading-none text-brass-400">
+              <div className="display-serif mb-4 text-5xl leading-none text-brass-400">
                 {t.n}
               </div>
               <div className="flex min-h-[140px] flex-col lg:min-h-[148px]">
-                <div className="fraunces-display text-[clamp(26px,2.4vw,32px)] leading-[1.1] tracking-[-0.02em] text-cream">
+                <div className="display-serif text-[clamp(26px,2.4vw,32px)] leading-[1.1] tracking-[-0.02em] text-cream">
                   {t.l}
                 </div>
                 <div className="mt-2 text-sm leading-snug text-cream/60">
@@ -97,12 +97,12 @@ export function Tickets() {
               </div>
               <div className="mt-6 flex items-baseline gap-2 border-b border-brass-400/20 pb-8">
                 <span
-                  className="fraunces-display font-medium leading-none tracking-[-0.04em] text-cream tabular-nums"
+                  className="display-serif font-medium leading-none tracking-[-0.04em] text-cream tabular-nums"
                   style={{ fontSize: "clamp(72px, 10vw, 96px)" }}
                 >
                   {t.p}
                 </span>
-                <span className="fraunces-display text-3xl text-brass-200 md:text-4xl">
+                <span className="display-serif text-3xl text-brass-200 md:text-4xl">
                   €
                 </span>
               </div>

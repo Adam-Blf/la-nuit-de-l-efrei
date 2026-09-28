@@ -55,7 +55,7 @@ export function Countdown() {
               } ${i === 0 ? "border-r border-brass-400/25" : ""}`}
             >
               <div
-                className="fraunces-display font-medium leading-[0.88] tracking-[-0.04em] text-cream tabular-nums"
+                className="display-serif font-medium leading-[0.88] tracking-[-0.04em] text-cream tabular-nums"
                 style={{ fontSize: "clamp(64px, 14vw, 220px)" }}
                 suppressHydrationWarning
               >
