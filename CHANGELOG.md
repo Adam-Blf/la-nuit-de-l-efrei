@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), versions follow [SemVer](https://semver.org/).
 
+## [Unreleased]
+
+- ci: remove the Vercel CLI workflow, production already deploys through the Vercel Git integration and the workflow failed on every push without a token
+
 ## [0.2.0] - 2026-10-07
 
 First tagged release. Latest changes:
