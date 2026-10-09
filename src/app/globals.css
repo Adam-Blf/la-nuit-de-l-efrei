@@ -62,6 +62,12 @@ button {
   font-family: inherit;
 }
 
+/* Focus clavier visible partout : laiton sur marine, 8,15:1 (seuil 3:1). */
+:focus-visible {
+  outline: 2px solid var(--brass-400);
+  outline-offset: 3px;
+}
+
 ::selection {
   background: var(--brass-400);
   color: var(--navy-900);

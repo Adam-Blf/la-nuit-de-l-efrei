@@ -4,6 +4,10 @@ All notable changes to this project are documented here. Format: [Keep a Changel
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-10-09
+
+- feat: buttons say what the visitor gets, not the gesture ("Réserver" becomes "Choisir ma place", "Réserver ma place à 14 €", "Découvrir les coulisses sur @promefrei"), full before and after list in `docs/boutons.md`
+- fix: contrast of map and Instagram chip borders raised above 3:1, visible keyboard focus ring on every control
 - ci: remove the Vercel CLI workflow, production already deploys through the Vercel Git integration and the workflow failed on every push without a token
 
 ## [0.2.0] - 2026-10-07

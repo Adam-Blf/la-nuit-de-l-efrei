@@ -80,14 +80,14 @@ export function HomeHero() {
               href="/billetterie"
               className="bg-brass-400 px-10 py-5 text-center text-xs font-bold uppercase tracking-[0.18em] text-navy-900 transition-transform hover:-translate-y-px"
             >
-              Réserver →
+              Comparer les trois tarifs →
             </Link>
             <a
               href="/calendar.ics"
               className="border-b border-brass-400 px-9 py-3 text-center text-[11px] font-semibold uppercase tracking-[0.18em] text-brass-200 hover:text-cream"
               download="la-nuit-de-l-efrei.ics"
             >
-              Ajouter à l&apos;agenda
+              Retenir la date dans mon agenda
             </a>
           </div>
         </div>

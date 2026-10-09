@@ -125,25 +125,25 @@ export function VenueMap() {
               href={OSM_OPEN}
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-brass-400/40 px-3 py-2 transition-colors hover:bg-brass-400 hover:text-navy-900"
+              className="border border-brass-400/70 px-3 py-2 transition-colors hover:bg-brass-400 hover:text-navy-900"
             >
-              OpenStreetMap ↗
+              Trouver la péniche sur OpenStreetMap ↗
             </a>
             <a
               href={GMAPS_OPEN}
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-brass-400/40 px-3 py-2 transition-colors hover:bg-brass-400 hover:text-navy-900"
+              className="border border-brass-400/70 px-3 py-2 transition-colors hover:bg-brass-400 hover:text-navy-900"
             >
-              Google Maps ↗
+              Trouver la péniche sur Google Maps ↗
             </a>
             <a
               href={APPLE_OPEN}
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-brass-400/40 px-3 py-2 transition-colors hover:bg-brass-400 hover:text-navy-900"
+              className="border border-brass-400/70 px-3 py-2 transition-colors hover:bg-brass-400 hover:text-navy-900"
             >
-              Plans Apple ↗
+              Trouver la péniche sur Plans Apple ↗
             </a>
           </div>
         </div>

@@ -37,7 +37,7 @@ export function HomeCTA() {
             href="/billetterie"
             className="mt-12 inline-block bg-brass-400 px-12 py-5 text-[13px] font-bold uppercase tracking-[0.22em] text-navy-900 transition-transform hover:-translate-y-px md:px-16"
           >
-            Réserver →
+            Réserver ma place parmi les 350 →
           </Link>
         </div>
         <div className="hidden justify-center lg:flex">

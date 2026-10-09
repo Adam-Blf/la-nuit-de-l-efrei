@@ -228,7 +228,7 @@ export function NextEdition() {
             className="px-6 py-3 text-center text-xs font-bold uppercase tracking-[0.2em] transition-transform hover:-translate-y-px focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4"
             style={{ background: TUNGSTENE, color: NOIR, outlineColor: TUNGSTENE }}
           >
-            Suivre les répétitions {EVENT.insta}
+            Découvrir les coulisses sur {EVENT.insta}
           </a>
           <a href={`mailto:${EVENT.email}`} className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#f4ebdd]/90 hover:text-[#f4ebdd]">
             {EVENT.email}

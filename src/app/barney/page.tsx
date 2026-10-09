@@ -76,13 +76,13 @@ export default function BarneyPage() {
                   href="/billetterie"
                   className="bg-brass-400 px-9 py-4 text-[11px] font-bold uppercase tracking-[0.22em] text-navy-900 transition-transform hover:-translate-y-px"
                 >
-                  Réserver pour le rencontrer →
+                  Réserver ma place pour rencontrer Barney →
                 </Link>
                 <Link
                   href="/lieu"
                   className="border border-brass-400 px-9 py-4 text-[11px] font-bold uppercase tracking-[0.22em] text-cream transition-colors hover:bg-brass-400 hover:text-navy-900"
                 >
-                  Le lieu
+                  Découvrir la péniche
                 </Link>
               </div>
             </div>
@@ -195,7 +195,7 @@ export default function BarneyPage() {
                 href="/billetterie"
                 className="mt-10 inline-block bg-brass-400 px-12 py-5 text-[13px] font-bold uppercase tracking-[0.22em] text-navy-900 transition-transform hover:-translate-y-px md:px-16"
               >
-                Réserver →
+                Réserver ma place →
               </Link>
             </div>
             <div className="hidden justify-center lg:flex">
