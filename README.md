@@ -23,7 +23,7 @@ Depuis la v0.2.0, le site est en mode chantier : l'accueil annonce la prochaine 
 
 Tout tient à un drapeau, `SITE_EN_PREPARATION` dans `src/lib/site-status.ts`. Le repasser à `false` rend le site complet de l'édition, sans autre modification.
 
-Direction « Coulisses de nuit » : écran noir, une baladeuse suit la souris et révèle les indices sur le thème. Typographie : Libre Caslon Display (titres), Hanken Grotesk (texte), Victor Mono (étiquettes). Icônes : Phosphor.
+Direction « Coulisses de nuit » : écran noir, une baladeuse suit la souris et révèle les indices sur le thème. Typographie : Libre Caslon Display (titres), Hanken Grotesk (texte), Victor Mono (étiquettes). Icônes : Reicon.
 
 ---
 
