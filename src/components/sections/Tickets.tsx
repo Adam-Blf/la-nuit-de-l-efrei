@@ -131,7 +131,7 @@ export function Tickets() {
                       : "border border-brass-400 text-cream hover:bg-brass-400 hover:text-navy-900"
                   } transition-colors`}
                 >
-                  Réserver
+                  Réserver ma place à {t.p} €
                 </a>
               </div>
             </Reveal>

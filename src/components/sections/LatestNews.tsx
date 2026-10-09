@@ -50,7 +50,7 @@ export function LatestNews() {
             rel="noopener noreferrer"
             className="group flex items-center gap-3 border-b border-brass-400/40 pb-1 font-mono text-[11px] uppercase tracking-[0.2em] text-brass-200 transition-colors hover:text-cream"
           >
-            Suivre @promefrei
+            Découvrir la suite sur @promefrei
             <span className="transition-transform group-hover:translate-x-1">→</span>
           </a>
         </div>

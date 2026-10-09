@@ -292,7 +292,7 @@ export default function AssociationsPage() {
                 rel="noopener noreferrer"
                 className="mt-8 inline-block bg-brass-400 px-9 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.32em] text-navy-900 transition-transform hover:-translate-y-px"
               >
-                Envoyer un DM ↗
+                Demander une place pour mon asso ↗
               </a>
             </div>
           </div>

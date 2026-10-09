@@ -11,7 +11,7 @@
 [![Phosphor Icons](https://img.shields.io/badge/icons-Phosphor-D4A437)](https://phosphoricons.com)
 [![framer-motion 11](https://img.shields.io/badge/framer--motion-11-0055FF?logo=framer)](https://motion.dev)
 [![License MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Version 0.2.0](https://img.shields.io/badge/version-0.2.0-blue)](package.json)
+[![Version 0.3.0](https://img.shields.io/badge/version-0.3.0-blue)](package.json)
 
 Site officiel du gala **La Nuit de l'EFREI** - jeudi 28 mai 2026 - La Péniche, 2 quai de la Tournelle - Paris V - 22h → 04h - 300 invités - privatisation totale.
 

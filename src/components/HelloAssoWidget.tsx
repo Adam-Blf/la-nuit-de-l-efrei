@@ -86,7 +86,7 @@ export function HelloAssoWidget() {
             rel="noopener noreferrer"
             className="inline-block self-start border border-brass-400 px-6 py-3 font-sans text-[11px] font-bold uppercase tracking-[0.22em] text-cream transition-colors hover:bg-brass-400 hover:text-navy-900 md:self-auto"
           >
-            Ouvrir HelloAsso ↗
+            Réserver ma place sur HelloAsso ↗
           </a>
         </div>
       </div>

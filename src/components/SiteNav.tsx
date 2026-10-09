@@ -11,8 +11,8 @@ import { SITE_EN_PREPARATION } from "@/lib/site-status";
 import { EVENT, NAV_ITEMS, EASE } from "@/lib/tokens";
 
 const CTA = SITE_EN_PREPARATION
-  ? { href: "/", label: "Le chantier" }
-  : { href: "/billetterie", label: "Réserver" };
+  ? { href: "/", label: "Découvrir le chantier" }
+  : { href: "/billetterie", label: "Choisir ma place" };
 
 export function SiteNav() {
   const pathname = usePathname();

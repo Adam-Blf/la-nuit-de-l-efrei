@@ -202,7 +202,7 @@ export default function LineupPage() {
                                   href={ig.url}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="inline-flex items-center gap-2 rounded-full border border-brass-400/30 bg-navy-800/40 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.05em] text-cream/80 transition-colors hover:border-brass-400/60 hover:bg-brass-400/10 hover:text-cream"
+                                  className="inline-flex items-center gap-2 rounded-full border border-brass-400/70 bg-navy-800/40 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.05em] text-cream/80 transition-colors hover:border-brass-400 hover:bg-brass-400/10 hover:text-cream"
                                 >
                                   <InstagramLogoIcon size={12} weight="bold" className="opacity-80" aria-hidden="true" />
                                   {ig.handle}
@@ -321,7 +321,7 @@ export default function LineupPage() {
                 href="/billetterie"
                 className="mt-8 inline-block bg-brass-400 px-9 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.32em] text-navy-900 transition-transform hover:-translate-y-px"
               >
-                Réserver →
+                Réserver ma place →
               </a>
             </div>
           </div>
