@@ -12,7 +12,7 @@ import {
 } from "@/components/primitives/Decor";
 import { Stars } from "@/components/primitives/Stars";
 import Image from "next/image";
-import { InstagramLogoIcon } from "@phosphor-icons/react/ssr";
+import { Instagram } from "reicon-react";
 
 export const metadata: Metadata = {
   title: "Line-up",
@@ -204,7 +204,7 @@ export default function LineupPage() {
                                   rel="noopener noreferrer"
                                   className="inline-flex items-center gap-2 rounded-full border border-brass-400/30 bg-navy-800/40 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.05em] text-cream/80 transition-colors hover:border-brass-400/60 hover:bg-brass-400/10 hover:text-cream"
                                 >
-                                  <InstagramLogoIcon size={12} weight="bold" className="opacity-80" aria-hidden="true" />
+                                  <Instagram size={12} strokeWidth={2} className="opacity-80" aria-hidden="true" />
                                   {ig.handle}
                                 </a>
                               ))}

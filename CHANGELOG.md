@@ -4,6 +4,9 @@ All notable changes to this project are documented here. Format: [Keep a Changel
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-10-09
+
+- icônes : migration des icônes vers Reicon, mêmes pictogrammes (menu, fermeture, vélo, noctilien, voiture, Instagram), le taxi est remplacé par la voiture générique faute de taxi chez Reicon
 - ci: remove the Vercel CLI workflow, production already deploys through the Vercel Git integration and the workflow failed on every push without a token
 
 ## [0.2.0] - 2026-10-07

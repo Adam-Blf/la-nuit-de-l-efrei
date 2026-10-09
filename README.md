@@ -8,7 +8,7 @@
 [![React 19](https://img.shields.io/badge/React-19-149ECA?logo=react)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript)](https://typescriptlang.org)
 [![Tailwind CSS 4](https://img.shields.io/badge/Tailwind-4-38BDF8?logo=tailwindcss)](https://tailwindcss.com)
-[![Phosphor Icons](https://img.shields.io/badge/icons-Phosphor-D4A437)](https://phosphoricons.com)
+[![Reicon](https://img.shields.io/badge/icons-Reicon-D4A437)](https://reicon.dev)
 [![framer-motion 11](https://img.shields.io/badge/framer--motion-11-0055FF?logo=framer)](https://motion.dev)
 [![License MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Version 0.2.0](https://img.shields.io/badge/version-0.2.0-blue)](package.json)
@@ -67,7 +67,7 @@ flowchart TB
 - **Next.js 16** App Router - React 19 - TypeScript strict
 - **Tailwind CSS 4** - tokens dans `src/app/globals.css` (`@theme inline`)
 - **framer-motion 11** pour les transitions et reveals
-- **lucide-react** pour les icônes UI (hamburger menu)
+- **reicon-react** pour les icônes UI (menu, fermeture, transports, Instagram)
 - **Vercel** ready - Image Optimization, Edge runtime compatible
 - Polices - `Fraunces` (display) - `Inter` (body) - `JetBrains Mono` (mono) via `next/font/google`
 

@@ -1,8 +1,4 @@
-import {
-  BicycleIcon,
-  MoonIcon,
-  TaxiIcon,
-} from "@phosphor-icons/react/ssr";
+import { Bicycle, Car, Moon } from "reicon-react";
 import type { ReactNode } from "react";
 
 import { Corners, Eyebrow } from "@/components/primitives/Decor";
@@ -66,7 +62,7 @@ const STOPS: Stop[] = [
     v: "Station 50403 | 50 m",
     modeIcon: (
       <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-[6px] bg-[#A6CE39] text-white">
-        <BicycleIcon size={16} weight="bold" aria-hidden="true" />
+        <Bicycle size={16} strokeWidth={2} aria-hidden="true" />
       </span>
     ),
     badges: (
@@ -80,7 +76,7 @@ const STOPS: Stop[] = [
     v: "Saint-Michel | 00h30 → 05h30",
     modeIcon: (
       <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#252958] text-white">
-        <MoonIcon size={15} weight="bold" aria-hidden="true" />
+        <Moon size={15} strokeWidth={2} aria-hidden="true" />
       </span>
     ),
     badges: (
@@ -97,7 +93,7 @@ const STOPS: Stop[] = [
     v: "Sur le quai | toute la nuit",
     modeIcon: (
       <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-[6px] bg-[#0F2E55] text-[#F4D03F]">
-        <TaxiIcon size={15} weight="bold" aria-hidden="true" />
+        <Car size={15} strokeWidth={2} aria-hidden="true" />
       </span>
     ),
     badges: (

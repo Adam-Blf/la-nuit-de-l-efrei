@@ -106,7 +106,7 @@
 
 - **Brand Guidelines** · cf `07_Brand_Book/brand-book.md` + `design-philosophy.md`
 - **Ton visuel** · luxueux + minimaliste + nostalgique (10 ans après) · jamais ludique infantile, jamais brutaliste
-- **Iconographie** · une seule famille · Lucide (outline 1.5px · cohérent sur tout le site web et la com)
+- **Iconographie** · une seule famille · Reicon (outline 1.5px · cohérent sur tout le site web et la com)
 
 ## 12. Accessibilité (design inclusif)
 

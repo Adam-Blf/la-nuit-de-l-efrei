@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ListIcon, XIcon } from "@phosphor-icons/react";
+import { Menu, X } from "reicon-react";
 
 import { PromBlason } from "@/components/primitives/Logos";
 import { SITE_EN_PREPARATION } from "@/lib/site-status";
@@ -82,7 +82,7 @@ export function SiteNav() {
             onClick={() => setOpen((o) => !o)}
             className="flex h-10 w-10 items-center justify-center text-cream lg:hidden"
           >
-            {open ? <XIcon size={22} weight="bold" /> : <ListIcon size={22} weight="bold" />}
+            {open ? <X size={22} strokeWidth={2} /> : <Menu size={22} strokeWidth={2} />}
           </button>
         </div>
       </nav>
